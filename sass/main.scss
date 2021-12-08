@@ -1,7 +1,8 @@
-body{
-    background-color: blue;
-}
-
-h1{
-    font-size: 10px;
-}
+@import "./Base/base";
+@import "./Components/bouton-etape";
+@import "./Layout/footer";
+@import "./Layout/header";
+@import "./Pages/accueil";
+@import "./Pages/menu";
+@import "./Utils/mixins";
+@import "./Utils/variables";
