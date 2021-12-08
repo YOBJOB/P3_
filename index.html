@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,73 @@
     <link rel="stylesheet" href="public/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:400,400i,600&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:400,400i,600&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <title>Ohmyfood</title>
 </head>
+
 <body>
     <div class="wrapper">
         <header>
-
+            <img id="logo" src="public/images/logo/ohmyfood.png">
         </header>
+        <main>
+
+            <!--localiser-->
+            <form class="bar-rec">
+                <label class="bar-rec__map" for="loc"><i class="fas fa-map-marker-alt"></i></label>
+                <input class="bar-rec__input" type="search" name="rec" id="loc" value="Paris, Belleville" />
+            </form>
+
+            <!--Trouvez un restaurant-->
+            <section>
+                <h1>Réservez le menu qui vous convient</h1>
+                <article>
+                    <p>Découvrez des restaurants d'exception,</p>
+                    <p>sélectionnés par nos soins</p>
+                </article>
+                <button class="bouton" type="submit">Explorer nos restaurants</button>
+            </section>
+
+            <!--Fonctionnement-->
+            <section>
+                <h2>Fonctionnement</h2>
+                <nav class="">
+                    <ul class="">
+                        <li class="">
+                            <a href="#">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Choisisssez un restaurants</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <i class="fas fa-list-ul"></i>
+                                <span>Composez votre menu</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <i class="fas fa-store"></i>
+                                <span>Dégustez au restaurants</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </section>
+
+            <!--Restaurants-->
+            <section>
+                <h2>Restaurants</h2>
+            </section>
+
+        </main>
+        <footer></footer>
 
     </div>
 </body>
+
 </html>
