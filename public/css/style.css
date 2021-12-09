@@ -1,9 +1,38 @@
-body {
-  background-color: blue;
+* {
+  box-sizing: border-box;
 }
 
-h1 {
-  font-size: 10px;
+.wrapper {
+  max-width: 800px;
+  margin: auto;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+}
+
+body, header, section, footer, div, ul, li, h1, h2, h3, h4, a, p {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+}
+
+h1, h2, strong {
+  font-weight: bold;
+}
+
+h1, h2 {
+  font-size: 22px;
+  font-family: "Shrikhand", "sans-serif";
+}
+
+p, strong, i {
+  font-size: 16px;
+  font-family: "Roboto", "sans-serif";
 }
 
 /*# sourceMappingURL=style.css.map */
