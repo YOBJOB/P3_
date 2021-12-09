@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&family=Shrikhand&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -34,6 +35,6 @@ h1, h2 {
 
 p, strong, i {
   font-size: 16px;
-  font-family: "Roboto","sans-serif";
+  font-family: 'Roboto', sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
