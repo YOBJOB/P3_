@@ -1,26 +1,24 @@
 @import'../utils/mixins';
 @import'../utils/variables';
 
-.btn-fonction{
+
+
+
+.btn_lien_fonc{
     @include flex;
     @include flex-layout ($justify:start); 
     @include dim ($height:80px, $width:85%);
     @include apparence;
-    &__cercle{      
-        position: relative;
-        right: 11px;      
+    .cercle{ 
+        position: relative;          
         border-radius: 50%;
         background-color: $color-secondary; 
-        @include dim ($height:50px, $width:50px);
+        @include dim ($height:20px, $width:20px);
         }
-        &__icone{
-        position: relative;
-        left: 15px; 
-        }
-        &__texte{
-            position: relative;
-        left:40px;     
-        }
+    .btn-fonction{
+        @include flex;
+        @include flex-layout ($justify:space-around); 
+    }
 }
 
                                

@@ -11,15 +11,15 @@
 
 .section_fonc{
     @include flex($direction:column);
-    @include dim($height:500px);
+    @include dim($height:400px);
     .titre_marg{
     margin-left: 20px;
     }
     .bloc_btn{
-    @include flex;
     @include flex-layout ($justify:space-around);
     @include flex($direction:column);
     @include dim($height:300px) 
     }
- 
     }
+
+    

@@ -14,7 +14,7 @@ img {
   height: 500px;
 }
 
-body, header, section, footer, div, ul, li, h1, h2, h3, h4, a, p {
+body, header, section, footer, div, ol, ul, li, h1, h2, h3, h4, a, p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   list-style: none;
@@ -35,7 +35,7 @@ h1, h2 {
 
 h3, h4, h5, h6 {
   font-family: "Shrikhand","sans-serif";
-  font-size: 22px;
+  font-size: 24px;
 }
 
 p, strong, i {
@@ -43,7 +43,7 @@ p, strong, i {
   font-family: 'Roboto', sans-serif;
 }
 
-.btn-fonction {
+.btn_lien_fonc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,26 +62,38 @@ p, strong, i {
   border-radius: 30px;
   -webkit-box-shadow: 0px 10px 10px #f2f2f2;
           box-shadow: 0px 10px 10px #f2f2f2;
-  border: solid 3px #f2f2f2;
+  border: solid 2px #f2f2f2;
 }
 
-.btn-fonction__cercle {
+.btn_lien_fonc .btn-fonction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn_lien_fonc .btn-fonction__cercle {
   position: relative;
-  right: 11px;
   border-radius: 50%;
   background-color: #FF79DA;
-  height: 50px;
-  width: 50px;
+  height: 20px;
+  width: 20px;
 }
 
-.btn-fonction__icone {
+.btn_lien_fonc .btn-fonction__icone {
   position: relative;
-  left: 15px;
 }
 
-.btn-fonction__texte {
+.btn_lien_fonc .btn-fonction__texte {
   position: relative;
-  left: 40px;
 }
 
 .section_fonc {
@@ -101,21 +113,18 @@ p, strong, i {
 }
 
 .section_fonc .bloc_btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 300px;
   width: 100%;
 }
