@@ -1,15 +1,11 @@
 @import'../utils/mixins';
-
+@import'../utils/variables';
 
 .btn-fonction{
     @include flex;
     @include flex-layout; 
-    height: 80px;
-    width: 70%;
-    box-shadow: 0 3px 3px 3px #f2f2f2;
-    border-radius: 30px;
-    border: solid 3px #f2f2f2;
-    font-weight: bold; 
+    @include dim;
+    @include apparence;
 }
 
 

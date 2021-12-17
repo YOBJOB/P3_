@@ -54,10 +54,9 @@ p, strong, i {
           align-items: center;
   height: 80px;
   width: 70%;
-  -webkit-box-shadow: 0 3px 3px 3px #f2f2f2;
-          box-shadow: 0 3px 3px 3px #f2f2f2;
   border-radius: 30px;
+  -webkit-box-shadow: 3px #f2f2f2;
+          box-shadow: 3px #f2f2f2;
   border: solid 3px #f2f2f2;
-  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,5 @@
+@import'../utils/variables';
+
 @mixin flex($direction:row){
     display:flex;
     flex-direction: $direction;
@@ -6,4 +8,15 @@
 @mixin flex-layout($justify:center, $aligne:center){
     justify-content: $justify;
     align-items: $aligne;    
+}
+
+@mixin dim($height:80px, $width:70%){
+    height: $height;
+    width: $width;
+}
+
+@mixin apparence($color:$color-back){
+    border-radius: 30px;
+    box-shadow: 3px $color; 
+    border: solid 3px $color;
 }
