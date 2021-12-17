@@ -43,6 +43,7 @@ p, strong, i {
   font-family: 'Roboto', sans-serif;
 }
 
+/*bouton fonctionnement*/
 .btn_lien_fonc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,6 +66,21 @@ p, strong, i {
   border: solid 2px #f2f2f2;
 }
 
+.btn_lien_fonc .cercle-proj {
+  position: relative;
+  right: 15px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  height: 30px;
+  width: 30px;
+}
+
+.btn_lien_fonc .cercle-proj__pos {
+  position: relative;
+  left: 9px;
+  top: 4px;
+}
+
 .btn_lien_fonc .btn-fonction {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,29 +89,111 @@ p, strong, i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.btn_lien_fonc .btn-fonction__icone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+}
+
+.btn_lien_fonc .btn-fonction__texte {
+  margin-left: 20px;
+}
+
+.foot_proj {
+  height: 300px;
+  width: 100%;
+  background-color: rgba(73, 64, 64, 0.555);
+}
+
+.foot_proj .bloc_foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.btn_lien_fonc .btn-fonction__cercle {
-  position: relative;
-  border-radius: 50%;
-  background-color: #FF79DA;
-  height: 20px;
-  width: 20px;
+.foot_proj .logo-proj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 80px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.btn_lien_fonc .btn-fonction__icone {
-  position: relative;
+.foot_proj .logo-proj__dim {
+  height: 50%;
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-.btn_lien_fonc .btn-fonction__texte {
-  position: relative;
+.header-proj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 80px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+.header-proj__dim {
+  height: 60%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/*section fonctionnement*/
 .section_fonc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,8 +202,9 @@ p, strong, i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 500px;
+  height: 350px;
   width: 100%;
+  margin: 20px 0;
 }
 
 .section_fonc .titre_marg {
@@ -115,9 +214,9 @@ p, strong, i {
 .section_fonc .bloc_btn {
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,5 +226,6 @@ p, strong, i {
           flex-direction: column;
   height: 300px;
   width: 100%;
+  margin-left: 30px;
 }
 /*# sourceMappingURL=main.css.map */

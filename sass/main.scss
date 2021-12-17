@@ -8,17 +8,19 @@
 @import "./utils/variables";
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&family=Shrikhand&display=swap');
 
-
+/*section fonctionnement*/ 
 .section_fonc{
     @include flex($direction:column);
-    @include dim($height:400px);
+    @include dim($height:350px);
+    margin: 20px 0;
     .titre_marg{
     margin-left: 20px;
     }
     .bloc_btn{
-    @include flex-layout ($justify:space-around);
+    @include flex-layout ($justify:space-around,$aligne:unset);
     @include flex($direction:column);
-    @include dim($height:300px) 
+    @include dim($height:300px); 
+    margin-left:30px;
     }
     }
 

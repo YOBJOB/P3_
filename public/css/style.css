@@ -41,6 +41,7 @@ p, strong, i {
   font-family: "Roboto", sans-serif;
 }
 
+/*bouton fonctionnement*/
 .btn_lien_fonc {
   display: flex;
   flex-direction: row;
@@ -52,42 +53,97 @@ p, strong, i {
   box-shadow: 0px 10px 10px #f2f2f2;
   border: solid 2px #f2f2f2;
 }
+.btn_lien_fonc .cercle-proj {
+  position: relative;
+  right: 15px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  height: 30px;
+  width: 30px;
+}
+.btn_lien_fonc .cercle-proj__pos {
+  position: relative;
+  left: 9px;
+  top: 4px;
+}
 .btn_lien_fonc .btn-fonction {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: unset;
   align-items: center;
-}
-.btn_lien_fonc .btn-fonction__cercle {
-  position: relative;
-  border-radius: 50%;
-  background-color: #FF79DA;
-  height: 20px;
-  width: 20px;
+  width: 90%;
 }
 .btn_lien_fonc .btn-fonction__icone {
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
 }
 .btn_lien_fonc .btn-fonction__texte {
-  position: relative;
+  margin-left: 20px;
 }
 
+.foot_proj {
+  height: 300px;
+  width: 100%;
+  background-color: rgba(73, 64, 64, 0.555);
+}
+.foot_proj .bloc_foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.foot_proj .logo-proj {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.foot_proj .logo-proj__dim {
+  height: 50%;
+  width: 50%;
+  object-fit: contain;
+}
+
+.header-proj {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.header-proj__dim {
+  height: 60%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/*section fonctionnement*/
 .section_fonc {
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 350px;
   width: 100%;
+  margin: 20px 0;
 }
 .section_fonc .titre_marg {
   margin-left: 20px;
 }
 .section_fonc .bloc_btn {
   justify-content: space-around;
-  align-items: center;
+  align-items: unset;
   display: flex;
   flex-direction: column;
   height: 300px;
   width: 100%;
+  margin-left: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
