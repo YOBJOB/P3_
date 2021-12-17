@@ -21,13 +21,18 @@ body,header,section,footer,div,ul,li,h1,h2,h3,h4,a,p{
     color: black;
 }
 
-h1,h2,strong{
+h1,h2,h3,h4,h5,h6,strong{
     font-weight: bold;
 }
 
 h1,h2{
-    font-size: 22px;
-    font-family: "Shrikhand","sans-serif";
+    font-size: 22px; 
+    font-family: 'Roboto', sans-serif;
+}
+
+h3,h4,h5,h6{
+font-family: "Shrikhand","sans-serif";
+font-size: 22px;
 }
 
 p,strong,i{
