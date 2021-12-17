@@ -37,29 +37,56 @@ h3, h4, h5, h6 {
 }
 
 p, strong, i {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
 }
 
 .btn-fonction {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   height: 80px;
-  width: 70%;
+  width: 85%;
   border-radius: 30px;
-  box-shadow: 3px #f2f2f2;
+  box-shadow: 0px 10px 10px #f2f2f2;
   border: solid 3px #f2f2f2;
-  margin-top: 20px;
 }
 .btn-fonction__cercle {
+  position: relative;
+  right: 11px;
   border-radius: 50%;
   background-color: #FF79DA;
   height: 50px;
   width: 50px;
-  justify-content: center;
+}
+.btn-fonction__icone {
+  position: relative;
+  left: 15px;
+}
+.btn-fonction__texte {
+  position: relative;
+  left: 40px;
+}
+
+.section_fonc {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+}
+.section_fonc .titre_marg {
+  margin-left: 20px;
+}
+.section_fonc .bloc_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

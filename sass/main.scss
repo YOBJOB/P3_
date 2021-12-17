@@ -9,4 +9,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&family=Shrikhand&display=swap');
 
 
-
+.section_fonc{
+    @include flex($direction:column);
+    @include dim($height:500px);
+    .titre_marg{
+    margin-left: 20px;
+    }
+    .bloc_btn{
+    @include flex;
+    @include flex-layout ($justify:space-around);
+    @include flex($direction:column);
+    @include dim($height:300px) 
+    }
+ 
+    }
