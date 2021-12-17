@@ -18,8 +18,8 @@
 
 <body>
     <div class="wrapper">
-        <header>
-            <img id="logo" src="public/images/logo/ohmyfood.png">
+        <header class="header-proj">
+            <img class="header-proj__dim" id="logo" src="public/images/logo/ohmyfood.png">
         </header>
         <main>
             <!--localiser-->
@@ -44,24 +44,24 @@
                     <a class="btn_lien_fonc" href="#">
                         <div class="cercle-proj"><p class="cercle-proj__pos">1</p></div>
                         <article class="btn-fonction">
-                            <span class="btn-fonction__icone"><i class="fas fa-mobile-alt"></i></span>
-                            <strong class="btn-fonction__texte">Choisisssez un restaurants</strong>
+                            <div class="btn-fonction__icone"><i class="fas fa-mobile-alt"></i></div>
+                            <p class="btn-fonction__texte">Choisisssez un restaurants</p>
                         </article>
                     </a>
 
                     <a class="btn_lien_fonc" href="#">
                         <div class="cercle-proj"><p class="cercle-proj__pos">2</p></div>
                         <article class="btn-fonction">
-                            <span class="btn-fonction__icone"><i class="fas fa-list-ul"></i></span>
-                            <strong class="btn-fonction__texte">Composez votre menu</strong>
+                            <div class="btn-fonction__icone"><i class="fas fa-list-ul"></i></div>
+                            <p class="btn-fonction__texte">Composez votre menu</p>
                         </article>
                     </a>
 
                     <a class="btn_lien_fonc" href="#">
                         <div class="cercle-proj"><p class="cercle-proj__pos">3</p></div>
                         <article class="btn-fonction">
-                            <span class="btn-fonction__icone"><i class="fas fa-store"></i></span>
-                            <strong class="btn-fonction__texte">Dégustez au restaurants</strong>
+                            <div class="btn-fonction__icone"><i class="fas fa-store"></i></div>
+                            <p class="btn-fonction__texte">Dégustez au restaurants</p>
                         </article>
                     </a>
                 </div>
@@ -133,17 +133,20 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="">
-                <div>
-                    <img src="/public/images/logo/ohmyfood.png" alt="logo">
+        <footer class="foot_proj">
+            <div class="bloc_foot">
+                <div class="logo-proj">
+                    <img class="logo-proj__dim" src="/public/images/logo/ohmyfood.png" alt="logo">
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#"><span><i class="fas fa-utensils"></i></span>
+                        <li>
+                            <a href="#"><span><i class="fas fa-utensils"></i></span>
                                 <p>Proposer un restaurant</p>
-                            </a></li>
-                        <li><a href="#"><span><i class="fas fa-hands-helping"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><span><i class="fas fa-hands-helping"></i></span>
                                 <p>Devenir partenaire</p>
                             </a></li>
                         <li><a href="#">
