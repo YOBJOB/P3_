@@ -5,7 +5,7 @@
 .btn_lien_fonc{
     @include flex;
     @include flex-layout ($justify:start); 
-    @include dim ($height:80px, $width:85%);
+    @include dim ($height:80px);
     @include apparence;
     .cercle-proj{ 
         position: relative;
@@ -22,15 +22,12 @@
     .btn-fonction{
         @include flex;
         @include flex-layout ($justify:unset); 
-        width: 90%;
+        @include dim ($height:unset);
         &__icone{
-            @include flex;
-            @include flex-layout ($justify:unset); 
-            @include dim ($height:30px, $width:30px);   
-            margin-left: 20px;
+            
         }
         &__texte{
-            margin-left: 20px;
+            padding-left: 10px;   
         }
     }
 }
