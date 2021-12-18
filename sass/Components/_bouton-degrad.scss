@@ -1,0 +1,11 @@
+@import'../utils/mixins';
+@import'../utils/variables';
+
+
+/*bouton-trouver*/
+.bouton{
+    border-radius: 30px;
+    font-weight: bold; 
+    height: 50px;
+    align-items: center;           
+}

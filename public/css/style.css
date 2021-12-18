@@ -78,6 +78,14 @@ p, strong, i {
   padding-left: 10px;
 }
 
+/*bouton-trouver*/
+.bouton {
+  border-radius: 30px;
+  font-weight: bold;
+  height: 50px;
+  align-items: center;
+}
+
 /*card resto*/
 .b {
   display: flex;
