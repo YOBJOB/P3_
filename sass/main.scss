@@ -13,7 +13,7 @@
     @include flex($direction:column);
     @include dim($height:350px);
     margin: 20px 0;
-    .titre_marg{
+    .marg_l_20{
     margin-left: 20px;
     }
     .bloc_btn{
@@ -27,8 +27,12 @@
 /*section resto*/ 
 .section_resto{
     @include flex($direction:column);
-    @include dim($height:1000px);
+    @include dim($height:1600px);
     margin: 20px 0;
+    background-color: $color-back;
+    .marg_l_20{
+        margin-left: 20px;
+    }
     .bloc_resto{
     @include flex($direction:column);
     @include flex-layout ($justify:space-around);
