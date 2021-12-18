@@ -24,4 +24,16 @@
     }
     }
 
+/*section resto*/ 
+.section_resto{
+    @include flex($direction:column);
+    @include dim($height:1000px);
+    margin: 20px 0;
+    .bloc_resto{
+    @include flex($direction:column);
+    @include flex-layout ($justify:space-around);
+    @include dim($height:100%);
+    }
+}
+
     
