@@ -8,6 +8,24 @@
 @import "./utils/variables";
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&family=Shrikhand&display=swap');
 
+
+/*localiser*/
+.conten_local{
+    @include flex;
+    @include flex-layout;
+    @include dim ($height: 50px);
+    background: $color-back;
+    box-shadow: 0px -6px 9px -2px darken($color-back,20%);
+    .bar-loc{
+        &__input{
+            border: unset;
+            background-color: $color-back;
+            margin-left: 30px;
+        }
+    }
+}
+
+
 /*section fonctionnement*/ 
 .section_fonc{
     @include flex($direction:column);

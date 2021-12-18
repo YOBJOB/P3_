@@ -176,6 +176,23 @@ p, strong, i {
   object-fit: contain;
 }
 
+/*localiser*/
+.conten_local {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background: #f2f2f2;
+  box-shadow: 0px -6px 9px -2px #bfbfbf;
+}
+.conten_local .bar-loc__input {
+  border: unset;
+  background-color: #f2f2f2;
+  margin-left: 30px;
+}
+
 /*section fonctionnement*/
 .section_fonc {
   display: flex;
