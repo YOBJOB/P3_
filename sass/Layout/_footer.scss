@@ -2,8 +2,9 @@
     @include dim($height:300px);  
     background-color: rgba(73, 64, 64, 0.555);
     .bloc_foot{
-    @include flex ($direction:column); 
-        .logo-foot{
+    @include flex ($direction:column);
+    padding: 0px 20px; 
+        /*.logo-foot{
         @include flex;
         @include dim ($height:50px, $width:50%);
         @include flex-layout ($justify:unset);
@@ -11,7 +12,7 @@
         @include dim($height:50%, $width:50%);
         object-fit: contain;
         }
-        }
+        }*/
         .nav_foot{
         @include dim($height:180px);
             .ul_foot_bloc{

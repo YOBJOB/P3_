@@ -35,7 +35,7 @@ h1, h2 {
 
 h3, h4, h5, h6 {
   font-family: "Shrikhand","sans-serif";
-  font-size: 24px;
+  font-size: 18px;
 }
 
 p, strong, i {
@@ -184,31 +184,16 @@ p, strong, i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.foot_proj .bloc_foot .logo-foot {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  height: 50px;
-  width: 50%;
-  -webkit-box-pack: unset;
-      -ms-flex-pack: unset;
-          justify-content: unset;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.foot_proj .bloc_foot .logo-foot__dim {
-  height: 50%;
-  width: 50%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  padding: 0px 20px;
+  /*.logo-foot{
+        @include flex;
+        @include dim ($height:50px, $width:50%);
+        @include flex-layout ($justify:unset);
+        &__dim{
+        @include dim($height:50%, $width:50%);
+        object-fit: contain;
+        }
+        }*/
 }
 
 .foot_proj .bloc_foot .nav_foot {
