@@ -23,12 +23,11 @@
         @include flex;
         @include flex-layout ($justify:unset); 
         @include dim ($height:unset);
-        &__icone{
-            
-        }
+       
         &__texte{
             padding-left: 10px;   
         }
     }
 }
+
 
