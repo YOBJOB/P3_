@@ -85,7 +85,8 @@ p, strong, i {
   height: 50px;
   align-items: center;
   background: linear-gradient(#FF79DA, #9356DC);
-  border: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border: unset;
 }
 
 /*card resto*/
