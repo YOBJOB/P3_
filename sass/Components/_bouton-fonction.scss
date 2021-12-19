@@ -7,12 +7,14 @@
     @include flex-layout ($justify:start); 
     @include dim ($height:80px);
     @include apparence;
+    background: $color-back;
     .cercle-proj{ 
         position: relative;
         right: 15px;          
         border-radius: 50%;
         background-color: $color-primary; 
         @include dim ($height:30px, $width:30px);
+        min-width: 30px;
         &__pos{
         position: relative;
         left: 9px;
@@ -22,8 +24,7 @@
     .btn-fonction{
         @include flex;
         @include flex-layout ($justify:unset); 
-        @include dim ($height:unset);
-       
+        @include dim ($height:unset);   
         &__texte{
             padding-left: 10px;   
         }

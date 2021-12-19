@@ -22,7 +22,7 @@
 
 @mixin apparence($color:$color-back){
     border-radius: 30px;
-    box-shadow: 0px 10px 10px $color; 
+    box-shadow: 0px 10px 10px darken($color, 10%); 
     border: solid 2px $color;
 }
 

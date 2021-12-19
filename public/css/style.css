@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 
 h1, h2 {
-  font-size: 22px;
+  font-size: 26px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -50,8 +50,9 @@ p, strong, i {
   height: 80px;
   width: 100%;
   border-radius: 30px;
-  box-shadow: 0px 10px 10px #f2f2f2;
+  box-shadow: 0px 10px 10px #d9d9d9;
   border: solid 2px #f2f2f2;
+  background: #f2f2f2;
 }
 .btn_lien_fonc .cercle-proj {
   position: relative;
@@ -60,6 +61,7 @@ p, strong, i {
   background-color: #9356DC;
   height: 30px;
   width: 30px;
+  min-width: 30px;
 }
 .btn_lien_fonc .cercle-proj__pos {
   position: relative;
@@ -83,6 +85,7 @@ p, strong, i {
   border-radius: 30px;
   font-weight: bold;
   height: 50px;
+  width: 280px;
   align-items: center;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
@@ -92,9 +95,8 @@ p, strong, i {
 /*card resto*/
 .b {
   display: flex;
-  align-self: center;
   height: 350px;
-  width: 90%;
+  width: 100%;
   margin: 10px 0 10px 0;
   flex-direction: column;
   border-radius: 30px;
@@ -238,7 +240,7 @@ p, strong, i {
   flex-direction: column;
   height: 300px;
   width: 100%;
-  padding: 0px 30px;
+  padding: 0px 20px 0px 30px;
 }
 
 /*section resto*/
@@ -260,6 +262,7 @@ p, strong, i {
   align-items: center;
   height: 100%;
   width: 100%;
+  padding: 0px 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

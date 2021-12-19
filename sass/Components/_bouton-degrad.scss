@@ -6,7 +6,7 @@
 .bouton{
     border-radius: 30px;
     font-weight: bold; 
-    height: 50px;
+    @include dim($height:50px, $width:280px);
     align-items: center; 
     background: $color-button-mix;
     color: white;
