@@ -1,4 +1,3 @@
-
 /*localiser*/
 .conten_local{
     @include flex;
@@ -32,8 +31,7 @@
     }
     .trouv_text{
         color: lighten($color-back,20%);
-        text-align: center;
-             
+        text-align: center;           
     }
 }
 
@@ -51,7 +49,7 @@
     @include dim($height:300px); 
     padding: 0px 20px 0px 30px;
     }
-    }
+}
 
 /*section resto*/ 
 .section_resto{
@@ -60,12 +58,12 @@
     padding: 20px 0;
     background-color: $color-back;
     .marg_l_20{
-    margin-left: 20px;
+        margin-left: 20px;
     }
     .bloc_resto{
-    @include flex($direction:column);
-    @include flex-layout ($justify:space-around);
-    @include dim($height:100%);
-    padding: 0px 20px;
+        @include flex($direction:column);
+        @include flex-layout ($justify:space-around);
+        @include dim($height:100%);
+        padding: 0px 20px;
     }
 }
