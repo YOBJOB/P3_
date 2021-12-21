@@ -54,6 +54,12 @@ p, strong, i {
   border: solid 2px #f2f2f2;
   background: #f2f2f2;
 }
+.btn_lien_fonc:hover {
+  background: #e4d5f6;
+}
+.btn_lien_fonc:hover:hover .btn-fonction__icone {
+  color: #9356DC;
+}
 .btn_lien_fonc .cercle-proj {
   position: relative;
   right: 15px;
@@ -75,6 +81,9 @@ p, strong, i {
   align-items: center;
   height: unset;
   width: 100%;
+}
+.btn_lien_fonc .btn-fonction__icone {
+  color: #a6a6a6;
 }
 .btn_lien_fonc .btn-fonction__texte {
   padding-left: 10px;

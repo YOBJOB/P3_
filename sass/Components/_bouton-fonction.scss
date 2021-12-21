@@ -8,6 +8,13 @@
     @include dim ($height:80px);
     @include apparence;
     background: $color-back;
+    &:hover {
+     background: lighten($color-primary, 30%);
+     &:hover .btn-fonction__icone{
+        @include nuance-color-10($color-primary);  
+     }
+        
+    }
     .cercle-proj{ 
         position: relative;
         right: 15px;          
@@ -24,9 +31,13 @@
     .btn-fonction{
         @include flex;
         @include flex-layout ($justify:unset); 
-        @include dim ($height:unset);   
+        @include dim ($height:unset);
+        &__icone{
+            @include nuance-color-10;     
+        }  
         &__texte{
-            padding-left: 10px;   
+            padding-left: 10px;
+              
         }
     }
 }
