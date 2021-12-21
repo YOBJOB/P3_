@@ -5,7 +5,6 @@
     border: 1px solid black;
 } 
     
-
 @mixin flex($direction:row){
     display:flex;
     flex-direction: $direction;
@@ -16,19 +15,11 @@
     align-items: $aligne;    
 }
 
-@mixin dim($height:80px, $width:100%){
+@mixin dim($height, $width:100%){
     height: $height;
     width: $width;
 }
 
-@mixin apparence($color:$color-back){
-    border-radius: 30px;
-    box-shadow: 0px 10px 10px darken($color, 10%); 
-    border: solid 2px $color;
-}
-
 @mixin nuance-color-10($color: lightness-shift($color-back)){
     color: $color;
-   
-    }
-
+}

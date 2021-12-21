@@ -6,42 +6,38 @@
     @include flex;
     @include flex-layout ($justify:start); 
     @include dim ($height:80px);
-    @include apparence;
+    border-radius: 30px;
+    box-shadow: 0px 10px 10px darken($color-back, 10%); 
     background: $color-back;
     &:hover {
-     background: lighten($color-primary, 30%);
-     &:hover .btn-fonction__icone{
-        @include nuance-color-10($color-primary);  
-     }
-        
+        background: lighten($color-primary, 30%);
+        &:hover .btn-fonction__icone{
+            @include nuance-color-10($color-primary);  
+        }     
     }
     .cercle-proj{ 
         position: relative;
         right: 15px;          
         border-radius: 50%;
         background-color: $color-primary; 
-        @include dim ($height:30px, $width:30px);
+        @include dim(30px,30px);
         min-width: 30px;
         &__pos{
-        position: relative;
-        left: 9px;
-        top: 4px;
+            position: relative;
+            left: 9px;
+            top: 4px;
+            color: white
         }
     }
     .btn-fonction{
         @include flex;
-        @include flex-layout ($justify:unset); 
-        @include dim ($height:unset);
+        @include flex-layout(unset); 
+        @include dim(unset);
         &__icone{
             @include nuance-color-10;     
         }  
         &__texte{
-            padding-left: 10px;
-              
+            padding-left: 10px;            
         }
     }
 }
-
-
-
-

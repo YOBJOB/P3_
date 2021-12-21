@@ -1,0 +1,71 @@
+
+/*localiser*/
+.conten_local{
+    @include flex;
+    @include flex-layout;
+    @include dim ($height: 50px);
+    background: darken($color-back,10%);
+    box-shadow: 0px -6px 9px -2px darken($color-back,20%);
+    .bar-loc{
+        &__map{
+            margin-left: 20px;
+        }
+        &__input{
+            border: unset;
+            background: darken($color-back,10%);
+            margin-left: 20px;
+        }
+    }
+}
+
+/*Trouvez un restaurant*/
+.section_trouv{
+    @include dim($height:300px);
+    @include flex($direction:column);
+    @include flex-layout($justify:space-around);
+    align-self: center;
+    padding: 30px 0px;
+    background: $color-back;
+    .trouv_titre{
+        font-size: 30px;
+        text-align: center;
+    }
+    .trouv_text{
+        color: lighten($color-back,20%);
+        text-align: center;
+             
+    }
+}
+
+/*section fonctionnement*/ 
+.section_fonc{
+    @include flex($direction:column);
+    @include dim($height:350px);
+    margin: 20px 0;
+    .marg_l_20{
+    margin-left: 20px;
+    }
+    .bloc_btn{
+    @include flex-layout ($justify:space-around,$aligne:unset);
+    @include flex($direction:column);
+    @include dim($height:300px); 
+    padding: 0px 20px 0px 30px;
+    }
+    }
+
+/*section resto*/ 
+.section_resto{
+    @include flex($direction:column);
+    @include dim($height:1600px);
+    padding: 20px 0;
+    background-color: $color-back;
+    .marg_l_20{
+    margin-left: 20px;
+    }
+    .bloc_resto{
+    @include flex($direction:column);
+    @include flex-layout ($justify:space-around);
+    @include dim($height:100%);
+    padding: 0px 20px;
+    }
+}

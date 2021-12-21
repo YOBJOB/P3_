@@ -1,9 +1,9 @@
 .header-proj{
     @include flex;
-    @include dim ($height:80px);
+    @include dim(80px);
     @include flex-layout;
     &__dim{
-        @include dim($height:60%);
+        @include dim(60%);
         object-fit: contain;
     }
 }
