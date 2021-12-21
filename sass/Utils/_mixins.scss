@@ -1,5 +1,5 @@
 @import'../utils/variables';
-@import'../utils.fonctions';
+@import'../utils/fonctions';
 
 @mixin borderblack{
     border: 1px solid black;
@@ -27,4 +27,8 @@
     border: solid 2px $color;
 }
 
+@mixin nuance-color-10($color: lightness-shift($color-back)){
+    color: $color;
+   
+    }
 
