@@ -3,6 +3,6 @@
     @if ( lightness($color) < 25% ) {
         @return lighten($color, 10%);
     }@else{
-        @return darken($color, 10%);
+        @return darken($color, 30%);
     }
     }
