@@ -1,2 +1,9 @@
 @import'../utils/mixins';
 @import'../utils/variables';
+
+.propri-coeur{ 
+    color: blue;    
+    &:active{
+        color: $color-button-mix;
+    }
+}
