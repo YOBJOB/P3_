@@ -151,7 +151,6 @@ p, strong, i {
   text-align: center;
   background: none;
   border: none;
-  cursor: pointer;
   padding: unset;
 }
 
@@ -159,14 +158,20 @@ p, strong, i {
   display: none;
   background: none;
   border: none;
-  cursor: pointer;
 }
 
-.resto-proj__coeur i {
+i {
   font-size: 40px;
   cursor: pointer;
   position: absolute;
   right: 50px;
+}
+
+i:hover {
+  color: #9356DC;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 input[type=checkbox] + label .fas {
@@ -211,6 +216,23 @@ input[type=checkbox]:checked + label .fas {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.resto-proj__card-ima .propri_new {
+  position: relative;
+  bottom: 233px;
+  height: 30px;
+  width: 100%;
+}
+
+.resto-proj__card-ima .propri_new .new {
+  position: absolute;
+  right: 27px;
+  padding: 10px 20px;
+  color: #278870;
+  background: #99E2D0;
+  font-weight: bold;
+  border-radius: 5%;
 }
 
 .resto-proj__card-info {

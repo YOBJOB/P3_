@@ -1,10 +1,6 @@
 @import'../utils/variables';
 @import'../utils/fonctions';
-
-@mixin borderblack{
-    border: 1px solid black;
-} 
-    
+  
 @mixin flex($direction:row){
     display:flex;
     flex-direction: $direction;
