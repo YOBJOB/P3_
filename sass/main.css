@@ -46,6 +46,14 @@ p, strong, i {
   font-weight: bold;
 }
 
+.marg_b_20 {
+  margin-bottom: 20px;
+}
+
+.marg_t_20 {
+  margin-top: 20px;
+}
+
 /*bouton fonctionnement*/
 .btn_lien_fonc {
   display: -webkit-box;
@@ -137,10 +145,9 @@ p, strong, i {
 
 .resto-proj__coeur {
   position: relative;
-  bottom: 70px;
-  left: 500px;
+  bottom: 75px;
   height: 40px;
-  width: 40px;
+  width: 100%;
   text-align: center;
   background: none;
   border: none;
@@ -155,13 +162,16 @@ p, strong, i {
   cursor: pointer;
 }
 
-.resto-proj__coeur .fa-heart {
-  font-size: 30px;
+.resto-proj__coeur i {
+  font-size: 40px;
   cursor: pointer;
+  position: absolute;
+  right: 50px;
 }
 
 input[type=checkbox] + label .fas {
   font-weight: unset;
+  color: rgba(0, 0, 0, 0.431);
 }
 
 input[type=checkbox]:checked + label .fas {
@@ -215,7 +225,7 @@ input[type=checkbox]:checked + label .fas {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   justify-items: center;
-  padding: 0 0 0 15px;
+  padding: 0 0 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,7 +395,7 @@ input[type=checkbox]:checked + label .fas {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 350px;
+  height: 400px;
   width: 100%;
   margin: 20px 0;
 }
@@ -407,7 +417,7 @@ input[type=checkbox]:checked + label .fas {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 300px;
+  height: 368px;
   width: 100%;
   padding: 0px 20px 0px 30px;
 }
@@ -421,7 +431,7 @@ input[type=checkbox]:checked + label .fas {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 1600px;
+  height: 1650px;
   width: 100%;
   padding: 20px 0;
   background-color: #f2f2f2;

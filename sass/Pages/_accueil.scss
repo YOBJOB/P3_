@@ -38,7 +38,7 @@
 /*section fonctionnement*/ 
 .section_fonc{
     @include flex($direction:column);
-    @include dim($height:350px);
+    @include dim($height:400px);
     margin: 20px 0;
     .marg_l_20{
     margin-left: 20px;
@@ -46,7 +46,7 @@
     .bloc_btn{
     @include flex-layout ($justify:space-around,$aligne:unset);
     @include flex($direction:column);
-    @include dim($height:300px); 
+    @include dim($height:368px); 
     padding: 0px 20px 0px 30px;
     }
 }
@@ -54,7 +54,7 @@
 /*section resto*/ 
 .section_resto{
     @include flex($direction:column);
-    @include dim($height:1600px);
+    @include dim($height:1650px);
     padding: 20px 0;
     background-color: $color-back;
     .marg_l_20{
@@ -65,5 +65,6 @@
         @include flex-layout ($justify:space-around);
         @include dim($height:100%);
         padding: 0px 20px;
+        
     }
 }
