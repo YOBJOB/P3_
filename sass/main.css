@@ -233,9 +233,22 @@ input[type=checkbox]:checked + label .fas {
 }
 
 .foot_proj {
-  height: 300px;
+  height: 220px;
   width: 100%;
-  background-color: rgba(73, 64, 64, 0.555);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  background-color: rgba(37, 30, 30, 0.909);
 }
 
 .foot_proj .bloc_foot {
@@ -247,19 +260,18 @@ input[type=checkbox]:checked + label .fas {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0px 20px;
-  /*.logo-foot{
-        @include flex;
-        @include dim ($height:50px, $width:50%);
-        @include flex-layout ($justify:unset);
-        &__dim{
-        @include dim($height:50%, $width:50%);
-        object-fit: contain;
-        }
-        }*/
+  height: 150px;
+  width: 100%;
+}
+
+.foot_proj .bloc_foot h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.849);
 }
 
 .foot_proj .bloc_foot .nav_foot {
-  height: 180px;
+  height: 130px;
   width: 100%;
 }
 
@@ -285,6 +297,12 @@ input[type=checkbox]:checked + label .fas {
           flex-direction: row;
   height: 100%;
   width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .foot_proj .bloc_foot .nav_foot .ul_foot_bloc .li_foot .lien_foot {
@@ -295,6 +313,15 @@ input[type=checkbox]:checked + label .fas {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  color: rgba(255, 255, 255, 0.849);
+}
+
+.foot_proj .bloc_foot .nav_foot .ul_foot_bloc .li_foot .lien_foot .espace {
+  width: 30px;
+}
+
+.foot_proj .bloc_foot .nav_foot .ul_foot_bloc .li_foot .lien_foot p {
+  color: rgba(255, 255, 255, 0.849);
 }
 
 .header-proj {
