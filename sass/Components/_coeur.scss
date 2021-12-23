@@ -2,85 +2,38 @@
 @import'../utils/variables';
 
 .resto-proj__coeur{ 
-        position: relative;
-        bottom: 70px;
-        left: 500px;
-        @include dim(40px,40px);
-        text-align: center;
+    position: relative;
+    bottom: 70px;
+    left: 500px;
+    @include dim(40px,40px);
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: unset;
+    input[type="checkbox"]{
+        display: none;
         background: none;
         border: none;
+        cursor: pointer;    
+    } 
+  
+        .fa-heart  {
+        font-size: 30px;
         cursor: pointer;
-        padding: unset;
-        
-      
-       /* input[type="checkbox"]{
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            /*+ label .fas{
-                object-fit: fill;
-                fill:transparent;
-                stroke: 10;
-                stroke: rgb(17, 165, 37);
-            }*/
-         /*}
-        
-
-        input[type=checkbox]:checked + label{        
+    }
+}
+input[type=checkbox] + label{
+    .fas{
+        font-weight: unset;   
+    }
+}       
+input[type=checkbox]:checked + label{ 
+    .fas{ 
+        font-weight: 900;     
         color: $color-primary;
         background: -webkit-linear-gradient($color-primary,$color-secondary);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;      
-        }
-        */
-    
-        input[type="checkbox"]{
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-        
-        }
-    }  
-        i{
-            font-size: 30px;
-        }
-        input[type=checkbox] + label{
-            .fas{
-                font-weight: unset;
-            
-            cursor: pointer;
-            }
-        }
-        
-
-
-input[type=checkbox]:checked + label{ 
-    .fas{ 
-    font-weight: 900;     
-    color: $color-primary;
-    background: -webkit-linear-gradient($color-primary,$color-secondary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    cursor: pointer;
-         
-    }}
-
-
-/*
-i::after {
-    content: "\f004" ;
-     font-size: 30px;
-     
-     
+        -webkit-text-fill-color: transparent;        
+    }
 }
-     #coeur:checked ~ i::after {
-         content: "\f004";
-         font-size: 30px;
-         fill:transparent;
-         stroke: 10;
-     
-         
-}  
-*/

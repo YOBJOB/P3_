@@ -146,27 +146,6 @@ p, strong, i {
   border: none;
   cursor: pointer;
   padding: unset;
-  /* input[type="checkbox"]{
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            /*+ label .fas{
-                object-fit: fill;
-                fill:transparent;
-                stroke: 10;
-                stroke: rgb(17, 165, 37);
-            }*/
-  /*}
-        
-
-        input[type=checkbox]:checked + label{        
-        color: $color-primary;
-        background: -webkit-linear-gradient($color-primary,$color-secondary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;      
-        }
-        */
 }
 
 .resto-proj__coeur input[type="checkbox"] {
@@ -176,13 +155,13 @@ p, strong, i {
   cursor: pointer;
 }
 
-i {
+.resto-proj__coeur .fa-heart {
   font-size: 30px;
+  cursor: pointer;
 }
 
 input[type=checkbox] + label .fas {
   font-weight: unset;
-  cursor: pointer;
 }
 
 input[type=checkbox]:checked + label .fas {
@@ -191,25 +170,8 @@ input[type=checkbox]:checked + label .fas {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  cursor: pointer;
 }
 
-/*
-i::after {
-    content: "\f004" ;
-     font-size: 30px;
-     
-     
-}
-     #coeur:checked ~ i::after {
-         content: "\f004";
-         font-size: 30px;
-         fill:transparent;
-         stroke: 10;
-     
-         
-}  
-*/
 /*card resto*/
 .resto-proj {
   display: -webkit-box;
