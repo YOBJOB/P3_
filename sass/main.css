@@ -192,6 +192,23 @@ p, strong, i {
   -webkit-text-fill-color: transparent;
 }
 
+.propri_new {
+  position: relative;
+  bottom: 233px;
+  height: 30px;
+  width: 100%;
+}
+
+.propri_new .new {
+  position: absolute;
+  right: 27px;
+  padding: 10px 20px;
+  color: #278870;
+  background: #99E2D0;
+  font-weight: bold;
+  border-radius: 5%;
+}
+
 /*card resto*/
 .resto-proj {
   display: -webkit-box;
@@ -414,6 +431,8 @@ p, strong, i {
 }
 
 .section_trouv .trouv_titre {
+  width: 320px;
+  height: 70px;
   font-size: 30px;
   text-align: center;
 }
@@ -421,6 +440,8 @@ p, strong, i {
 .section_trouv .trouv_text {
   color: white;
   text-align: center;
+  width: 320px;
+  height: 50px;
 }
 
 /*section fonctionnement*/

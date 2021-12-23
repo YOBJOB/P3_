@@ -25,12 +25,16 @@
     padding: 30px 0px;
     background: $color-back;
     .trouv_titre{
+        width: 320px;
+        height: 70px;
         font-size: 30px;
         text-align: center;
     }
     .trouv_text{
         color: lighten($color-back,20%);
-        text-align: center;           
+        text-align: center;
+        width: 320px;
+        height: 50px;           
     }
 }
 /*section fonctionnement*/ 
