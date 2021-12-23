@@ -46,24 +46,26 @@
         i{
             font-size: 30px;
         }
-        input[type=checkbox] + .far{        
-            stroke: blue; 
-            font-size: 30px;
-            fill:transparent;
-            stroke: 10;
+        input[type=checkbox] + label{
+            .fas{
+                font-weight: unset;
+            
             cursor: pointer;
-
             }
+        }
         
 
 
-input[type=checkbox]:checked + .fas{        
+input[type=checkbox]:checked + label{ 
+    .fas{ 
+    font-weight: 900;     
     color: $color-primary;
     background: -webkit-linear-gradient($color-primary,$color-secondary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
-    cursor: pointer;    
-    }
+    cursor: pointer;
+         
+    }}
 
 
 /*
