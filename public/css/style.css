@@ -104,13 +104,82 @@ p, strong, i {
   border: unset;
 }
 
-.propri-coeur {
-  color: blue;
+.resto-proj__coeur {
+  position: relative;
+  bottom: 70px;
+  left: 500px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: unset;
+  /* input[type="checkbox"]{
+       display: none;
+       background: none;
+       border: none;
+       cursor: pointer;
+       /*+ label .fas{
+           object-fit: fill;
+           fill:transparent;
+           stroke: 10;
+           stroke: rgb(17, 165, 37);
+       }*/
+  /*}
+
+
+  input[type=checkbox]:checked + label{        
+  color: $color-primary;
+  background: -webkit-linear-gradient($color-primary,$color-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;      
+  }
+  */
 }
-.propri-coeur:active {
-  color: linear-gradient(#FF79DA, #9356DC);
+.resto-proj__coeur input[type=checkbox] {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
+i {
+  font-size: 30px;
+}
+
+input[type=checkbox] + label {
+  color: blue;
+  font-size: 30px;
+  fill: transparent;
+  stroke: 10;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked + label {
+  color: #9356DC;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+/*
+i::after {
+    content: "\f004" ;
+     font-size: 30px;
+
+
+}
+     #coeur:checked ~ i::after {
+         content: "\f004";
+         font-size: 30px;
+         fill:transparent;
+         stroke: 10;
+
+
+}  
+*/
 /*card resto*/
 .resto-proj {
   display: flex;

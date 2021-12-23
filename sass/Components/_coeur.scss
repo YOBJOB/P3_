@@ -1,9 +1,84 @@
 @import'../utils/mixins';
 @import'../utils/variables';
 
-.propri-coeur{ 
-    color: blue;    
-    &:active{
-        color: $color-button-mix;
+.resto-proj__coeur{ 
+        position: relative;
+        bottom: 70px;
+        left: 500px;
+        @include dim(40px,40px);
+        text-align: center;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: unset;
+        
+      
+       /* input[type="checkbox"]{
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            /*+ label .fas{
+                object-fit: fill;
+                fill:transparent;
+                stroke: 10;
+                stroke: rgb(17, 165, 37);
+            }*/
+         /*}
+        
+
+        input[type=checkbox]:checked + label{        
+        color: $color-primary;
+        background: -webkit-linear-gradient($color-primary,$color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;      
+        }
+        */
+    
+        input[type="checkbox"]{
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        
+        }
+    }  
+        i{
+            font-size: 30px;
+        }
+        input[type=checkbox] + .far{        
+            stroke: blue; 
+            font-size: 30px;
+            fill:transparent;
+            stroke: 10;
+            cursor: pointer;
+
+            }
+        
+
+
+input[type=checkbox]:checked + .fas{        
+    color: $color-primary;
+    background: -webkit-linear-gradient($color-primary,$color-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    cursor: pointer;    
     }
+
+
+/*
+i::after {
+    content: "\f004" ;
+     font-size: 30px;
+     
+     
 }
+     #coeur:checked ~ i::after {
+         content: "\f004";
+         font-size: 30px;
+         fill:transparent;
+         stroke: 10;
+     
+         
+}  
+*/
