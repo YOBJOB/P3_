@@ -9,5 +9,8 @@
     align-items: center; 
     background: $color-button-mix;
     color: white;
-    border: unset;    
+    border: unset;
+    &:active{
+        box-shadow: 0px 10px 10px darken($color-back, 10%);
+    }    
 }
