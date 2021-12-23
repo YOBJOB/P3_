@@ -1,0 +1,17 @@
+@import'../utils/mixins';
+@import'../utils/variables';
+
+.propri_new{
+    position: relative;
+    bottom: 233px;
+    @include dim(30px); 
+    .new{
+        position: absolute;
+        right: 27px;
+        padding: 10px 20px;
+        color: darken($color-tertiary, 40%);
+        background: $color-tertiary;
+        font-weight: bold;
+        border-radius: 5%;
+    }
+}
