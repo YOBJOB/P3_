@@ -35,7 +35,7 @@ h3, h4, h5, h6 {
   font-size: 18px;
 }
 
-p, strong, i {
+p, strong, span, i {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
 }
@@ -173,11 +173,10 @@ p, strong, i {
 /*card resto*/
 .resto-proj {
   display: flex;
-  align-self: center;
+  flex-direction: column;
   height: 350px;
   width: 100%;
-  margin: 10px 0 10px 0;
-  flex-direction: column;
+  margin: 10px 0px;
   border-radius: 30px;
 }
 .resto-proj__card-ima {
@@ -187,19 +186,19 @@ p, strong, i {
   width: 100%;
 }
 .resto-proj__card-ima .wi_he_co {
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 .resto-proj__card-info {
+  display: flex;
+  flex-direction: column;
   height: 100px;
+  width: 100%;
   box-shadow: 0 3px 3px 3px #f2f2f2;
   border-radius: 0 0 30px 30px;
-  flex-direction: column;
   justify-content: space-around;
-  justify-items: center;
   padding: 0 0 0 20px;
-  display: flex;
   background-color: white;
 }
 
@@ -301,16 +300,16 @@ p, strong, i {
   background: #f2f2f2;
 }
 .section_trouv .trouv_titre {
-  width: 320px;
   height: 70px;
+  width: 320px;
   font-size: 30px;
   text-align: center;
 }
 .section_trouv .trouv_text {
+  height: 50px;
+  width: 320px;
   color: white;
   text-align: center;
-  width: 320px;
-  height: 50px;
 }
 
 /*section fonctionnement*/

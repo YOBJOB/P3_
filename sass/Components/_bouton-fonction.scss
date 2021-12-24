@@ -4,8 +4,8 @@
 /*bouton fonctionnement*/ 
 .btn_lien_fonc{
     @include flex;
-    @include flex-layout ($justify:start); 
-    @include dim ($height:90px);
+    @include flex-layout(start); 
+    @include dim (90px);
     border-radius: 30px;
     box-shadow: 0px 10px 10px darken($color-back, 10%); 
     background: $color-back;

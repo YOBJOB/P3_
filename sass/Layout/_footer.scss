@@ -1,10 +1,10 @@
 .foot_proj{
-    @include dim($height:220px);
+    @include dim(220px);
     @include flex(column);
-    @include flex-layout (center,unset);  
+    @include flex-layout (center, unset);  
     background-color: rgba(37, 30, 30, 0.909);
     .bloc_foot{
-        @include flex (column);
+        @include flex(column);
         padding: 0px 20px;
         @include dim(150px);
         h4{
@@ -13,23 +13,23 @@
             color: rgba(255, 255, 255, 0.849);
         }
         .nav_foot{
-            @include dim($height:130px);
+            @include dim(130px);
             .ul_foot_bloc{
-                @include dim($height:100%); 
-                @include flex ($direction:column);
+                @include dim(100%); 
+                @include flex (column);
             .li_foot{
                 @include flex;
-                @include dim ($height:100%);
+                @include dim (100%);
                 @include flex-layout (start);
             .lien_foot{
                 @include flex;
                 color: rgba(255, 255, 255, 0.849);
-            .espace{
-                width: 30px;
-            }
-            p{
-                color: rgba(255, 255, 255, 0.849); 
-            }
+                .espace{
+                    width: 30px;
+                }
+                p{
+                    color: rgba(255, 255, 255, 0.849); 
+                }
             }
             }
             }

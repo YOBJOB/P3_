@@ -3,33 +3,26 @@
 
 /*card resto*/ 
 .resto-proj{
-    display: flex;
-    align-self: center;
-    height: 350px;
-    width: 100%;
-    margin: 10px 0 10px 0;
-    flex-direction: column;
+    @include flex(column); 
+    @include dim(350px);
+    margin: 10px 0px;
     border-radius: 30px;
     &__card-ima{
         overflow: hidden;
         border-radius: 30px 30px 0 0;
-        height: 250px;
-        width: 100%;
+        @include dim(250px);
         .wi_he_co{
-            width: 100%;
-            height: 100%;
+            @include dim(100%);
             object-fit: cover;
         }    
     }
     &__card-info{
-        height: 100px;
+        @include flex(column);
+        @include dim(100px); 
         box-shadow: 0 3px 3px 3px #f2f2f2;
-        border-radius: 0 0 30px 30px;
-        flex-direction: column;
+        border-radius: 0 0 30px 30px;  
         justify-content: space-around;
-        justify-items: center;
-        padding: 0 0 0 20px;
-        display: flex;
+        padding: 0 0 0 20px;   
         background-color: white;
     }     
 }
