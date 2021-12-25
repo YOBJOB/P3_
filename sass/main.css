@@ -145,6 +145,7 @@ p, strong, span, i {
           box-shadow: 0px 10px 10px #d9d9d9;
 }
 
+/*-btn-plat-*/
 .btn-plat {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,6 +436,11 @@ p, strong, span, i {
 
 /*header*/
 .header-proj {
+  height: 80px;
+  width: 100%;
+}
+
+.header-proj__dim {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,11 +458,28 @@ p, strong, span, i {
           align-items: center;
 }
 
-.header-proj__dim {
-  height: 60%;
+.header-proj__dim .contenant {
+  height: 45%;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.header-proj .btn_retour {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  bottom: 56px;
+}
+
+.header-proj .btn_retour .btn_retour_lien {
+  display: block;
+  position: absolute;
+  left: 15px;
+}
+
+.header-proj .btn_retour .btn_retour_lien .fa-arrow-left {
+  font-size: 30px;
 }
 
 /*-photo resto-*/
@@ -599,6 +622,7 @@ p, strong, span, i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /*component/btn-plat*/
 }
 
 .menu_position .section_menu .bloc_bouton_menu {
@@ -917,6 +941,7 @@ p, strong, span, i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /*component/btn-plat*/
 }
 
 .menu_position .section_menu .bloc_bouton_menu {

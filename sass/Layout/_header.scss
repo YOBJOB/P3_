@@ -1,10 +1,26 @@
 /*header*/
 .header-proj{
-    @include flex;
     @include dim(80px);
-    @include flex-layout;
     &__dim{
-        @include dim(60%);
-        object-fit: contain;
+        @include flex;
+        @include dim(80px);
+        @include flex-layout;
+        .contenant{
+            @include dim(45%);
+            object-fit: contain;
+        }
+    }
+    .btn_retour{
+        position: relative;
+        @include dim(30px);
+        bottom: 56px;
+        .btn_retour_lien{
+            display: block;
+            position: absolute;
+            left: 15px;
+            .fa-arrow-left{
+                font-size: 30px;     
+            }
+        }
     }
 }

@@ -18,20 +18,26 @@
 
 <body>
     <div class="wrapper">
-        <header class="header-proj">
-            <!--layout/header-->
-            <img class="header-proj__dim" id="logo" src="../public/images/logo/ohmyfood.png">
+        <header class="header-proj"><!--layout/header-->   
+            <div class="header-proj__dim">
+                <img class="contenant" id="logo" src="../public/images/logo/ohmyfood.png"
+                    alt="logo du site oh my food">
+            </div>
+            <div class="btn_retour">
+                <a class="btn_retour_lien" href="../index.html">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div> 
         </header>
         <figure class="photo_resto">
             <img class="wi_he_co" src="../public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                alt="photo restaurant">
+                alt="photo du restaurant à la française">
         </figure>
         <div class="menu_position">
             <main>
                 <section class="section_menu">
                     <h1 class="menu_titre ">À la française</h1>
-                    <div class="menu-proj__coeur">
-                        <!--components/coeur-->
+                    <div class="menu-proj__coeur"><!--components/coeur-->
                         <form class="bloc_coeur">
                             <input type="checkbox" name="coeur" id="coeur" />
                             <label for="coeur">
@@ -46,7 +52,7 @@
                                 <span class="bordure_titre"></span>
                             </div>
                             <div class="bloc_menu">
-                                <div class="btn-plat">
+                                <div class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Tartare de poulpe acidulés</span>
                                         <span class="info">Aux zestes d'orange</span>
@@ -60,10 +66,10 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="btn-plat">
+                                <div class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Velouté de légumes d'antan</span>
-                                        <span class="info">Carottes, panais, topinanbour</span>
+                                        <span class="info">Carottes, panais, topinambour</span>
                                     </div>
                                     <div class="btn-plat__prix">
                                         <span class="bold">35€</span>
@@ -74,7 +80,7 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="btn-plat">
+                                <div class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Soupe à l'oignon</span>
                                         <span class="info">Revisitée</span>
@@ -96,7 +102,7 @@
                                 <span class="bordure_titre"></span>
                             </div>
                             <div class="bloc_menu">
-                                <div class="btn-plat">
+                                <div class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Coquilles Saint-Jacques</span>
                                         <span class="info">Accompagnées d'une purée de panais</span>
@@ -110,7 +116,7 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="btn-plat">
+                                <div class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Magret de canard</span>
                                         <span class="info">Et parmentier de pommes de terres</span>
@@ -125,10 +131,10 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="btn-plat">
+                                <div class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
-                                        <span class="nom bold">Pigeonneau d'Ile-et-Vilaine</span>
-                                        <span class="info">Sur son lit de gnocchisaux légumes</span>                                 
+                                        <span class="nom bold">Pigeonneau d'Ille-et-Vilaine</span>
+                                        <span class="info">Sur son lit de gnocchis aux légumes</span>
                                     </div>
                                     <div class="btn-plat__prix">
                                         <span class="bold">44€</span>
@@ -147,10 +153,10 @@
                                 <span class="bordure_titre"></span>
                             </div>
                             <div class="bloc_menu">
-                                <div class="btn-plat">
+                                <div class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Pétales de violettes glacés</span>
-                                        <span class="info">Et purée de noisettes</span>                                  
+                                        <span class="info">Et purée de noisettes</span>
                                     </div>
                                     <div class="btn-plat__prix">
                                         <span class="bold">18€</span></p>
@@ -161,10 +167,10 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="btn-plat">
+                                <div class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Fondant au chocolat</span>
-                                            <span class="info">Revisité</span>                               
+                                        <span class="info">Revisité</span>
                                     </div>
                                     <div class="btn-plat__prix">
                                         <span class="bold">22€</span>
@@ -175,31 +181,29 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="btn-plat">
+                                <div class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
-                                        <span class="nom bold">Millefeuille croustillan</span>
-                                        <span class="info">Myrtilles et pâte d'amande</span>                                  
+                                        <span class="nom bold">Millefeuille croustillant</span>
+                                        <span class="info">Myrtilles et pâte d'amande</span>
                                     </div>
                                     <div class="btn-plat__prix">
                                         <span class="bold">23€</span>
                                     </div>
                                     <div class="btn-plat__check">
                                         <span class="cercle">
-                                        <i class="fas fa-check"></i>
+                                            <i class="fas fa-check"></i>
                                         </span>
                                     </div>
                                 </div>
                             </div>
                         </article>
                     </div>
-                    <div class="bloc_bouton_menu">
-                        <!--components/bouton-degrade-->
+                    <div class="bloc_bouton_menu"><!--components/bouton-degrade-->
                         <button class="bouton">Commander</button>
                     </div>
                 </section>
             </main>
-            <footer class="foot_proj">
-                <!--layout/footer-->
+            <footer class="foot_proj"><!--layout/footer-->
                 <div class="bloc_foot">
                     <h4>ohmyfood</h4>
                     <nav class="nav_foot">

@@ -1,6 +1,7 @@
 @import'../utils/mixins';
 @import'../utils/variables';
 
+/*-btn-plat-*/
 .btn-plat{
     @include flex;
     @include dim(80px);
