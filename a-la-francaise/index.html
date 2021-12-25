@@ -1,27 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../public/css/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&family=Shrikhand&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-        <title>À la française</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <title>À la française</title>
+</head>
+
 <body>
     <div class="wrapper">
-        <header class="header-proj"><!--layout/header-->
+        <header class="header-proj">
+            <!--layout/header-->
             <img class="header-proj__dim" id="logo" src="../public/images/logo/ohmyfood.png">
         </header>
         <main>
+            <figure class="photo_resto">
+                <img class="wi_he_co" src="../public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                    alt="photo restaurant">
+            </figure>
+            <section>
+                <h1>À la française</h1>
+                <form class="resto-proj__coeur">
+                    <!--components/coeur-->
+                    <input type="checkbox" name="coeur" id="coeur" />
+                    <label for="coeur">
+                        <i class="coeur fas fa-heart"></i>
+                    </label>
+                </form>
+                <article>
+                    <h2>ÉNTRÉE</h2>
+                    <div>
+                        <div class="bouton-plat">
+                            <div>
+                                <p class="marg_t_20">
+                                    <span class="bold">Tartare de poulpe acidulés</span>
+                                </p>
+                                <p class="marg_b_20">
+                                    <span>Aux zestes d'orange</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p><span>25€</span></p>
+                            </div>                              
+                            <div>
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <div class="bouton-plat">
+                            <div>
+                                <p class="marg_t_20">
+                                    <span class="bold">Velouté de légumes d'antan</span>
+                                </p>
+                                <p class="marg_b_20">
+                                    <span>Carottes, panais, topinanbour</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p><span>35€</span></p>
+                            </div>                              
+                            <div>
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <div class="bouton-plat">
+                            <div>
+                                <p class="marg_t_20">
+                                    <span class="bold">Soupe à l'oignon</span>
+                                </p>
+                                <p class="marg_b_20">
+                                    <span>Revisitée</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p><span>20€</span></p>
+                            </div>                              
+                            <div>
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </article><article>
+                    <h2>PLATS</h2>
+                    <div>
+                        <div class="bouton-plat">
+                            <div>
+                                <p class="marg_t_20">
+                                    <span class="bold">Coquilles Saint-Jacques</span>
+                                </p>
+                                <p class="marg_b_20">
+                                    <span>Accompagnées d'une purée de panais</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p><span>40€</span></p>
+                            </div>                              
+                            <div>
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <div class="bouton-plat">
+                            <div>
+                                <p class="marg_t_20">
+                                    <span class="bold">Magret de canard</span>
+                                </p>
+                                <p class="marg_b_20">
+                                    <span>Et parmentier de pommes de terres</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p><span>35€</span></p>
+                            </div>                              
+                            <div>
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <div class="bouton-plat">
+                            <div>
+                                <p class="marg_t_20">
+                                    <span class="bold">Pigeonneau d'Ile-et-Vilaine</span>
+                                </p>
+                                <p class="marg_b_20">
+                                    <span>Sur son lit de gnocchisaux légumes</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p><span>44€</span></p>
+                            </div>                              
+                            <div>
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <h2>DESSERT</h2>
+                    <div>
+                        <div class="bouton-plat">
+                            <div>
+                                <p class="marg_t_20">
+                                    <span class="bold">Pétales de violettes glacés</span>
+                                </p>
+                                <p class="marg_b_20">
+                                    <span>Et purée de noisettes</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p><span>18€</span></p>
+                            </div>                              
+                            <div>
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <div class="bouton-plat">
+                            <div>
+                                <p class="marg_t_20">
+                                    <span class="bold">Fondant au chocolat</span>
+                                </p>
+                                <p class="marg_b_20">
+                                    <span>Revisité</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p><span>22€</span></p>
+                            </div>                              
+                            <div>
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <div class="bouton-plat">
+                            <div>
+                                <p class="marg_t_20">
+                                    <span class="bold">Millefeuille croustillan</span>
+                                </p>
+                                <p class="marg_b_20">
+                                    <span>Myrtilles et pâte d'amande</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p><span>23€</span></p>
+                            </div>                              
+                            <div>
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <div>
+                 <!--components/bouton-degrade-->
+                 <button class="bouton">Commander</button>
+            </div>
         </main>
-        <footer class="foot_proj"><!--layout/footer-->
+        <footer class="foot_proj">
+            <!--layout/footer-->
             <div class="bloc_foot">
                 <h4>ohmyfood</h4>
                 <nav class="nav_foot">
@@ -52,4 +232,5 @@
         </footer>
     </div>
 </body>
+
 </html>

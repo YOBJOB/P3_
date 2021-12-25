@@ -1,0 +1,9 @@
+/*-photo resto-*/
+.photo_resto{
+    overflow: hidden;
+    @include dim(300px);
+    .wi_he_co{
+        @include dim(100%);
+        object-fit: cover;
+    }    
+}
