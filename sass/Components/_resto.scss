@@ -1,7 +1,7 @@
 @import'../utils/mixins';
 @import'../utils/variables';
 
-/*card resto*/ 
+/*resto*/
 .resto-proj{
     @include flex(column); 
     @include dim(350px);

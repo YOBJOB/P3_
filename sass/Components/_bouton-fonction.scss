@@ -1,7 +1,7 @@
 @import'../utils/mixins';
 @import'../utils/variables';
 
-/*bouton fonctionnement*/ 
+/*bouton-fonction*/ 
 .btn_lien_fonc{
     @include flex;
     @include flex-layout(start); 

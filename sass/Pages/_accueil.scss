@@ -16,7 +16,7 @@
         }
     }
 }
-/*Trouvez un restaurant*/
+/*-Trouvez un restaurant-*/
 .section_trouv{
     @include dim(300px);
     @include flex(column);
@@ -34,8 +34,9 @@
         color: lighten($color-back, 20%);
         text-align: center;          
     }
+    /*components/bouton-degrade*/
 }
-/*section fonctionnement*/ 
+/*-section fonctionnement-*/ 
 .section_fonc{
     @include flex(column);
     @include dim(400px);
@@ -48,9 +49,10 @@
         @include flex(column);
         @include dim(368px); 
         padding: 0px 20px 0px 30px;
+        /*components/bouton-fonction*/
     }
 }
-/*section resto*/ 
+/*-section resto-*/ 
 .section_resto{
     @include flex(column);
     @include dim(1650px);
@@ -63,6 +65,9 @@
         @include flex(column);
         @include flex-layout(space-around);
         @include dim(100%);
-        padding: 0px 20px;     
+        padding: 0px 20px; 
+        /*components/resto*/
+          /*components/new*/
+          /*components/coeur*/
     }
 }
