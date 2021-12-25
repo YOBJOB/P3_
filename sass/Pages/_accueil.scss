@@ -68,6 +68,15 @@
         padding: 0px 20px; 
         /*components/resto*/
           /*components/new*/
-          /*components/coeur*/
+          .resto-proj__coeur{ 
+            position: relative;
+            bottom: 75px;
+            @include dim(40px);
+            text-align: center;
+            background: none;
+            border: none;
+            padding: unset;
+            /*components/coeur*/
+          }
     }
 }

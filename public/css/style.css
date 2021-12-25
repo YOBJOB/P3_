@@ -19,10 +19,7 @@ body, header, section, figure, footer, div, ul, li, h1, h2, h3, h4, a, p {
   padding: 0;
   text-decoration: none;
   color: black;
-}
-
-h1, h2, h3, h4, h5, h6, strong {
-  font-weight: bold;
+  font-weight: unset;
 }
 
 h1, h2 {
@@ -115,40 +112,39 @@ p, strong, span, i {
   box-shadow: 0px 10px 10px #d9d9d9;
 }
 
-/*coeur*/
-.resto-proj__coeur {
-  position: relative;
-  bottom: 75px;
-  height: 40px;
+.bouton-plat {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
   width: 100%;
-  text-align: center;
-  background: none;
-  border: none;
-  padding: unset;
+  border-radius: 20px;
+  background: white;
 }
-.resto-proj__coeur input[type=checkbox] {
+
+/*coeur*/
+.bloc_coeur input[type=checkbox] {
   display: none;
   background: none;
   border: none;
 }
-.resto-proj__coeur input[type=checkbox] + label .fas {
+.bloc_coeur input[type=checkbox] + label .fas {
   font-weight: unset;
   color: rgba(0, 0, 0, 0.431);
 }
-.resto-proj__coeur input[type=checkbox]:checked + label .fas {
+.bloc_coeur input[type=checkbox]:checked + label .fas {
   font-weight: 900;
   color: #9356DC;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.resto-proj__coeur .coeur {
+.bloc_coeur .coeur {
   font-size: 40px;
   cursor: pointer;
   position: absolute;
   right: 50px;
 }
-.resto-proj__coeur .coeur:hover {
+.bloc_coeur .coeur:hover {
   color: #9356DC;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -283,6 +279,84 @@ p, strong, span, i {
   object-fit: cover;
 }
 
+.menu_position {
+  position: relative;
+  bottom: 72px;
+}
+.menu_position .section_menu {
+  height: 1430px;
+  width: 100%;
+  background: #f2f2f2;
+  border-radius: 60px 60px 0px 0px;
+  padding: 0px 20px;
+}
+.menu_position .section_menu .menu_titre {
+  font-family: "Shrikhand";
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-top: 20px;
+}
+.menu_position .section_menu .menu-proj__coeur {
+  position: relative;
+  bottom: 75px;
+  height: unset;
+  width: 100%;
+  text-align: center;
+  background: none;
+  border: none;
+  padding: unset;
+  /*components/coeur*/
+}
+.menu_position .section_menu .bloc_arti {
+  height: 1150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu_position .section_menu .bloc_arti .arti_menu {
+  height: 360px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px;
+}
+.menu_position .section_menu .bloc_arti .arti_menu .plat_titre {
+  height: 28px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  font-size: 18px;
+}
+.menu_position .section_menu .bloc_arti .arti_menu .bordure_titre {
+  border-top: 3px solid #99E2D0;
+  width: 45px;
+}
+.menu_position .section_menu .bloc_arti .arti_menu .bloc_menu {
+  height: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu_position .section_menu .bloc_bouton_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  width: 100%;
+  /*components/bouton-degrade*/
+}
+
 /*localiser*/
 .conten_local {
   display: flex;
@@ -373,7 +447,107 @@ p, strong, span, i {
   padding: 0px 20px;
   /*components/resto*/
   /*components/new*/
+}
+.section_resto .bloc_resto .resto-proj__coeur {
+  position: relative;
+  bottom: 75px;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  background: none;
+  border: none;
+  padding: unset;
   /*components/coeur*/
+}
+
+/*-photo resto-*/
+.photo_resto {
+  overflow: hidden;
+  height: 300px;
+  width: 100%;
+}
+.photo_resto .wi_he_co {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu_position {
+  position: relative;
+  bottom: 72px;
+}
+.menu_position .section_menu {
+  height: 1430px;
+  width: 100%;
+  background: #f2f2f2;
+  border-radius: 60px 60px 0px 0px;
+  padding: 0px 20px;
+}
+.menu_position .section_menu .menu_titre {
+  font-family: "Shrikhand";
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-top: 20px;
+}
+.menu_position .section_menu .menu-proj__coeur {
+  position: relative;
+  bottom: 75px;
+  height: unset;
+  width: 100%;
+  text-align: center;
+  background: none;
+  border: none;
+  padding: unset;
+  /*components/coeur*/
+}
+.menu_position .section_menu .bloc_arti {
+  height: 1150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu_position .section_menu .bloc_arti .arti_menu {
+  height: 360px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px;
+}
+.menu_position .section_menu .bloc_arti .arti_menu .plat_titre {
+  height: 28px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  font-size: 18px;
+}
+.menu_position .section_menu .bloc_arti .arti_menu .bordure_titre {
+  border-top: 3px solid #99E2D0;
+  width: 45px;
+}
+.menu_position .section_menu .bloc_arti .arti_menu .bloc_menu {
+  height: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu_position .section_menu .bloc_bouton_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  width: 100%;
+  /*components/bouton-degrade*/
 }
 
 /*# sourceMappingURL=style.css.map */

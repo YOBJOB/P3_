@@ -18,218 +18,227 @@
 
 <body>
     <div class="wrapper">
-        <header class="header-proj">
-            <!--layout/header-->
+        <header class="header-proj"><!--layout/header-->
             <img class="header-proj__dim" id="logo" src="../public/images/logo/ohmyfood.png">
         </header>
-        <main>
-            <figure class="photo_resto">
-                <img class="wi_he_co" src="../public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                    alt="photo restaurant">
-            </figure>
-            <section>
-                <h1>À la française</h1>
-                <form class="resto-proj__coeur">
-                    <!--components/coeur-->
-                    <input type="checkbox" name="coeur" id="coeur" />
-                    <label for="coeur">
-                        <i class="coeur fas fa-heart"></i>
-                    </label>
-                </form>
-                <article>
-                    <h2>ÉNTRÉE</h2>
-                    <div>
-                        <div class="bouton-plat">
-                            <div>
-                                <p class="marg_t_20">
-                                    <span class="bold">Tartare de poulpe acidulés</span>
-                                </p>
-                                <p class="marg_b_20">
-                                    <span>Aux zestes d'orange</span>
-                                </p>
-                            </div>
-                            <div>
-                                <p><span>25€</span></p>
-                            </div>                              
-                            <div>
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
-                        <div class="bouton-plat">
-                            <div>
-                                <p class="marg_t_20">
-                                    <span class="bold">Velouté de légumes d'antan</span>
-                                </p>
-                                <p class="marg_b_20">
-                                    <span>Carottes, panais, topinanbour</span>
-                                </p>
-                            </div>
-                            <div>
-                                <p><span>35€</span></p>
-                            </div>                              
-                            <div>
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
-                        <div class="bouton-plat">
-                            <div>
-                                <p class="marg_t_20">
-                                    <span class="bold">Soupe à l'oignon</span>
-                                </p>
-                                <p class="marg_b_20">
-                                    <span>Revisitée</span>
-                                </p>
-                            </div>
-                            <div>
-                                <p><span>20€</span></p>
-                            </div>                              
-                            <div>
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
+        <figure class="photo_resto">
+            <img class="wi_he_co" src="../public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt="photo restaurant">
+        </figure>
+        <div class="menu_position">
+            <main>
+                <section class="section_menu">
+                    <h1 class="menu_titre ">À la française</h1>
+                    <div class="menu-proj__coeur">
+                        <!--components/coeur-->
+                        <form class="bloc_coeur">
+                            <input type="checkbox" name="coeur" id="coeur" />
+                            <label for="coeur">
+                                <i class="coeur fas fa-heart"></i>
+                            </label>
+                        </form>
                     </div>
-                </article><article>
-                    <h2>PLATS</h2>
-                    <div>
-                        <div class="bouton-plat">
-                            <div>
-                                <p class="marg_t_20">
-                                    <span class="bold">Coquilles Saint-Jacques</span>
-                                </p>
-                                <p class="marg_b_20">
-                                    <span>Accompagnées d'une purée de panais</span>
-                                </p>
+                    <div class="bloc_arti">
+                        <article class="arti_menu">
+                            <h2 class="plat_titre">ENTRÉES</h2>
+                            <span class="bordure_titre"></span>
+                            <div class="bloc_menu">
+                                <div class="bouton-plat">
+                                    <div>
+                                        <p class="marg_t_20">
+                                            <span class="bold">Tartare de poulpe acidulés</span>
+                                        </p>
+                                        <p class="marg_b_20">
+                                            <span>Aux zestes d'orange</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p><span>25€</span></p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="bouton-plat">
+                                    <div>
+                                        <p class="marg_t_20">
+                                            <span class="bold">Velouté de légumes d'antan</span>
+                                        </p>
+                                        <p class="marg_b_20">
+                                            <span>Carottes, panais, topinanbour</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p><span>35€</span></p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="bouton-plat">
+                                    <div>
+                                        <p class="marg_t_20">
+                                            <span class="bold">Soupe à l'oignon</span>
+                                        </p>
+                                        <p class="marg_b_20">
+                                            <span>Revisitée</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p><span>20€</span></p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <p><span>40€</span></p>
-                            </div>                              
-                            <div>
-                                <i class="fas fa-check"></i>
+                        </article>
+                        <article class="arti_menu">
+                            <h2 class="plat_titre">PLATS</h2>
+                            <span class="bordure_titre"></span>
+                            <div class="bloc_menu">
+                                <div class="bouton-plat">
+                                    <div>
+                                        <p class="marg_t_20">
+                                            <span class="bold">Coquilles Saint-Jacques</span>
+                                        </p>
+                                        <p class="marg_b_20">
+                                            <span>Accompagnées d'une purée de panais</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p><span>40€</span></p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="bouton-plat">
+                                    <div>
+                                        <p class="marg_t_20">
+                                            <span class="bold">Magret de canard</span>
+                                        </p>
+                                        <p class="marg_b_20">
+                                            <span>Et parmentier de pommes de terres</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p><span>35€</span></p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="bouton-plat">
+                                    <div>
+                                        <p class="marg_t_20">
+                                            <span class="bold">Pigeonneau d'Ile-et-Vilaine</span>
+                                        </p>
+                                        <p class="marg_b_20">
+                                            <span>Sur son lit de gnocchisaux légumes</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p><span>44€</span></p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="bouton-plat">
-                            <div>
-                                <p class="marg_t_20">
-                                    <span class="bold">Magret de canard</span>
-                                </p>
-                                <p class="marg_b_20">
-                                    <span>Et parmentier de pommes de terres</span>
-                                </p>
+                        </article>
+                        <article class="arti_menu">
+                            <h2 class="plat_titre">DESSERT</h2>
+                            <span class="bordure_titre"></span>
+                            <div class="bloc_menu">
+                                <div class="bouton-plat">
+                                    <div>
+                                        <p class="marg_t_20">
+                                            <span class="bold">Pétales de violettes glacés</span>
+                                        </p>
+                                        <p class="marg_b_20">
+                                            <span>Et purée de noisettes</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p><span>18€</span></p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="bouton-plat">
+                                    <div>
+                                        <p class="marg_t_20">
+                                            <span class="bold">Fondant au chocolat</span>
+                                        </p>
+                                        <p class="marg_b_20">
+                                            <span>Revisité</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p><span>22€</span></p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="bouton-plat">
+                                    <div>
+                                        <p class="marg_t_20">
+                                            <span class="bold">Millefeuille croustillan</span>
+                                        </p>
+                                        <p class="marg_b_20">
+                                            <span>Myrtilles et pâte d'amande</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p><span>23€</span></p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <p><span>35€</span></p>
-                            </div>                              
-                            <div>
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
-                        <div class="bouton-plat">
-                            <div>
-                                <p class="marg_t_20">
-                                    <span class="bold">Pigeonneau d'Ile-et-Vilaine</span>
-                                </p>
-                                <p class="marg_b_20">
-                                    <span>Sur son lit de gnocchisaux légumes</span>
-                                </p>
-                            </div>
-                            <div>
-                                <p><span>44€</span></p>
-                            </div>                              
-                            <div>
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
+                        </article>
                     </div>
-                </article>
-                <article>
-                    <h2>DESSERT</h2>
-                    <div>
-                        <div class="bouton-plat">
-                            <div>
-                                <p class="marg_t_20">
-                                    <span class="bold">Pétales de violettes glacés</span>
-                                </p>
-                                <p class="marg_b_20">
-                                    <span>Et purée de noisettes</span>
-                                </p>
-                            </div>
-                            <div>
-                                <p><span>18€</span></p>
-                            </div>                              
-                            <div>
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
-                        <div class="bouton-plat">
-                            <div>
-                                <p class="marg_t_20">
-                                    <span class="bold">Fondant au chocolat</span>
-                                </p>
-                                <p class="marg_b_20">
-                                    <span>Revisité</span>
-                                </p>
-                            </div>
-                            <div>
-                                <p><span>22€</span></p>
-                            </div>                              
-                            <div>
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
-                        <div class="bouton-plat">
-                            <div>
-                                <p class="marg_t_20">
-                                    <span class="bold">Millefeuille croustillan</span>
-                                </p>
-                                <p class="marg_b_20">
-                                    <span>Myrtilles et pâte d'amande</span>
-                                </p>
-                            </div>
-                            <div>
-                                <p><span>23€</span></p>
-                            </div>                              
-                            <div>
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
+                    <div class="bloc_bouton_menu">
+                        <!--components/bouton-degrade-->
+                        <button class="bouton">Commander</button>
                     </div>
-                </article>
-            </section>
-            <div>
-                 <!--components/bouton-degrade-->
-                 <button class="bouton">Commander</button>
-            </div>
-        </main>
-        <footer class="foot_proj">
-            <!--layout/footer-->
-            <div class="bloc_foot">
-                <h4>ohmyfood</h4>
-                <nav class="nav_foot">
-                    <ul class="ul_foot_bloc">
-                        <li class="li_foot">
-                            <a class="lien_foot" href="#">
-                                <span class="espace"><i class="fas fa-utensils"></i></span>
-                                <p>Proposer un restaurant</p>
-                            </a>
-                        </li>
-                        <li class="li_foot">
-                            <a class="lien_foot" href="#">
-                                <span class="espace"><i class="fas fa-hands-helping"></i></span>
-                                <p>Devenir partenaire</p>
-                            </a>
-                        </li>
-                        <li class="li_foot">
-                            <a class="lien_foot" href="#">
-                                <p>Mentions légales</p>
-                            </a>
-                        </li>
-                        <li class="li_foot">
-                            <a class="lien_foot" href="mailto:ohmyfood@i-mail.com">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </footer>
+                </section>
+            </main>
+            <footer class="foot_proj">
+                <!--layout/footer-->
+                <div class="bloc_foot">
+                    <h4>ohmyfood</h4>
+                    <nav class="nav_foot">
+                        <ul class="ul_foot_bloc">
+                            <li class="li_foot">
+                                <a class="lien_foot" href="#">
+                                    <span class="espace"><i class="fas fa-utensils"></i></span>
+                                    <p>Proposer un restaurant</p>
+                                </a>
+                            </li>
+                            <li class="li_foot">
+                                <a class="lien_foot" href="#">
+                                    <span class="espace"><i class="fas fa-hands-helping"></i></span>
+                                    <p>Devenir partenaire</p>
+                                </a>
+                            </li>
+                            <li class="li_foot">
+                                <a class="lien_foot" href="#">
+                                    <p>Mentions légales</p>
+                                </a>
+                            </li>
+                            <li class="li_foot">
+                                <a class="lien_foot" href="mailto:ohmyfood@i-mail.com">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+        </div>
     </div>
 </body>
 

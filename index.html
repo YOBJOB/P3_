@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/style.css"/>
+    <link rel="stylesheet" href="public/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,7 +18,8 @@
 
 <body>
     <div class="wrapper">
-        <header class="header-proj"><!--layout/header-->
+        <header class="header-proj">
+            <!--layout/header-->
             <img class="header-proj__dim" id="logo" src="public/images/logo/ohmyfood.png">
         </header>
         <main>
@@ -106,13 +107,15 @@
                                     <span>Ménilmontant</span>
                                 </p>
                             </div>
-                            <form class="resto-proj__coeur">
+                            <div class="resto-proj__coeur">
                                 <!--components/coeur-->
-                                <input type="checkbox" name="coeur" id="coeur1" />
-                                <label for="coeur1">
-                                    <i class="coeur fas fa-heart"></i>
-                                </label>
-                            </form>
+                                <form class="bloc_coeur">
+                                    <input type="checkbox" name="coeur" id="coeur1" />
+                                    <label for="coeur1">
+                                        <i class="coeur fas fa-heart"></i>
+                                    </label>
+                                </form>
+                            </div>
                         </a>
                     </article>
                     <!--la note enchantée-->
@@ -135,13 +138,15 @@
                                     <span>Charonne</span>
                                 </p>
                             </div>
-                            <form class="resto-proj__coeur">
+                            <div class="resto-proj__coeur">
                                 <!--components/coeur-->
-                                <input type="checkbox" name="coeur" id="coeur2" />
-                                <label for="coeur2">
-                                    <i class="coeur fas fa-heart"></i>
-                                </label>
-                            </form>
+                                <form class="bloc_coeur">
+                                    <input type="checkbox" name="coeur" id="coeur2" />
+                                    <label for="coeur2">
+                                        <i class="coeur fas fa-heart"></i>
+                                    </label>
+                                </form>
+                            </div>
                         </a>
                     </article>
                     <!--A la française-->
@@ -161,13 +166,15 @@
                                     <span>Cité Rouge</span>
                                 </p>
                             </div>
-                            <form class="resto-proj__coeur">
+                            <div class="resto-proj__coeur">
                                 <!--components/coeur-->
-                                <input type="checkbox" name="coeur" id="coeur3" />
-                                <label for="coeur3">
-                                    <i class="coeur fas fa-heart"></i>
-                                </label>
-                            </form>
+                                <form class="bloc_coeur">
+                                    <input type="checkbox" name="coeur" id="coeur3" />
+                                    <label for="coeur3">
+                                        <i class="coeur fas fa-heart"></i>
+                                    </label>
+                                </form>
+                            </div>
                         </a>
                     </article>
                     <!--Le delice des sens-->
@@ -187,20 +194,22 @@
                                     <span>Folie Méricourt</span>
                                 </p>
                             </div>
-
-                            <form class="resto-proj__coeur">
+                            <div class="resto-proj__coeur">
                                 <!--components/coeur-->
-                                <input type="checkbox" name="coeur" id="coeur4" />
-                                <label for="coeur4">
-                                    <i class="coeur fas fa-heart"></i>
-                                </label>
-                            </form>
+                                <form class="bloc_coeur">
+                                    <input type="checkbox" name="coeur" id="coeur4" />
+                                    <label for="coeur4">
+                                        <i class="coeur fas fa-heart"></i>
+                                    </label>
+                                </form>
+                            </div>
                         </a>
                     </article>
                 </div>
             </section>
         </main>
-        <footer class="foot_proj"><!--layout/footer-->
+        <footer class="foot_proj">
+            <!--layout/footer-->
             <div class="bloc_foot">
                 <h4>ohmyfood</h4>
                 <nav class="nav_foot">
@@ -231,4 +240,5 @@
         </footer>
     </div>
 </body>
+
 </html>

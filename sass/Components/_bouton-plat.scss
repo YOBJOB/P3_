@@ -1,0 +1,9 @@
+@import'../utils/mixins';
+@import'../utils/variables';
+
+.bouton-plat{
+    @include flex;
+    @include dim(80px);
+    border-radius: 20px;
+    background: $color-contrast;
+}
