@@ -1,4 +1,7 @@
 /*-photo resto-*/
+.wrapper{
+    height: 1979px;
+}
 .photo_resto{
     overflow: hidden;
     @include dim(300px);
@@ -14,7 +17,7 @@
         @include dim(1430px);
         background: $color-back;
         border-radius: 60px 60px 0px 0px;
-        padding: 0px 20px;
+        padding: 0px 15px;
         .menu_titre{
             font-family: "Shrikhand";
             @include dim(100px);
@@ -25,6 +28,7 @@
         .menu-proj__coeur{
             position: relative;
             bottom: 75px;
+            left: 20px;
             @include dim(unset);
             text-align: center;
             background: none;
@@ -39,7 +43,7 @@
             .arti_menu{
                 @include dim(360px);
                 @include flex(column);
-                margin: 5px 0px;
+                @include flex-layout(space-between,start);
                 .plat_titre{
                     @include dim(28px);
                     @include flex;
@@ -47,6 +51,7 @@
                     font-size: 18px;
                 }
                 .bordure_titre{
+                    display: block;
                     border-top: 3px solid $color-tertiary;
                     width: 45px;  
                 }

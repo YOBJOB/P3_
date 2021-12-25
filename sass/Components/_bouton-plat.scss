@@ -1,9 +1,46 @@
 @import'../utils/mixins';
 @import'../utils/variables';
 
-.bouton-plat{
+.btn-plat{
     @include flex;
     @include dim(80px);
     border-radius: 20px;
     background: $color-contrast;
+    &__ref{
+        @include flex(column);
+        @include dim(80px,70%);
+        @include flex-layout(center,start);
+        padding-left: 10px;
+        .nom{
+            display: block;
+            margin-bottom: 5px;
+        }
+        .info{
+            display: block;
+        }
+    }
+    &__prix{
+        @include flex(column);
+        @include dim(80px,15%);
+        @include flex-layout;
+    }
+    &__check{
+        @include flex(column);
+        @include dim(80px,15%);
+        @include flex-layout;
+        background: $color-tertiary;     
+        border-radius: 0 20px 20px 0;
+        .cercle{
+            @include dim(20px,20px);
+            border-radius: 50%;
+            background: $color-contrast;
+            .fa-check{
+                font-size: 15px;
+                position: relative;
+                bottom: 1px;
+                left: 2px;
+                color: $color-tertiary;  
+            }
+        }
+    }
 }

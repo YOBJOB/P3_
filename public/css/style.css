@@ -112,13 +112,60 @@ p, strong, span, i {
   box-shadow: 0px 10px 10px #d9d9d9;
 }
 
-.bouton-plat {
+.btn-plat {
   display: flex;
   flex-direction: row;
   height: 80px;
   width: 100%;
   border-radius: 20px;
   background: white;
+}
+.btn-plat__ref {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  width: 70%;
+  justify-content: center;
+  align-items: start;
+  padding-left: 10px;
+}
+.btn-plat__ref .nom {
+  display: block;
+  margin-bottom: 5px;
+}
+.btn-plat__ref .info {
+  display: block;
+}
+.btn-plat__prix {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  width: 15%;
+  justify-content: center;
+  align-items: center;
+}
+.btn-plat__check {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  width: 15%;
+  justify-content: center;
+  align-items: center;
+  background: #99E2D0;
+  border-radius: 0 20px 20px 0;
+}
+.btn-plat__check .cercle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+}
+.btn-plat__check .cercle .fa-check {
+  font-size: 15px;
+  position: relative;
+  bottom: 1px;
+  left: 2px;
+  color: #99E2D0;
 }
 
 /*coeur*/
@@ -268,6 +315,10 @@ p, strong, span, i {
 }
 
 /*-photo resto-*/
+.wrapper {
+  height: 1979px;
+}
+
 .photo_resto {
   overflow: hidden;
   height: 300px;
@@ -288,7 +339,7 @@ p, strong, span, i {
   width: 100%;
   background: #f2f2f2;
   border-radius: 60px 60px 0px 0px;
-  padding: 0px 20px;
+  padding: 0px 15px;
 }
 .menu_position .section_menu .menu_titre {
   font-family: "Shrikhand";
@@ -303,6 +354,7 @@ p, strong, span, i {
 .menu_position .section_menu .menu-proj__coeur {
   position: relative;
   bottom: 75px;
+  left: 20px;
   height: unset;
   width: 100%;
   text-align: center;
@@ -324,7 +376,8 @@ p, strong, span, i {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 5px 0px;
+  justify-content: space-between;
+  align-items: start;
 }
 .menu_position .section_menu .bloc_arti .arti_menu .plat_titre {
   height: 28px;
@@ -336,6 +389,7 @@ p, strong, span, i {
   font-size: 18px;
 }
 .menu_position .section_menu .bloc_arti .arti_menu .bordure_titre {
+  display: block;
   border-top: 3px solid #99E2D0;
   width: 45px;
 }
@@ -461,6 +515,10 @@ p, strong, span, i {
 }
 
 /*-photo resto-*/
+.wrapper {
+  height: 1979px;
+}
+
 .photo_resto {
   overflow: hidden;
   height: 300px;
@@ -481,7 +539,7 @@ p, strong, span, i {
   width: 100%;
   background: #f2f2f2;
   border-radius: 60px 60px 0px 0px;
-  padding: 0px 20px;
+  padding: 0px 15px;
 }
 .menu_position .section_menu .menu_titre {
   font-family: "Shrikhand";
@@ -496,6 +554,7 @@ p, strong, span, i {
 .menu_position .section_menu .menu-proj__coeur {
   position: relative;
   bottom: 75px;
+  left: 20px;
   height: unset;
   width: 100%;
   text-align: center;
@@ -517,7 +576,8 @@ p, strong, span, i {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 5px 0px;
+  justify-content: space-between;
+  align-items: start;
 }
 .menu_position .section_menu .bloc_arti .arti_menu .plat_titre {
   height: 28px;
@@ -529,6 +589,7 @@ p, strong, span, i {
   font-size: 18px;
 }
 .menu_position .section_menu .bloc_arti .arti_menu .bordure_titre {
+  display: block;
   border-top: 3px solid #99E2D0;
   width: 45px;
 }
