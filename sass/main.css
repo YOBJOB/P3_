@@ -13,7 +13,7 @@ img {
   height: 500px;
 }
 
-body, header, section, figure, footer, div, ul, li, h1, h2, h3, h4, a, p, span {
+body, header, section, figure, footer, div, ul, li, h1, h2, h3, h4, a, p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   list-style: none;
@@ -713,7 +713,7 @@ p, strong, span, i {
 .section_trouv .trouv_text {
   height: 50px;
   width: 320px;
-  color: white;
+  color: #595959;
   text-align: center;
 }
 
