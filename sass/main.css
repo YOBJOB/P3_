@@ -13,7 +13,7 @@ img {
   height: 500px;
 }
 
-body, header, section, figure, footer, div, ul, li, h1, h2, h3, h4, a, p {
+body, header, section, figure, footer, div, ul, li, h1, h2, h3, h4, a, p, span {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   list-style: none;
@@ -49,6 +49,10 @@ p, strong, span, i {
 
 .marg_t_20 {
   margin-top: 20px;
+}
+
+.bloc {
+  display: block;
 }
 
 /*bouton-fonction*/

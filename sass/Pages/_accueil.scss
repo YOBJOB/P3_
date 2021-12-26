@@ -31,7 +31,7 @@
     }
     .trouv_text{
         @include dim(50px, 320px);
-        color: lighten($color-back, 20%);
+        color: darken($color-back, 60%);
         text-align: center;          
     }
     /*components/bouton-degrade*/

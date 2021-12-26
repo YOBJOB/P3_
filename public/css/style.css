@@ -49,6 +49,10 @@ p, strong, span, i {
   margin-top: 20px;
 }
 
+.bloc {
+  display: block;
+}
+
 /*bouton-fonction*/
 .btn_lien_fonc {
   display: flex;
@@ -473,7 +477,7 @@ p, strong, span, i {
 .section_trouv .trouv_text {
   height: 50px;
   width: 320px;
-  color: white;
+  color: #595959;
   text-align: center;
 }
 
