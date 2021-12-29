@@ -18,34 +18,36 @@
 
 <body>
     <div class="wrapper">
-        <header class="header-proj"><!--layout/header-->   
+        <header class="header-proj">
+            <!--layout/header-->
             <div class="header-proj__dim">
-                <img class="contenant" id="logo" src="public/images/logo/ohmyfood.png"
-                    alt="logo du site oh my food">
+                <img class="contenant" id="logo" src="public/images/logo/ohmyfood.png" alt="logo du site oh my food">
             </div>
         </header>
         <main>
-            <!--localiser--> 
+            <!--localiser-->
             <div class="conten_local">
                 <form class="bar-loc">
                     <label class="bar-loc__map" for="loc"><i class="fas fa-map-marker-alt"></i></label>
                     <input class="bar-loc__input bold" type="search" name="rec" id="loc" value="Paris, Belleville" />
                 </form>
-            </div> 
-            <!--Trouvez un restaurant--> 
+            </div>
+            <!--Trouvez un restaurant-->
             <section class="section_trouv">
                 <h1 class="trouv_titre bold">Réservez le menu qui vous convient</h1>
                 <div class="trouv_text">
                     <span>Découvrez des restaurants d'exception,</span>
                     <span>sélectionnés par nos soins</span>
                 </div>
-                <button class="bouton">Explorer nos restaurants</button><!--components/bouton-degrade-->
+                <button class="bouton">Explorer nos restaurants</button>
+                <!--components/bouton-degrade-->
             </section>
             <!--Fonctionnement-->
             <section class="section_fonc">
                 <h2 class="marg_l_20 bold">Fonctionnement</h2>
                 <div class="bloc_btn">
-                    <a class="btn_lien_fonc"><!--components/fonction-->  
+                    <a class="btn_lien_fonc">
+                        <!--components/fonction-->
                         <div class="cercle-proj">
                             <span class="cercle-proj__pos">1</span>
                         </div>
@@ -56,7 +58,8 @@
                             <span class="btn-fonction__texte">Choisisssez un restaurants</span>
                         </div>
                     </a>
-                    <a class="btn_lien_fonc"><!--components/fonction-->   
+                    <a class="btn_lien_fonc">
+                        <!--components/fonction-->
                         <div class="cercle-proj">
                             <span class="cercle-proj__pos">2</span>
                         </div>
@@ -67,7 +70,8 @@
                             <span class="btn-fonction__texte">Composez votre menu</span>
                         </div>
                     </a>
-                    <a class="btn_lien_fonc"><!--components/fonction--> 
+                    <a class="btn_lien_fonc">
+                        <!--components/fonction-->
                         <div class="cercle-proj">
                             <span class="cercle-proj__pos">3</span>
                         </div>
@@ -81,106 +85,108 @@
                 </div>
             </section>
             <!--Restaurants-->
-            <section class="section_resto">
+            <section class="section-resto">
                 <h2 class="marg_l_20 bold">Restaurants</h2>
-                <div class="bloc_resto">
+                <div class="bloc-resto">
                     <!--la palette du gout-->
-                    <article class="resto-proj"><!--components/resto-->
-                        <a href="la-palette-du-gout/">
-                            <div class="resto-proj__card-ima">
-                                <img class="wi_he_co"
-                                    src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                                    alt="photo restaurant la palette du gout">
-                                <div class="propri_new"><!--components/new-->
-                                    <span class="new">Nouveau</span>
-                                </div>
+                    <!--components/resto-->
+                    <a class="lien-resto" href="la-palette-du-gout/">
+                        <div class="lien-resto__card-ima">
+                            <img class="wi_he_co"
+                                src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                alt="photo restaurant la palette du gout">
+                            <!--components/new-->
+                            <div class="propri_new">
+                                <span class="new">Nouveau</span>
                             </div>
-                            <div class="resto-proj__card-info">
-                                    <span class="bloc marg_t_20 bold">La palette du goût</span>
-                                    <span class="bloc marg_b_20">Ménilmontant</span>
-                            </div>        
-                        </a>
-                        <div class="resto-proj__coeur"><!--components/coeur-->
-                            <form class="bloc_coeur">
+                        </div>
+                        <div class="lien-resto__card">
+                            <div class="bloc-info">
+                                <span class="bloc-info__titre">La palette du goût</span>
+                                <span class="bloc-info__sous-titre">Ménilmontant</span>
+                            </div>
+                            <div class="bloc-coeur">
+                                <!--components/coeur-->
                                 <input type="checkbox" name="coeur" id="coeur1" />
                                 <label for="coeur1">
                                     <i class="coeur fas fa-heart"></i>
                                 </label>
-                            </form>
+                            </div>
                         </div>
-                    </article>
+                    </a>
                     <!--la note enchantée-->
-                    <article class="resto-proj"><!--components/resto-->
-                        <a href="la-note-enchantee/index.html">
-                            <div class="resto-proj__card-ima">
-                                <img class="wi_he_co" src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                                    alt="photo restaurant la note enchantée">
-                                <div class="propri_new"><!--components/new-->   
-                                    <span class="new">Nouveau</span>
-                                </div>
+                    <!--components/resto-->
+                    <a class="lien-resto" href="la-note-enchantee/index.html">
+                        <div class="lien-resto__card-ima">
+                            <img class="wi_he_co" src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                                alt="photo restaurant la note enchantée">
+                            <div class="propri_new">
+                                <!--components/new-->
+                                <span class="new">Nouveau</span>
                             </div>
-                            <div class="resto-proj__card-info">
-                                    <span class="bloc bold marg_t_20">La note enchantée</span>
-                                    <span class="bloc marg_b_20">Charonne</span>
+                        </div>
+                        <div class="lien-resto__card">
+                            <div class="bloc-info">
+                                <span class="bloc-info__titre">La note enchantée</span>
+                                <span class="bloc-info__sous-titre">Charonne</span>
                             </div>
-                        </a>
-                        <div class="resto-proj__coeur"><!--components/coeur-->
-                            <form class="bloc_coeur">
+                            <div class="bloc-coeur">
+                                <!--components/coeur-->
                                 <input type="checkbox" name="coeur" id="coeur2" />
                                 <label for="coeur2">
                                     <i class="coeur fas fa-heart"></i>
                                 </label>
-                            </form>
+                            </div>
                         </div>
-                    </article>
+                    </a>
                     <!--A la française-->
-                    <article class="resto-proj"><!--components/resto-->
-                        <a href="a-la-francaise/index.html">
-                            <div class="resto-proj__card-ima">
-                                <img class="wi_he_co"
-                                    src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                                    alt="photo restaurant à la française">
+                        <!--components/resto-->
+                    <a class="lien-resto" href="a-la-francaise/index.html">
+                        <div class="lien-resto__card-ima">
+                            <img class="wi_he_co" src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                                alt="photo restaurant à la française">
+                        </div>
+                        <div class="lien-resto__card">
+                            <div class="bloc-info">
+                                <span class="bloc-info__titre">À la française</span>
+                                <span class="bloc-info__sous-titre">Cité Rouge</span>
                             </div>
-                            <div class="resto-proj__card-info">
-                                    <span class="bloc marg_t_20 bold">À la française</span>
-                                    <span class="bloc marg_b_20">Cité Rouge</span>
-                            </div>
-                        </a>
-                        <div class="resto-proj__coeur"><!--components/coeur-->
-                            <form class="bloc_coeur">
+                            <div class="bloc-coeur">
+                            <!--components/coeur-->
                                 <input type="checkbox" name="coeur" id="coeur3" />
                                 <label for="coeur3">
                                     <i class="coeur fas fa-heart"></i>
                                 </label>
-                            </form>
+                            </div>
                         </div>
-                    </article>
+                    </a>
                     <!--Le delice des sens-->
-                    <article class="resto-proj"><!--components/resto-->
-                        <a href="le-delice-des-sens/index.html">
-                            <div class="resto-proj__card-ima">
-                                <img class="wi_he_co"
-                                    src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                                    alt="photo restaurant le délice des sens">
+                        <!--components/resto-->
+                    <a class="lien-resto" href="le-delice-des-sens/index.html">
+                        <div class="lien-resto__card-ima">
+                            <img class="wi_he_co"
+                                src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                alt="photo restaurant le délice des sens">
+                        </div>
+                        <div class="lien-resto__card">
+                            <div class="bloc-info">
+                                <span class="bloc-info__titre">Le délice des sens</span>
+                                <span class="bloc-info__sous-titre">Folie Méricourt</span>
                             </div>
-                            <div class="resto-proj__card-info">
-                                    <span class="bloc marg_t_20 bold">Le délice des sens</span>
-                                    <span class="bloc marg_b_20">Folie Méricourt</span>
-                            </div>
-                        </a>
-                        <div class="resto-proj__coeur"><!--components/coeur-->
-                            <form class="bloc_coeur">
+                            <div class="bloc-coeur">
+                            <!--components/coeur-->
                                 <input type="checkbox" name="coeur" id="coeur4" />
                                 <label for="coeur4">
                                     <i class="coeur fas fa-heart"></i>
                                 </label>
-                            </form>
+                            </div>
                         </div>
-                    </article>
+                    </a>
                 </div>
             </section>
         </main>
-        <footer class="foot_proj"><!--layout/footer--> 
+        <footer class="foot_proj">
+            <!--layout/footer-->
             <div class="bloc_foot">
                 <h4>ohmyfood</h4>
                 <nav class="nav_foot">
@@ -211,4 +217,5 @@
         </footer>
     </div>
 </body>
+
 </html>
