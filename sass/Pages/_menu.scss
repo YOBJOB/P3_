@@ -18,23 +18,14 @@
         background: $color-back;
         border-radius: 60px 60px 0px 0px;
         padding: 0px 15px;
-        .menu_titre{
-            font-family: "Shrikhand";
+        &_header{
             @include dim(100px);
             @include flex;
-            @include flex-layout(start);
-            margin-top: 20px;
-        }
-        .menu-proj__coeur{
-            position: relative;
-            bottom: 75px;
-            left: 20px;
-            @include dim(unset);
-            text-align: center;
-            background: none;
-            border: none;
-            padding: unset;
-            /*components/coeur*/
+            @include flex-layout(space-between);
+            padding: 5px 10px;
+            &_titre{
+                font-family: "Shrikhand";
+            }
         }
         .bloc_arti{
             @include dim(1150px);

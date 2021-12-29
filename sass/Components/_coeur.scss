@@ -10,6 +10,7 @@
     }  
     input[type=checkbox] + label{
         .fas{
+            font-size: 30px;
             font-weight: unset; 
             color: rgba(0, 0, 0, 0.431);       
         }
@@ -23,16 +24,16 @@
             -webkit-text-fill-color: transparent;           
         }
     } 
-    .coeur{
-        font-size: 40px;
-        cursor: pointer;
-        position: absolute;
-        right: 50px;
-        &:hover{       
-            color: $color-primary;
-            background: -webkit-linear-gradient($color-primary,$color-secondary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        } 
-    }
+    // .coeur{
+    //     font-size: 40px;
+    //     cursor: pointer;
+    //     position: absolute;
+    //     right: 50px;
+    //     &:hover{       
+    //         color: $color-primary;
+    //         background: -webkit-linear-gradient($color-primary,$color-secondary);
+    //         -webkit-background-clip: text;
+    //         -webkit-text-fill-color: transparent;
+    //     } 
+    // }
 }
