@@ -27,11 +27,11 @@
                 font-family: "Shrikhand";
             }
         }
-        .bloc_arti{
+        &_main{
             @include dim(1150px);
             @include flex(column);
             @include flex-layout(space-between);
-            .arti_menu{
+            &_plat{
                 @include dim(360px);
                 @include flex(column);
                 @include flex-layout(space-between,start);

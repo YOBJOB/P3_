@@ -1,39 +1,30 @@
-@import'../utils/mixins';
-@import'../utils/variables';
+@import "../utils/mixins";
+@import "../utils/variables";
 
 /*coeur*/
-.bloc-coeur{
-    input[type="checkbox"]{
+.btn-coeur {
+    .btn-coeur_plein {
         display: none;
-        background: none;
-        border: none;
-    }  
-    input[type=checkbox] + label{
-        .fas{
-            font-size: 30px;
-            font-weight: unset; 
-            color: rgba(0, 0, 0, 0.431);       
+        background: -webkit-linear-gradient($color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 1;
+    }
+    .btn-coeur_vide {
+        display: block;
+    }
+    &:hover, &:active {
+        .btn-coeur_plein {
+            display: block;
+            animation: coeur 500ms ease-in;
         }
-    }       
-    input[type=checkbox]:checked + label{ 
-        .fas{ 
-            font-weight: 900;     
-            color: $color-primary;
-            background: -webkit-linear-gradient($color-primary,$color-secondary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;           
+        .btn-coeur_vide {
+            display: none;
         }
-    } 
-    // .coeur{
-    //     font-size: 40px;
-    //     cursor: pointer;
-    //     position: absolute;
-    //     right: 50px;
-    //     &:hover{       
-    //         color: $color-primary;
-    //         background: -webkit-linear-gradient($color-primary,$color-secondary);
-    //         -webkit-background-clip: text;
-    //         -webkit-text-fill-color: transparent;
-    //     } 
-    // }
+    }
+}
+@keyframes coeur{
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
 }

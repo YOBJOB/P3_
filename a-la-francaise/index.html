@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/style.css"/>
+    <link rel="stylesheet" href="../public/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&family=Shrikhand&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <title>Le délice des sens</title>
 </head>
+
 <body>
     <div class="wrapper">
-        <header class="header-proj"><!--layout/header-->   
+        <header class="header-proj">
+            <!--layout/header-->
             <div class="header-proj__dim">
-                <img class="contenant" id="logo" src="../public/images/logo/ohmyfood.png"
-                    alt="logo du site oh my food">
+                <img class="contenant" id="logo" src="../public/images/logo/ohmyfood.png" alt="logo du site oh my food">
             </div>
             <div class="btn_retour">
                 <a class="btn_retour_lien" href="../index.html">
                     <i class="fas fa-arrow-left"></i>
                 </a>
-            </div> 
+            </div>
         </header>
         <figure class="photo_resto">
             <img class="wi_he_co" src="../public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
@@ -36,21 +38,22 @@
                 <section class="section_menu">
                     <div class="section_menu_header">
                         <h1 class="section_menu_header_titre ">À la française</h1>
-                        <div class="bloc_coeur">
+                        <div class="bloc-coeur">
                             <input type="checkbox" name="coeur" id="coeur" />
                             <label for="coeur">
                                 <i class="coeur fas fa-heart"></i>
                             </label>
                         </div>
                     </div>
-                    <div class="bloc_arti">
-                        <article class="arti_menu">
+                    <div class="section_menu_main">
+                        <div class="section_menu_main_plat">
                             <div>
                                 <h2 class="plat_titre">ENTRÉES</h2>
                                 <span class="bordure_titre"></span>
                             </div>
                             <div class="bloc_menu">
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                <article class="btn-plat">
+                                    <!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Tartare de poulpe acidulés</span>
                                         <span class="info">Aux zestes d'orange</span>
@@ -63,8 +66,9 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat">
+                                    <!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Velouté de légumes d'antan</span>
                                         <span class="info">Carottes, panais, topinambour</span>
@@ -77,8 +81,9 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat">
+                                    <!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Soupe à l'oignon</span>
                                         <span class="info">Revisitée</span>
@@ -91,16 +96,17 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
+                                </article>
                             </div>
-                        </article>
-                        <article class="arti_menu">
+                        </div>
+                        <div class="section_menu_main_plat">
                             <div>
                                 <h2 class="plat_titre">PLATS</h2>
                                 <span class="bordure_titre"></span>
                             </div>
                             <div class="bloc_menu">
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                <article class="btn-plat">
+                                    <!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Coquilles Saint-Jacques</span>
                                         <span class="info">Accompagnées d'une purée de panais</span>
@@ -113,8 +119,9 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat">
+                                    <!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Magret de canard</span>
                                         <span class="info">Et parmentier de pommes de terres</span>
@@ -127,8 +134,9 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <!--component/btn-plat-->
+                                <article class="btn-plat">
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Pigeonneau d'Ille-et-Vilaine</span>
                                         <span class="info">Sur son lit de gnocchis aux légumes</span>
@@ -141,16 +149,17 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
+                                </article>
                             </div>
-                        </article>
-                        <article class="arti_menu">
+                        </div>
+                        <div class="section_menu_main_plat">
                             <div>
                                 <h2 class="plat_titre">DESSERT</h2>
                                 <span class="bordure_titre"></span>
                             </div>
                             <div class="bloc_menu">
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                <article class="btn-plat">
+                                    <!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Pétales de violettes glacés</span>
                                         <span class="info">Et purée de noisettes</span>
@@ -163,8 +172,9 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat">
+                                    <!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Fondant au chocolat</span>
                                         <span class="info">Revisité</span>
@@ -177,8 +187,9 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat">
+                                    <!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Millefeuille croustillant</span>
                                         <span class="info">Myrtilles et pâte d'amande</span>
@@ -191,16 +202,18 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
+                                </article>
                             </div>
-                        </article>
+                        </div>
                     </div>
-                    <div class="bloc_bouton_menu"><!--components/bouton-degrade-->
+                    <div class="bloc_bouton_menu">
+                        <!--components/bouton-degrade-->
                         <button class="bouton">Commander</button>
                     </div>
                 </section>
             </main>
-            <footer class="foot_proj"><!--layout/footer-->
+            <footer class="foot_proj">
+                <!--layout/footer-->
                 <div class="bloc_foot">
                     <h4>ohmyfood</h4>
                     <nav class="nav_foot">
@@ -232,4 +245,5 @@
         </div>
     </div>
 </body>
+
 </html>

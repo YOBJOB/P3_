@@ -1,37 +1,49 @@
 /*resto*/
-.lien-resto{
-    @include flex(column); 
+.lien-resto {
+    @include flex(column);
     @include dim(350px);
     display: block;
     margin: 10px 0px;
     border-radius: 30px;
-    &__card-ima{
+    &__card-ima {
+        display: block;
         overflow: hidden;
         border-radius: 20px 20px 0 0;
         @include dim(250px);
-        .wi_he_co{
+        .wi_he_co {
             @include dim(100%);
             object-fit: cover;
-        }    
+        }
     }
-    &__card{
-        @include flex;
-        @include dim(100px); 
-        @include flex-layout(unset,center);
+    &__card {
+        @include flex(row);
+        @include dim(100px);
+        @include flex-layout(center, start);
         box-shadow: 0 3px 3px 3px #f2f2f2;
-        border-radius: 0 0 20px 20px;  
-        padding: 0 0 0 15px;   
+        border-radius: 0 0 20px 20px;
+        padding: 0 0 0 15px;
         background-color: white;
-        .bloc-info{
+        .bloc-info {
             @include flex(column);
-            width: 82%;
-            &__titre{
+            @include dim(100%);
+            @include flex-layout(center, start);
+            &__titre {
                 font-weight: bold;
                 padding-bottom: 5px;
             }
-            &__sous-titre{
+            &__sous-titre {
                 padding-top: 5px;
             }
         }
-    }     
+    }
+    .btn-coeur {
+        @include dim(30px,30px);
+        position: relative;
+        right: 25px;
+        top: 35px;
+        .fas,
+        .far {
+            font-size: 30px;
+        }
+    }
 }
