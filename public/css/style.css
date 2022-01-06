@@ -176,35 +176,39 @@ p, strong, span, i {
 }
 
 /*coeur*/
-.btn-coeur .btn-coeur_plein {
-  display: none;
+.btn-coeur {
+  cursor: pointer;
+}
+.btn-coeur:hover .btn-coeur_plein, .btn-coeur:active .btn-coeur_plein {
+  opacity: 1;
+  transform: scale(1);
+}
+.btn-coeur:hover .btn-coeur_vide, .btn-coeur:active .btn-coeur_vide {
+  opacity: 1;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 1;
 }
 .btn-coeur .btn-coeur_vide {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(32, 27, 27, 0.63);
 }
-.btn-coeur:hover .btn-coeur_plein, .btn-coeur:active .btn-coeur_plein {
-  display: block;
-  animation: coeur 500ms ease-in;
-}
-.btn-coeur:hover .btn-coeur_vide, .btn-coeur:active .btn-coeur_vide {
-  display: none;
+.btn-coeur .btn-coeur_plein {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 500ms;
+  transform-origin: bottom;
+  transform: scale(0);
+  transition: transform 500ms cubic-bezier(0.32, 0, 0.07, 1);
 }
 
-@keyframes coeur {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 /*new*/
 .propri_new {
   position: relative;
@@ -272,14 +276,11 @@ p, strong, span, i {
   padding-top: 5px;
 }
 .lien-resto .btn-coeur {
-  height: 30px;
-  width: 30px;
   position: relative;
-  right: 25px;
   top: 35px;
+  right: 67px;
 }
-.lien-resto .btn-coeur .fas,
-.lien-resto .btn-coeur .far {
+.lien-resto .btn-coeur .fas, .lien-resto .btn-coeur .far {
   font-size: 30px;
 }
 

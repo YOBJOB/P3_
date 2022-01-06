@@ -37,12 +37,10 @@
         }
     }
     .btn-coeur {
-        @include dim(30px,30px);
         position: relative;
-        right: 25px;
         top: 35px;
-        .fas,
-        .far {
+        right: 67px;
+        .fas, .far {
             font-size: 30px;
         }
     }
