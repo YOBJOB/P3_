@@ -14,7 +14,8 @@
     position: relative;
     bottom: 72px;
     .section_menu{
-        @include dim(1430px);
+        width: 100%;
+        min-height: 1430px;
         background: $color-back;
         border-radius: 60px 60px 0px 0px;
         padding: 0px 15px;
@@ -24,15 +25,26 @@
             @include flex-layout(space-between);
             padding: 5px 10px;
             &_titre{
+                padding-left: 15px;
                 font-family: "Shrikhand";
+            }
+            .btn-coeur {
+                position: relative;
+                bottom: 13px;
+                right: 67px;
+                .fas, .far {
+                    font-size: 30px;
+                }
             }
         }
         &_main{
-            @include dim(1150px);
+            width: 100%;
+            min-height: 1150px;
             @include flex(column);
             @include flex-layout(space-between);
             &_plat{
-                @include dim(360px);
+                width: 100%;
+                min-height: 360px;
                 @include flex(column);
                 @include flex-layout(space-between,start);
                 .plat_titre{
@@ -47,7 +59,8 @@
                     width: 45px;  
                 }
                 .bloc_menu{
-                    @include dim(320px);
+                    width: 100%;
+                    min-height: 320px;
                     @include flex(column);
                     @include flex-layout(space-around);
                     /*component/btn-plat*/

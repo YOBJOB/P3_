@@ -10,6 +10,11 @@
             object-fit: contain;
         }
     }
+    .conten-loader{
+        position: relative;
+        display: block;
+        @include dim(100px,100px)
+    }
     .btn_retour{
         position: relative;
         @include dim(30px);

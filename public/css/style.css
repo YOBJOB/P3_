@@ -53,6 +53,10 @@ p, strong, span, i {
   display: block;
 }
 
+.plus1 {
+  height: 420px;
+}
+
 /*bouton-fonction*/
 .btn_lien_fonc {
   display: flex;
@@ -354,6 +358,12 @@ p, strong, span, i {
   width: 100%;
   object-fit: contain;
 }
+.header-proj .conten-loader {
+  position: relative;
+  display: block;
+  height: 100px;
+  width: 100px;
+}
 .header-proj .btn_retour {
   position: relative;
   height: 30px;
@@ -390,8 +400,8 @@ p, strong, span, i {
   bottom: 72px;
 }
 .menu_position .section_menu {
-  height: 1430px;
   width: 100%;
+  min-height: 1430px;
   background: #f2f2f2;
   border-radius: 60px 60px 0px 0px;
   padding: 0px 15px;
@@ -406,19 +416,28 @@ p, strong, span, i {
   padding: 5px 10px;
 }
 .menu_position .section_menu_header_titre {
+  padding-left: 15px;
   font-family: "Shrikhand";
 }
+.menu_position .section_menu_header .btn-coeur {
+  position: relative;
+  bottom: 13px;
+  right: 67px;
+}
+.menu_position .section_menu_header .btn-coeur .fas, .menu_position .section_menu_header .btn-coeur .far {
+  font-size: 30px;
+}
 .menu_position .section_menu_main {
-  height: 1150px;
   width: 100%;
+  min-height: 1150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 .menu_position .section_menu_main_plat {
-  height: 360px;
   width: 100%;
+  min-height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -439,8 +458,8 @@ p, strong, span, i {
   width: 45px;
 }
 .menu_position .section_menu_main_plat .bloc_menu {
-  height: 320px;
   width: 100%;
+  min-height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -568,8 +587,8 @@ p, strong, span, i {
   bottom: 72px;
 }
 .menu_position .section_menu {
-  height: 1430px;
   width: 100%;
+  min-height: 1430px;
   background: #f2f2f2;
   border-radius: 60px 60px 0px 0px;
   padding: 0px 15px;
@@ -584,19 +603,28 @@ p, strong, span, i {
   padding: 5px 10px;
 }
 .menu_position .section_menu_header_titre {
+  padding-left: 15px;
   font-family: "Shrikhand";
 }
+.menu_position .section_menu_header .btn-coeur {
+  position: relative;
+  bottom: 13px;
+  right: 67px;
+}
+.menu_position .section_menu_header .btn-coeur .fas, .menu_position .section_menu_header .btn-coeur .far {
+  font-size: 30px;
+}
 .menu_position .section_menu_main {
-  height: 1150px;
   width: 100%;
+  min-height: 1150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 .menu_position .section_menu_main_plat {
-  height: 360px;
   width: 100%;
+  min-height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -617,8 +645,8 @@ p, strong, span, i {
   width: 45px;
 }
 .menu_position .section_menu_main_plat .bloc_menu {
-  height: 320px;
   width: 100%;
+  min-height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

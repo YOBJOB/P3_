@@ -1,0 +1,42 @@
+@import'../utils/mixins';
+@import'../utils/variables';
+
+.loader-bars::before{
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    @include dim(30px,10px);
+    position: absolute;
+    background-color: $color-primary;
+    animation: grow 1.5s linear infinite;
+}
+
+.loader-bars::after{
+    content: "";
+    display: block;
+    left: 15px;
+    top: 0;
+    @include dim(30px,10px);
+    position: absolute;
+    background-color: $color-secondary;
+    animation: grow 1.5s linear -.5s infinite;
+}
+
+.loader-bars span{
+    content: "";
+    display: block;
+    left: 30px;
+    top: 0;
+    @include dim(30px,10px);
+    position: absolute;
+    background-color: $color-tertiary;
+    animation: grow 1.5s linear -.5s infinite;
+}
+
+
+@keyframes grow{
+    0% {transform: scaleY(0); opacity: 0;}
+    50% {transform: scaleY(1); opacity: 1;}
+    100% {transform: scaleY(0); opacity: 0;}
+}

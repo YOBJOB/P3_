@@ -34,23 +34,22 @@
         <div class="menu_position">
             <main>
                 <section class="section_menu">
-                    <h1 class="menu_titre ">La note enchantée</h1>
-                    <div class="menu-proj__coeur"><!--components/coeur-->
-                        <form class="bloc_coeur">
-                            <input type="checkbox" name="coeur" id="coeur" />
-                            <label for="coeur">
-                                <i class="coeur fas fa-heart"></i>
-                            </label>
-                        </form>
+                    <div class="section_menu_header">
+                        <h1 class="section_menu_header_titre ">La note enchantée</h1>
+                        <!--components/coeur-->
+                        <div class="btn-coeur">
+                            <i class="btn-coeur_plein fas fa-heart"></i>
+                            <i class="btn-coeur_vide far fa-heart"></i>
+                        </div>
                     </div>
-                    <div class="bloc_arti">
-                        <article class="arti_menu">
+                    <div class="section_menu_main">
+                        <div class="section_menu_main_plat">
                             <div>
                                 <h2 class="plat_titre">ENTRÉES</h2>
                                 <span class="bordure_titre"></span>
                             </div>
-                            <div class="bloc_menu">
-                                <div class="btn-plat"><!--component/btn-plat-->
+                            <div class="bloc_menu plus1 ">
+                                <article class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Ravioles de foie gras </span>    
                                         <span class="info">Accompagnés de leur crème à la truffe</span>
@@ -63,8 +62,8 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Caviar osciètre</span>
                                         <span class="info">Sur blini à la farine de blé noir</span>
@@ -77,8 +76,8 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Homard et espuma de potiron</span>
                                         <span class="info">Mariné aux zestes d'orange</span>
@@ -91,8 +90,8 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Foie gras de canard cuit entier</span>
                                         <span class="info"> Confiture de figue et pain toasté</span>
@@ -105,16 +104,16 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
+                                </article>
                             </div>
-                        </article>
-                        <article class="arti_menu">
+                        </div>
+                        <div class="section_menu_main_plat">
                             <div>
                                 <h2 class="plat_titre">PLATS</h2>
                                 <span class="bordure_titre"></span>
                             </div>
                             <div class="bloc_menu">
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                <article class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Noix de coquilles Saint-Jacques</span>
                                         <span class="info">Sur lit de purée de céleri-rave</span>
@@ -127,8 +126,8 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Langoustine poêlée</span>
                                         <span class="info">Purée de patate douce</span>
@@ -141,8 +140,8 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Mijoté de queue de boeuf </span>
                                         <span class="info">Et riz sauvage aux zestes de citron</span>
@@ -155,16 +154,16 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
+                                </article>
                             </div>
-                        </article>
-                        <article class="arti_menu">
+                        </div>
+                        <div class="section_menu_main_plat">
                             <div>
                                 <h2 class="plat_titre">DESSERT</h2>
                                 <span class="bordure_titre"></span>
                             </div>
                             <div class="bloc_menu">
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                <article class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Macaron noisette et chocolat</span>
                                         <span class="info">Glace au caramel brun et sel de Guérande</span>
@@ -177,8 +176,8 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Baba au rhum revisité</span>
                                         <span class="info">Avec son coulis de citron</span>
@@ -191,8 +190,8 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat"><!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Tarte au citron meringuée</span>
                                         <span class="info">Déstructurée</span>
@@ -205,9 +204,9 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
+                                </article>
                             </div>
-                        </article>
+                        </div>
                     </div>
                     <div class="bloc_bouton_menu"><!--components/bouton-degrade-->
                         <button class="bouton">Commander</button>
