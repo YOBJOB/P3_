@@ -358,12 +358,6 @@ p, strong, span, i {
   width: 100%;
   object-fit: contain;
 }
-.header-proj .conten-loader {
-  position: relative;
-  display: block;
-  height: 100px;
-  width: 100px;
-}
 .header-proj .btn_retour {
   position: relative;
   height: 30px;
@@ -661,6 +655,24 @@ p, strong, span, i {
   height: 130px;
   width: 100%;
   /*components/bouton-degrade*/
+}
+
+.body1 {
+  padding: 0;
+  margin: 0;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+}
+.body1 .content-loader {
+  background-color: #046822;
+  height: 500px;
+  line-height: 500px;
+}
+.body1 .content-loader .loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */
