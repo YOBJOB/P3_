@@ -1,23 +1,62 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 
-.body1 {
-    padding: 0;
-    margin: 0;
-    font-size: 40px;
-    text-align: center;
-    color: #fff;
-    .content-loader{
-        background-color: rgb(4, 104, 34);
-        height: 500px;
-        line-height: 500px;
-        .loader {
-            width: 50px;
+.content-loader {
+    visibility: hidden;
+    @include flex;
+    @include flex-layout;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(99, 104, 100, 0.5);
+    animation: display-loader 3s;
+    .loader {
+        @include flex;
+        @include flex-layout(space-around);
+        width: 100px;
+        .bar {
             height: 50px;
-            display: inline-block;
+            width: 25px;
+        }
+        .bar-1 {
+            background-color: $color-primary;
+            animation: grow 1s linear infinite;
+        }
+        .bar-2 {
+            background-color: $color-secondary;
+            animation: grow 1s linear -0.25s infinite;
+        }
+        .bar-3 {
+            background-color: $color-tertiary;
+            animation: grow 1s linear -0.5s infinite;
         }
     }
 }
+@keyframes grow {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+}
+@keyframes display-loader {
+    from{
+        visibility: visible;
+    }
+    to{
+        visibility: hidden;
+    }
+}
+
 //         .loader-bars {
 //             display: block;
 //             left: 0;

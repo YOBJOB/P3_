@@ -60,7 +60,7 @@
                 }
                 .bloc_menu{
                     width: 100%;
-                    min-height: 320px;
+                    
                     @include flex(column);
                     @include flex-layout(space-around);
                     /*component/btn-plat*/
