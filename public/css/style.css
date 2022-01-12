@@ -53,10 +53,6 @@ p, strong, span, i {
   display: block;
 }
 
-.plus1 {
-  height: 420px;
-}
-
 /*bouton-fonction*/
 .btn_lien_fonc {
   display: flex;
@@ -395,7 +391,6 @@ p, strong, span, i {
 }
 .menu_position .section_menu {
   width: 100%;
-  min-height: 1430px;
   background: #f2f2f2;
   border-radius: 60px 60px 0px 0px;
   padding: 0px 15px;
@@ -418,12 +413,12 @@ p, strong, span, i {
   bottom: 13px;
   right: 67px;
 }
-.menu_position .section_menu_header .btn-coeur .fas, .menu_position .section_menu_header .btn-coeur .far {
+.menu_position .section_menu_header .btn-coeur .fas,
+.menu_position .section_menu_header .btn-coeur .far {
   font-size: 30px;
 }
 .menu_position .section_menu_main {
   width: 100%;
-  min-height: 1150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -431,13 +426,16 @@ p, strong, span, i {
 }
 .menu_position .section_menu_main_plat {
   width: 100%;
-  min-height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
+  margin: 15px 0 15px 0;
 }
-.menu_position .section_menu_main_plat .plat_titre {
+.menu_position .section_menu_main_plat__titre {
+  margin-bottom: 10px;
+}
+.menu_position .section_menu_main_plat__titre .plat_titre {
   height: 28px;
   width: 100%;
   display: flex;
@@ -446,7 +444,7 @@ p, strong, span, i {
   align-items: center;
   font-size: 18px;
 }
-.menu_position .section_menu_main_plat .bordure_titre {
+.menu_position .section_menu_main_plat__titre .bordure_titre {
   display: block;
   border-top: 3px solid #99E2D0;
   width: 45px;
@@ -455,17 +453,21 @@ p, strong, span, i {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   /*component/btn-plat*/
+}
+.menu_position .section_menu_main_plat .bloc_menu .btn-plat {
+  margin: 10px 0 10px 0;
 }
 .menu_position .section_menu .bloc_bouton_menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 130px;
+  height: 160px;
   width: 100%;
+  padding-bottom: 55px;
   /*components/bouton-degrade*/
 }
 
@@ -581,7 +583,6 @@ p, strong, span, i {
 }
 .menu_position .section_menu {
   width: 100%;
-  min-height: 1430px;
   background: #f2f2f2;
   border-radius: 60px 60px 0px 0px;
   padding: 0px 15px;
@@ -604,12 +605,12 @@ p, strong, span, i {
   bottom: 13px;
   right: 67px;
 }
-.menu_position .section_menu_header .btn-coeur .fas, .menu_position .section_menu_header .btn-coeur .far {
+.menu_position .section_menu_header .btn-coeur .fas,
+.menu_position .section_menu_header .btn-coeur .far {
   font-size: 30px;
 }
 .menu_position .section_menu_main {
   width: 100%;
-  min-height: 1150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -617,13 +618,16 @@ p, strong, span, i {
 }
 .menu_position .section_menu_main_plat {
   width: 100%;
-  min-height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
+  margin: 15px 0 15px 0;
 }
-.menu_position .section_menu_main_plat .plat_titre {
+.menu_position .section_menu_main_plat__titre {
+  margin-bottom: 10px;
+}
+.menu_position .section_menu_main_plat__titre .plat_titre {
   height: 28px;
   width: 100%;
   display: flex;
@@ -632,7 +636,7 @@ p, strong, span, i {
   align-items: center;
   font-size: 18px;
 }
-.menu_position .section_menu_main_plat .bordure_titre {
+.menu_position .section_menu_main_plat__titre .bordure_titre {
   display: block;
   border-top: 3px solid #99E2D0;
   width: 45px;
@@ -641,17 +645,21 @@ p, strong, span, i {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   /*component/btn-plat*/
+}
+.menu_position .section_menu_main_plat .bloc_menu .btn-plat {
+  margin: 10px 0 10px 0;
 }
 .menu_position .section_menu .bloc_bouton_menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 130px;
+  height: 160px;
   width: 100%;
+  padding-bottom: 55px;
   /*components/bouton-degrade*/
 }
 

@@ -1,30 +1,29 @@
 /*-photo resto-*/
-.wrapper{
+.wrapper {
     height: 1979px;
 }
-.photo_resto{
+.photo_resto {
     overflow: hidden;
     @include dim(300px);
-    .wi_he_co{
+    .wi_he_co {
         @include dim(100%);
         object-fit: cover;
-    }    
+    }
 }
-.menu_position{
+.menu_position {
     position: relative;
     bottom: 72px;
-    .section_menu{
+    .section_menu {
         width: 100%;
-        min-height: 1430px;
         background: $color-back;
         border-radius: 60px 60px 0px 0px;
         padding: 0px 15px;
-        &_header{
+        &_header {
             @include dim(100px);
             @include flex;
             @include flex-layout(space-between);
             padding: 5px 10px;
-            &_titre{
+            &_titre {
                 padding-left: 15px;
                 font-family: "Shrikhand";
             }
@@ -32,45 +31,51 @@
                 position: relative;
                 bottom: 13px;
                 right: 67px;
-                .fas, .far {
+                .fas,
+                .far {
                     font-size: 30px;
                 }
             }
         }
-        &_main{
+        &_main {
             width: 100%;
-            min-height: 1150px;
             @include flex(column);
             @include flex-layout(space-between);
-            &_plat{
+            &_plat {
                 width: 100%;
-                min-height: 360px;
                 @include flex(column);
-                @include flex-layout(space-between,start);
-                .plat_titre{
-                    @include dim(28px);
-                    @include flex;
-                    @include flex-layout(start,center);
-                    font-size: 18px;
+                @include flex-layout(space-between, start);
+                margin: 15px 0 15px 0;
+                &__titre {
+                    margin-bottom: 10px;
+                    .plat_titre{
+                        @include dim(28px);
+                        @include flex;
+                        @include flex-layout(start, center);
+                        font-size: 18px;
+                    }
+                    .bordure_titre {
+                        display: block;
+                        border-top: 3px solid $color-tertiary;
+                        width: 45px;
+                    }
                 }
-                .bordure_titre{
-                    display: block;
-                    border-top: 3px solid $color-tertiary;
-                    width: 45px;  
-                }
-                .bloc_menu{
+                .bloc_menu {
                     width: 100%;
-                    
                     @include flex(column);
-                    @include flex-layout(space-around);
+                    @include flex-layout(space-between);
                     /*component/btn-plat*/
+                    .btn-plat{
+                        margin: 10px 0 10px 0;
+                    }
                 }
             }
         }
-        .bloc_bouton_menu{
+        .bloc_bouton_menu {
             @include flex;
             @include flex-layout;
-            @include dim(130px);
+            @include dim(160px);
+            padding-bottom: 55px;
             /*components/bouton-degrade*/
         }
     }
