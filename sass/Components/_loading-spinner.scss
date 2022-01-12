@@ -1,42 +1,72 @@
-@import'../utils/mixins';
-@import'../utils/variables';
+@import "../utils/mixins";
+@import "../utils/variables";
 
-.loader-bars::before{
-    content: "";
-    display: block;
-    left: 0;
-    top: 0;
-    @include dim(30px,10px);
-    position: absolute;
-    background-color: $color-primary;
-    animation: grow 1.5s linear infinite;
+.body1 {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    .content-loader{
+        background-color: rgb(4, 104, 34);
+        height: 500px;
+        line-height: 500px;
+        .loader {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+        }
+    }
 }
-
-.loader-bars::after{
-    content: "";
-    display: block;
-    left: 15px;
-    top: 0;
-    @include dim(30px,10px);
-    position: absolute;
-    background-color: $color-secondary;
-    animation: grow 1.5s linear -.5s infinite;
-}
-
-.loader-bars span{
-    content: "";
-    display: block;
-    left: 30px;
-    top: 0;
-    @include dim(30px,10px);
-    position: absolute;
-    background-color: $color-tertiary;
-    animation: grow 1.5s linear -.5s infinite;
-}
-
-
-@keyframes grow{
-    0% {transform: scaleY(0); opacity: 0;}
-    50% {transform: scaleY(1); opacity: 1;}
-    100% {transform: scaleY(0); opacity: 0;}
-}
+//         .loader-bars {
+//             display: block;
+//             left: 0;
+//             top: 0;
+//             @include dim(30px, 10px);
+//             position: absolute;
+//             background-color: $color-primary;
+//             .loader-bars::before {
+//                 content: "";
+//                 display: block;
+//                 left: 0;
+//                 top: 0;
+//                 @include dim(30px, 10px);
+//                 position: absolute;
+//                 background-color: $color-primary;
+//             }
+//             .loader-bars::after {
+//                 content: "";
+//                 display: block;
+//                 left: 15px;
+//                 top: 0;
+//                 @include dim(30px, 10px);
+//                 position: absolute;
+//                 background-color: $color-secondary;
+//             }
+//             .loader-bars span {
+//                 content: "";
+//                 display: block;
+//                 left: 30px;
+//                 top: 0;
+//                 @include dim(30px, 10px);
+//                 position: absolute;
+//                 background-color: $color-tertiary;
+//                 animation: grow 1.5s linear -0.5s infinite;
+//             }
+//         }
+//     }
+// }
+// @keyframes grow{
+//     0% {
+//         transform: scaleY(0);
+//         opacity: 0;
+//     }
+//     50% {
+//         transform: scaleY(1);
+//         opacity: 1;
+//     }
+//     100% {
+//         transform: scaleY(0);
+//         opacity: 0;
+//     }
+// }
