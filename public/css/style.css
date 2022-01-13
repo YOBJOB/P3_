@@ -126,6 +126,7 @@ p, strong, span, i {
   width: 100%;
   border-radius: 20px;
   background: white;
+  margin: 10px 0 10px 0;
 }
 .btn-plat__ref {
   display: flex;
@@ -135,19 +136,28 @@ p, strong, span, i {
   justify-content: center;
   align-items: start;
   padding-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .btn-plat__ref .nom {
   display: block;
   margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .btn-plat__ref .info {
   display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .btn-plat__prix {
   display: flex;
   flex-direction: column;
   height: 80px;
-  width: 15%;
+  width: 30%;
   justify-content: center;
   align-items: center;
 }
@@ -155,9 +165,13 @@ p, strong, span, i {
   display: flex;
   flex-direction: column;
   height: 80px;
-  width: 15%;
+  width: 0%;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: opacity 500ms;
+  transform: scale(0);
+  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
   background: #99E2D0;
   border-radius: 0 20px 20px 0;
 }
@@ -173,8 +187,51 @@ p, strong, span, i {
   bottom: 1px;
   left: 2px;
   color: #99E2D0;
+  transform: rotate(-360deg);
+  transition: transform 750ms ease-in-out;
+}
+.btn-plat:hover .btn-plat__prix {
+  transform: scaleY(1);
+  transition-duration: 750ms;
+  animation: low-titre 750ms linear;
+  width: 20%;
+}
+.btn-plat:hover .btn-plat__check {
+  opacity: 1;
+  transform: scale(1);
+  transform-origin: right;
+  transition-duration: 750ms;
+  width: 20%;
+  animation: grow-check 750ms linear;
+}
+.btn-plat:hover .fa-check {
+  transform: rotate(0deg);
 }
 
+@keyframes grow-check {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 20%;
+  }
+}
+@keyframes low-titre {
+  from {
+    width: 30%;
+  }
+  to {
+    width: 20%;
+  }
+}
+@keyframes low-ref {
+  from {
+    width: 70%;
+  }
+  to {
+    width: 60%;
+  }
+}
 /*coeur*/
 .btn-coeur {
   cursor: pointer;
@@ -457,9 +514,6 @@ p, strong, span, i {
   align-items: center;
   /*component/btn-plat*/
 }
-.menu_position .section_menu_main_plat .bloc_menu .btn-plat {
-  margin: 10px 0 10px 0;
-}
 .menu_position .section_menu .bloc_bouton_menu {
   display: flex;
   flex-direction: row;
@@ -648,9 +702,6 @@ p, strong, span, i {
   justify-content: space-between;
   align-items: center;
   /*component/btn-plat*/
-}
-.menu_position .section_menu_main_plat .bloc_menu .btn-plat {
-  margin: 10px 0 10px 0;
 }
 .menu_position .section_menu .bloc_bouton_menu {
   display: flex;
