@@ -25,18 +25,20 @@
             @include dim(100px);
             @include flex;
             @include flex-layout(space-between);
-            padding: 5px 10px;
+            padding: 5px;
             &_titre {
-                padding-left: 15px;
                 font-family: "Shrikhand";
+                width: 80%;
+                padding-left: 5px;
+                font-size: 24px;
             }
             &_contenaire{
-
+                width: 20%;
             }
             .btn-coeur {
                 position: relative;
-                bottom: 13px;
-                right: 67px;
+                bottom: 14px;
+                left: 20px;
                 .fas,
                 .far {
                     font-size: 30px;

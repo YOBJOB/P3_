@@ -445,16 +445,21 @@ p, strong, span, i {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10px;
+  padding: 5px;
 }
 .menu_position .section_menu_header_titre {
-  padding-left: 15px;
   font-family: "Shrikhand";
+  width: 80%;
+  padding-left: 5px;
+  font-size: 24px;
+}
+.menu_position .section_menu_header_contenaire {
+  width: 20%;
 }
 .menu_position .section_menu_header .btn-coeur {
   position: relative;
-  bottom: 13px;
-  right: 67px;
+  bottom: 14px;
+  left: 20px;
 }
 .menu_position .section_menu_header .btn-coeur .fas,
 .menu_position .section_menu_header .btn-coeur .far {
@@ -637,16 +642,21 @@ p, strong, span, i {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10px;
+  padding: 5px;
 }
 .menu_position .section_menu_header_titre {
-  padding-left: 15px;
   font-family: "Shrikhand";
+  width: 80%;
+  padding-left: 5px;
+  font-size: 24px;
+}
+.menu_position .section_menu_header_contenaire {
+  width: 20%;
 }
 .menu_position .section_menu_header .btn-coeur {
   position: relative;
-  bottom: 13px;
-  right: 67px;
+  bottom: 14px;
+  left: 20px;
 }
 .menu_position .section_menu_header .btn-coeur .fas,
 .menu_position .section_menu_header .btn-coeur .far {
