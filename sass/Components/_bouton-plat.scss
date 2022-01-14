@@ -11,24 +11,15 @@
     &__ref {
         @include flex(column);
         @include dim(80px, 70%);
-        @include flex-layout(center, start);
-        padding-left: 10px;
+        @include flex-layout(center, unset);
+        padding-left: 12px;
         overflow: hidden;
-        text-overflow: ellipsis;
         white-space: nowrap;
-        // flex: 5;
-        .nom {
+        .nom, .info {
             display: block;
-            margin-bottom: 5px;
-            overflow: hidden;
+            margin: 3px 0;
             text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-        .info {
-            display: block;
             overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
         }
     }
     &__prix {
@@ -38,11 +29,10 @@
     }
     &__check {
         @include flex(column);
-        // @include dim(80px,15%);
         @include dim(80px, 0%);
         @include flex-layout;
-        opacity: 0;
-        transition: opacity 500ms;
+        // opacity: 0;
+        // transition: opacity 500ms;
         transform: scale(0);
         transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
         background: $color-tertiary;
@@ -51,6 +41,7 @@
             @include dim(20px, 20px);
             border-radius: 50%;
             background: $color-contrast;
+            overflow: hidden;
             .fa-check {
                 font-size: 15px;
                 position: relative;
@@ -63,38 +54,21 @@
         }
     }
     &:hover {
-        // & .btn-plat__ref {
-        //     transform: scaleY(1);
-        //     transition-duration: 750ms;
-        //     animation: low-ref 750ms linear;
-        //     min-width: 50%;
-        //     width: 60%;
-        // }
         & .btn-plat__prix {
-            // transition: transform 3s;
-            transform: scaleY(1);
-            // transform-origin: right;
             transition-duration: 750ms;
-            animation: low-titre 750ms linear;
             width: 20%;
-            // transition-delay: -750ms;
+            // transform: scaleY(1) 750ms;
+            // animation: low-titre 750ms linear;
             // transition-property: width;
-            // transition-duration: 2s;
-            // transform-origin: right;
-            // transform: scaleY(1);
-
-            // transform: scale(10%);
-            // transform-origin: left;
-            // animation: grow-check 3s linear ;
         }
         & .btn-plat__check {
-            opacity: 1;
+            // opacity: 1;
             transform: scale(1);
             transform-origin: right;
             transition-duration: 750ms;
-            // transition-delay: 1s;
             width: 20%;
             animation: grow-check 750ms linear;
+            transition: transform 750ms linear ;
         }
         & .fa-check {
             transform: rotate(0deg);
@@ -105,9 +79,11 @@
 @keyframes grow-check {
     from {
         width: 0%;
+        height: 100%;
     }
     to {
         width: 20%;
+        height: 100%;
     }
 }
 
@@ -119,20 +95,3 @@
         width: 20%;
     }
 }
-@keyframes low-ref {
-    from {
-        width: 70%;
-    }
-    to {
-        width: 60%;
-    }
-}
-// 0% {
-//     width: 0;
-// }
-// 50% {
-//     width: 10%;
-// }
-// 100% {
-//     width: 20%;
-// }

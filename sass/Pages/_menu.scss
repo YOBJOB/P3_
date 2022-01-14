@@ -13,6 +13,9 @@
 .menu_position {
     position: relative;
     bottom: 72px;
+    left: 0px;
+    right: 0px;
+    max-width: 650px;
     .section_menu {
         width: 100%;
         background: $color-back;
@@ -26,6 +29,9 @@
             &_titre {
                 padding-left: 15px;
                 font-family: "Shrikhand";
+            }
+            &_contenaire{
+
             }
             .btn-coeur {
                 position: relative;

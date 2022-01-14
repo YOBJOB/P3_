@@ -134,24 +134,16 @@ p, strong, span, i {
   height: 80px;
   width: 70%;
   justify-content: center;
-  align-items: start;
-  padding-left: 10px;
+  align-items: unset;
+  padding-left: 12px;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
-.btn-plat__ref .nom {
+.btn-plat__ref .nom, .btn-plat__ref .info {
   display: block;
-  margin-bottom: 5px;
-  overflow: hidden;
+  margin: 3px 0;
   text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.btn-plat__ref .info {
-  display: block;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .btn-plat__prix {
   display: flex;
@@ -168,8 +160,6 @@ p, strong, span, i {
   width: 0%;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  transition: opacity 500ms;
   transform: scale(0);
   transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
   background: #99E2D0;
@@ -180,6 +170,7 @@ p, strong, span, i {
   width: 20px;
   border-radius: 50%;
   background: white;
+  overflow: hidden;
 }
 .btn-plat__check .cercle .fa-check {
   font-size: 15px;
@@ -191,18 +182,16 @@ p, strong, span, i {
   transition: transform 750ms ease-in-out;
 }
 .btn-plat:hover .btn-plat__prix {
-  transform: scaleY(1);
   transition-duration: 750ms;
-  animation: low-titre 750ms linear;
   width: 20%;
 }
 .btn-plat:hover .btn-plat__check {
-  opacity: 1;
   transform: scale(1);
   transform-origin: right;
   transition-duration: 750ms;
   width: 20%;
   animation: grow-check 750ms linear;
+  transition: transform 750ms linear;
 }
 .btn-plat:hover .fa-check {
   transform: rotate(0deg);
@@ -211,9 +200,11 @@ p, strong, span, i {
 @keyframes grow-check {
   from {
     width: 0%;
+    height: 100%;
   }
   to {
     width: 20%;
+    height: 100%;
   }
 }
 @keyframes low-titre {
@@ -222,14 +213,6 @@ p, strong, span, i {
   }
   to {
     width: 20%;
-  }
-}
-@keyframes low-ref {
-  from {
-    width: 70%;
-  }
-  to {
-    width: 60%;
   }
 }
 /*coeur*/
@@ -445,6 +428,9 @@ p, strong, span, i {
 .menu_position {
   position: relative;
   bottom: 72px;
+  left: 0px;
+  right: 0px;
+  max-width: 650px;
 }
 .menu_position .section_menu {
   width: 100%;
@@ -634,6 +620,9 @@ p, strong, span, i {
 .menu_position {
   position: relative;
   bottom: 72px;
+  left: 0px;
+  right: 0px;
+  max-width: 650px;
 }
 .menu_position .section_menu {
   width: 100%;
