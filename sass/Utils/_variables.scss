@@ -1,6 +1,12 @@
-$color-primary:#9356DC;
-$color-secondary:#FF79DA;
-$color-tertiary: #99E2D0;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
 $color-button-mix: linear-gradient($color-secondary, $color-primary);
-$color-back:#f2f2f2;
+$color-back: #f2f2f2;
 $color-contrast: white;
+
+$breakpoints: (pad: 992px);
+
+$anim-dur: 1000ms;
+$num-bars: 4;
+$anim-delay: $anim-dur / 4;

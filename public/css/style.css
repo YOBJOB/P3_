@@ -69,13 +69,13 @@ p, strong, span, i {
   background: #e4d5f6;
 }
 .btn_lien_fonc:hover:hover .btn-fonction__icone {
-  color: #9356DC;
+  color: #9356dc;
 }
 .btn_lien_fonc .cercle-proj {
   position: relative;
   right: 15px;
   border-radius: 50%;
-  background-color: #9356DC;
+  background-color: #9356dc;
   height: 30px;
   width: 30px;
   min-width: 30px;
@@ -108,7 +108,7 @@ p, strong, span, i {
   height: 50px;
   width: 280px;
   align-items: center;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356dc);
   color: white;
   border: unset;
   box-shadow: 0px 10px 10px #d9d9d9;
@@ -128,6 +128,20 @@ p, strong, span, i {
   background: white;
   margin: 10px 0 10px 0;
   cursor: pointer;
+  transform-origin: top;
+  animation: bars 1000ms backwards;
+}
+.btn-plat--1 {
+  animation-delay: 250ms;
+}
+.btn-plat--2 {
+  animation-delay: 500ms;
+}
+.btn-plat--3 {
+  animation-delay: 750ms;
+}
+.btn-plat--4 {
+  animation-delay: 1000ms;
 }
 .btn-plat__ref {
   display: flex;
@@ -140,7 +154,8 @@ p, strong, span, i {
   overflow: hidden;
   white-space: nowrap;
 }
-.btn-plat__ref .nom, .btn-plat__ref .info {
+.btn-plat__ref .nom,
+.btn-plat__ref .info {
   display: block;
   margin: 3px 0;
   text-overflow: ellipsis;
@@ -165,7 +180,7 @@ p, strong, span, i {
   transition: opacity 500ms;
   transform: scaleX(0);
   transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
-  background: #99E2D0;
+  background: #99e2d0;
   border-radius: 0 20px 20px 0;
 }
 .btn-plat__check .cercle {
@@ -180,20 +195,20 @@ p, strong, span, i {
   position: relative;
   bottom: 1px;
   left: 2px;
-  color: #99E2D0;
+  color: #99e2d0;
   transform: rotate(-360deg);
   transition: transform 750ms ease-in-out;
 }
 .btn-plat:hover .btn-plat__prix {
-  transition-duration: 750ms;
   width: 20%;
+  transition-duration: 750ms;
 }
 .btn-plat:hover .btn-plat__check {
+  width: 20%;
   opacity: 1;
   transform: scaleX(1);
   transform-origin: right;
   transition-duration: 750ms;
-  width: 20%;
   animation: grow-check 750ms linear;
 }
 .btn-plat:hover .fa-check {
@@ -218,6 +233,23 @@ p, strong, span, i {
     width: 20%;
   }
 }
+@keyframes bars {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*coeur*/
 .btn-coeur {
   cursor: pointer;
@@ -228,7 +260,7 @@ p, strong, span, i {
 }
 .btn-coeur:hover .btn-coeur_vide, .btn-coeur:active .btn-coeur_vide {
   opacity: 1;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -243,7 +275,7 @@ p, strong, span, i {
   top: 0;
   left: 0;
   opacity: 0;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 500ms;
@@ -264,7 +296,7 @@ p, strong, span, i {
   right: 27px;
   padding: 10px 20px;
   color: #278870;
-  background: #99E2D0;
+  background: #99e2d0;
   font-weight: bold;
   border-radius: 5%;
 }
@@ -497,7 +529,7 @@ p, strong, span, i {
 }
 .menu_position .section_menu_main_plat__titre .bordure_titre {
   display: block;
-  border-top: 3px solid #99E2D0;
+  border-top: 3px solid #99e2d0;
   width: 45px;
 }
 .menu_position .section_menu_main_plat .bloc_menu {
@@ -694,7 +726,7 @@ p, strong, span, i {
 }
 .menu_position .section_menu_main_plat__titre .bordure_titre {
   display: block;
-  border-top: 3px solid #99E2D0;
+  border-top: 3px solid #99e2d0;
   width: 45px;
 }
 .menu_position .section_menu_main_plat .bloc_menu {
@@ -742,15 +774,15 @@ p, strong, span, i {
   width: 25px;
 }
 .content-loader .loader .bar-1 {
-  background-color: #9356DC;
+  background-color: #9356dc;
   animation: grow 1s linear infinite;
 }
 .content-loader .loader .bar-2 {
-  background-color: #FF79DA;
+  background-color: #ff79da;
   animation: grow 1s linear -0.25s infinite;
 }
 .content-loader .loader .bar-3 {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   animation: grow 1s linear -0.5s infinite;
 }
 

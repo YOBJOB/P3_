@@ -32,7 +32,7 @@
                 padding-left: 5px;
                 font-size: 24px;
             }
-            &_contenaire{
+            &_contenaire {
                 width: 20%;
             }
             .btn-coeur {
@@ -56,7 +56,7 @@
                 margin: 15px 0 15px 0;
                 &__titre {
                     margin-bottom: 10px;
-                    .plat_titre{
+                    .plat_titre {
                         @include dim(28px);
                         @include flex;
                         @include flex-layout(start, center);
@@ -73,7 +73,6 @@
                     @include flex(column);
                     @include flex-layout(space-between);
                     /*component/btn-plat*/
-
                 }
             }
         }

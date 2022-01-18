@@ -9,6 +9,13 @@
     background: $color-contrast;
     margin: 10px 0 10px 0;
     cursor: pointer;
+    transform-origin: top;
+    animation: bars $anim-dur backwards;
+    @for $i from 1 through $num-bars {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+    }
     &__ref {
         @include flex(column);
         @include dim(80px, 70%);
@@ -16,7 +23,8 @@
         padding-left: 12px;
         overflow: hidden;
         white-space: nowrap;
-        .nom, .info {
+        .nom,
+        .info {
             display: block;
             margin: 3px 0;
             text-overflow: ellipsis;
@@ -56,15 +64,15 @@
     }
     &:hover {
         & .btn-plat__prix {
-            transition-duration: 750ms;
             width: 20%;
+            transition-duration: 750ms;
         }
         & .btn-plat__check {
+            width: 20%;
             opacity: 1;
             transform: scaleX(1);
             transform-origin: right;
             transition-duration: 750ms;
-            width: 20%;
             animation: grow-check 750ms linear;
         }
         & .fa-check {
@@ -72,7 +80,6 @@
         }
     }
 }
-
 @keyframes grow-check {
     from {
         width: 0%;
@@ -90,5 +97,24 @@
     }
     to {
         width: 20%;
+    }
+}
+
+@keyframes bars {
+    0% {
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.75;
+
+    }
+    100% {
+        opacity: 1;
     }
 }
