@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-  max-width: 650px;
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -445,10 +445,6 @@ p, strong, span, i {
 }
 
 /*-photo resto-*/
-.wrapper {
-  height: 1979px;
-}
-
 .photo_resto {
   overflow: hidden;
   height: 300px;
@@ -590,11 +586,21 @@ p, strong, span, i {
   font-size: 30px;
   text-align: center;
 }
+@media all and (min-width: 651px) and (max-width: 1420px) {
+  .section_trouv .trouv_titre {
+    width: 100%;
+  }
+}
 .section_trouv .trouv_text {
   height: 50px;
   width: 320px;
   color: #595959;
   text-align: center;
+}
+@media all and (min-width: 651px) and (max-width: 1420px) {
+  .section_trouv .trouv_text {
+    width: 100%;
+  }
 }
 
 /*-section fonctionnement-*/
@@ -617,6 +623,12 @@ p, strong, span, i {
   width: 100%;
   padding: 0px 20px 0px 30px;
   /*components/bouton-fonction*/
+}
+@media all and (min-width: 993px) and (max-width: 1420px) {
+  .section_fonc .bloc_btn {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /*-section resto-*/
@@ -642,10 +654,6 @@ p, strong, span, i {
 }
 
 /*-photo resto-*/
-.wrapper {
-  height: 1979px;
-}
-
 .photo_resto {
   overflow: hidden;
   height: 300px;

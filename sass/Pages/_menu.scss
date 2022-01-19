@@ -1,7 +1,8 @@
 /*-photo resto-*/
-.wrapper {
-    height: 1979px;
-}
+// .wrapper {
+//     @include pad-only;
+//     // height: 1979px;
+// }
 .photo_resto {
     overflow: hidden;
     @include dim(300px);

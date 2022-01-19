@@ -5,8 +5,13 @@ $color-button-mix: linear-gradient($color-secondary, $color-primary);
 $color-back: #f2f2f2;
 $color-contrast: white;
 
-$breakpoints: (pad: 992px);
-
 $anim-dur: 1000ms;
 $num-bars: 4;
 $anim-delay: $anim-dur / 4;
+
+// MAP
+$breakpoints: (
+    mobile: 650px,
+    pad: 992px,
+    desktop: 1420px,
+);

@@ -1,21 +1,45 @@
-@import'../utils/variables';
-@import'../utils/fonctions';
-  
-@mixin flex($direction:row){
-    display:flex;
+@import "../utils/variables";
+@import "../utils/fonctions";
+
+@mixin flex($direction: row) {
+    display: flex;
     flex-direction: $direction;
 }
 
-@mixin flex-layout($justify:center, $aligne:center){
+@mixin flex-layout($justify: center, $aligne: center) {
     justify-content: $justify;
-    align-items: $aligne;    
+    align-items: $aligne;
 }
 
-@mixin dim($height, $width:100%){
+@mixin dim($height, $width: 100%) {
     height: $height;
     width: $width;
 }
 
-@mixin nuance-color-10($color: lightness-shift($color-back)){
+@mixin nuance-color-10($color: lightness-shift($color-back)) {
     color: $color;
+}
+
+@mixin mobile-only {
+    @media (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+@mixin pad-only {
+    @media all and (min-width: 651px) and (max-width: map-get($breakpoints, pad)) {
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media all and (min-width: 993px) and (max-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+@mixin desktop-pad {
+    @media all and (min-width: 651px) and (max-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
 }

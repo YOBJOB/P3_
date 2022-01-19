@@ -28,11 +28,17 @@
         @include dim(70px, 320px);
         font-size: 30px;
         text-align: center;
+        @include desktop-pad{
+            width: 100%;
+        }
     }
     .trouv_text{
         @include dim(50px, 320px);
         color: darken($color-back, 60%);
-        text-align: center;          
+        text-align: center;
+        @include desktop-pad{
+            width: 100%;
+        }         
     }
     /*components/bouton-degrade*/
 }
@@ -49,6 +55,9 @@
         @include flex(column);
         @include dim(368px); 
         padding: 0px 20px 0px 30px;
+        @include desktop-only{
+            @include flex;
+        }
         /*components/bouton-fonction*/
     }
 }
