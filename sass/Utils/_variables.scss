@@ -5,9 +5,9 @@ $color-button-mix: linear-gradient($color-secondary, $color-primary);
 $color-back: #f2f2f2;
 $color-contrast: white;
 
-$anim-dur: 1000ms;
-$num-bars: 4;
-$anim-delay: $anim-dur / 4;
+$anim-dur: 2000ms;
+$num-bars: 10;
+$anim-delay: $anim-dur / 10;
 
 // MAP
 $breakpoints: (

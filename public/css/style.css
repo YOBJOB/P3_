@@ -66,7 +66,7 @@ p, strong, span, i {
   background: #f2f2f2;
   margin: 0 0 35px 0;
 }
-@media all and (min-width: 993px) and (max-width: 1420px) {
+@media all and (min-width: 993px) {
   .btn_lien_fonc {
     margin: 20px;
   }
@@ -135,25 +135,43 @@ p, strong, span, i {
   margin: 10px 0 10px 0;
   cursor: pointer;
   transform-origin: top;
-  animation: bars 1000ms backwards;
+  animation: bars 2000ms backwards;
 }
 .btn-plat--1 {
-  animation-delay: 250ms;
+  animation-delay: 200ms;
 }
 .btn-plat--2 {
-  animation-delay: 500ms;
+  animation-delay: 400ms;
 }
 .btn-plat--3 {
-  animation-delay: 750ms;
+  animation-delay: 600ms;
 }
 .btn-plat--4 {
+  animation-delay: 800ms;
+}
+.btn-plat--5 {
   animation-delay: 1000ms;
+}
+.btn-plat--6 {
+  animation-delay: 1200ms;
+}
+.btn-plat--7 {
+  animation-delay: 1400ms;
+}
+.btn-plat--8 {
+  animation-delay: 1600ms;
+}
+.btn-plat--9 {
+  animation-delay: 1800ms;
+}
+.btn-plat--10 {
+  animation-delay: 2000ms;
 }
 .btn-plat__ref {
   display: flex;
   flex-direction: column;
   height: 80px;
-  width: 70%;
+  width: 80%;
   justify-content: center;
   align-items: unset;
   padding-left: 12px;
@@ -171,9 +189,10 @@ p, strong, span, i {
   display: flex;
   flex-direction: column;
   height: 80px;
-  width: 30%;
-  justify-content: center;
-  align-items: center;
+  width: 20%;
+  justify-content: end;
+  align-items: end;
+  padding: 0 25px 15px 0;
 }
 .btn-plat__check {
   display: flex;
@@ -323,10 +342,10 @@ p, strong, span, i {
     width: 47%;
   }
 }
-@media all and (min-width: 993px) and (max-width: 1420px) {
+@media all and (min-width: 993px) {
   .lien-resto {
     margin-bottom: 30px;
-    width: 23%;
+    width: 24%;
   }
 }
 .lien-resto__card-ima {
@@ -480,6 +499,7 @@ p, strong, span, i {
   left: 0px;
   right: 0px;
   max-width: 650px;
+  margin-bottom: -105px;
 }
 .menu_position .section_menu {
   width: 100%;
@@ -498,20 +518,25 @@ p, strong, span, i {
 }
 .menu_position .section_menu_header_titre {
   font-family: "Shrikhand";
-  width: 80%;
+  width: 90%;
   padding-left: 5px;
   font-size: 24px;
 }
 .menu_position .section_menu_header_contenaire {
-  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  padding: 0 25px 5px 0;
+  width: 10%;
 }
-.menu_position .section_menu_header .btn-coeur {
+.menu_position .section_menu_header_contenaire .btn-coeur {
   position: relative;
-  bottom: 14px;
-  left: 20px;
+  bottom: 15px;
+  right: 22px;
 }
-.menu_position .section_menu_header .btn-coeur .fas,
-.menu_position .section_menu_header .btn-coeur .far {
+.menu_position .section_menu_header_contenaire .btn-coeur .fas,
+.menu_position .section_menu_header_contenaire .btn-coeur .far {
   font-size: 30px;
 }
 .menu_position .section_menu_main {
@@ -603,7 +628,7 @@ p, strong, span, i {
   text-align: center;
   margin-bottom: 25px;
 }
-@media all and (min-width: 651px) and (max-width: 1420px) {
+@media all and (min-width: 651px) {
   .section_trouv .trouv_titre {
     width: 100%;
   }
@@ -615,7 +640,7 @@ p, strong, span, i {
   text-align: center;
   margin-bottom: 25px;
 }
-@media all and (min-width: 651px) and (max-width: 1420px) {
+@media all and (min-width: 651px) {
   .section_trouv .trouv_text {
     width: 100%;
   }
@@ -643,7 +668,7 @@ p, strong, span, i {
   padding: 0px 20px 0px 30px;
   /*components/bouton-fonction*/
 }
-@media all and (min-width: 993px) and (max-width: 1420px) {
+@media all and (min-width: 993px) {
   .section_fonc .bloc_btn {
     display: flex;
     flex-direction: row;
@@ -675,7 +700,7 @@ p, strong, span, i {
   padding: 0px 20px;
   /*components/resto*/
 }
-@media all and (min-width: 651px) and (max-width: 1420px) {
+@media all and (min-width: 651px) {
   .section-resto .bloc-resto {
     display: flex;
     flex-direction: row;
@@ -703,6 +728,7 @@ p, strong, span, i {
   left: 0px;
   right: 0px;
   max-width: 650px;
+  margin-bottom: -105px;
 }
 .menu_position .section_menu {
   width: 100%;
@@ -721,20 +747,25 @@ p, strong, span, i {
 }
 .menu_position .section_menu_header_titre {
   font-family: "Shrikhand";
-  width: 80%;
+  width: 90%;
   padding-left: 5px;
   font-size: 24px;
 }
 .menu_position .section_menu_header_contenaire {
-  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  padding: 0 25px 5px 0;
+  width: 10%;
 }
-.menu_position .section_menu_header .btn-coeur {
+.menu_position .section_menu_header_contenaire .btn-coeur {
   position: relative;
-  bottom: 14px;
-  left: 20px;
+  bottom: 15px;
+  right: 22px;
 }
-.menu_position .section_menu_header .btn-coeur .fas,
-.menu_position .section_menu_header .btn-coeur .far {
+.menu_position .section_menu_header_contenaire .btn-coeur .fas,
+.menu_position .section_menu_header_contenaire .btn-coeur .far {
   font-size: 30px;
 }
 .menu_position .section_menu_main {

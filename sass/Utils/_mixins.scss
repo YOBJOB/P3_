@@ -27,19 +27,19 @@
 }
 
 @mixin pad-only {
-    @media all and (min-width: 651px) and (max-width: map-get($breakpoints, pad)) {
+    @media all and (min-width: calc(map-get($breakpoints, mobile) + 1px)) and (max-width: map-get($breakpoints, pad)) {
         @content;
     }
 }
 
 @mixin desktop-only {
-    @media all and (min-width: 993px) and (max-width: map-get($breakpoints, desktop)) {
+    @media all and (min-width: calc(map-get($breakpoints, pad) + 1px)) {
         @content;
     }
 }
 
 @mixin desktop-pad {
-    @media all and (min-width: 651px) and (max-width: map-get($breakpoints, desktop)) {
+    @media all and (min-width: calc(map-get($breakpoints, mobile) + 1px)) {
         @content;
     }
 }
@@ -49,4 +49,3 @@
         @content;
     }
 }
-

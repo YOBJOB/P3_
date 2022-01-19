@@ -1,8 +1,4 @@
 /*-photo resto-*/
-// .wrapper {
-//     @include pad-only;
-//     // height: 1979px;
-// }
 .photo_resto {
     overflow: hidden;
     @include dim(300px);
@@ -17,6 +13,7 @@
     left: 0px;
     right: 0px;
     max-width: 650px;
+    margin-bottom: -105px;
     .section_menu {
         width: 100%;
         background: $color-back;
@@ -29,20 +26,23 @@
             padding: 5px;
             &_titre {
                 font-family: "Shrikhand";
-                width: 80%;
+                width: 90%;
                 padding-left: 5px;
                 font-size: 24px;
             }
             &_contenaire {
-                width: 20%;
-            }
-            .btn-coeur {
-                position: relative;
-                bottom: 14px;
-                left: 20px;
-                .fas,
-                .far {
-                    font-size: 30px;
+                @include flex;
+                @include flex-layout(end, end);
+                padding: 0 25px 5px 0;
+                width: 10%;
+                .btn-coeur {
+                    position: relative;
+                    bottom: 15px;
+                    right: 22px;
+                    .fas,
+                    .far {
+                        font-size: 30px;
+                    }
                 }
             }
         }

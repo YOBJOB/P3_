@@ -18,7 +18,7 @@
     }
     &__ref {
         @include flex(column);
-        @include dim(80px, 70%);
+        @include dim(80px, 80%);
         @include flex-layout(center, unset);
         padding-left: 12px;
         overflow: hidden;
@@ -33,8 +33,9 @@
     }
     &__prix {
         @include flex(column);
-        @include dim(80px, 30%);
-        @include flex-layout;
+        @include dim(80px, 20%);
+        @include flex-layout(end,end);
+        padding: 0 25px 15px 0;
     }
     &__check {
         @include flex(column);
