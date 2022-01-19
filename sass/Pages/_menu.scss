@@ -12,8 +12,8 @@
     bottom: 72px;
     left: 0px;
     right: 0px;
-    max-width: 650px;
-    margin-bottom: -105px;
+    max-width: 1420px;
+    margin-bottom: -72px;
     .section_menu {
         width: 100%;
         background: $color-back;
@@ -73,6 +73,10 @@
                     width: 100%;
                     @include flex(column);
                     @include flex-layout(space-between);
+                    @include desktop-pad{
+                        @include flex;
+                        flex-wrap: wrap;
+                    }
                     /*component/btn-plat*/
                 }
             }

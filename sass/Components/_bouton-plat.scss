@@ -11,6 +11,9 @@
     cursor: pointer;
     transform-origin: top;
     animation: bars $anim-dur backwards;
+    @include desktop-pad{
+        width: 49%;
+    }
     @for $i from 1 through $num-bars {
         &--#{$i} {
             animation-delay: $anim-delay * $i;

@@ -137,6 +137,11 @@ p, strong, span, i {
   transform-origin: top;
   animation: bars 2000ms backwards;
 }
+@media all and (min-width: 651px) {
+  .btn-plat {
+    width: 49%;
+  }
+}
 .btn-plat--1 {
   animation-delay: 200ms;
 }
@@ -493,8 +498,8 @@ p, strong, span, i {
   bottom: 72px;
   left: 0px;
   right: 0px;
-  max-width: 650px;
-  margin-bottom: -105px;
+  max-width: 1420px;
+  margin-bottom: -72px;
 }
 .menu_position .section_menu {
   width: 100%;
@@ -573,6 +578,13 @@ p, strong, span, i {
   justify-content: space-between;
   align-items: center;
   /*component/btn-plat*/
+}
+@media all and (min-width: 651px) {
+  .menu_position .section_menu_main_plat .bloc_menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 .menu_position .section_menu .bloc_bouton_menu {
   display: flex;
@@ -722,8 +734,8 @@ p, strong, span, i {
   bottom: 72px;
   left: 0px;
   right: 0px;
-  max-width: 650px;
-  margin-bottom: -105px;
+  max-width: 1420px;
+  margin-bottom: -72px;
 }
 .menu_position .section_menu {
   width: 100%;
@@ -802,6 +814,13 @@ p, strong, span, i {
   justify-content: space-between;
   align-items: center;
   /*component/btn-plat*/
+}
+@media all and (min-width: 651px) {
+  .menu_position .section_menu_main_plat .bloc_menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 .menu_position .section_menu .bloc_bouton_menu {
   display: flex;
