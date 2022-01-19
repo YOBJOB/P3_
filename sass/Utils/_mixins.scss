@@ -43,3 +43,10 @@
         @content;
     }
 }
+
+@mixin mobile-pad {
+    @media all and (max-width: map-get($breakpoints, pad)) {
+        @content;
+    }
+}
+

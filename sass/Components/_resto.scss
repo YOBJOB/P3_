@@ -3,8 +3,16 @@
     @include flex(column);
     @include dim(350px);
     display: block;
-    margin: 10px 0px;
+    margin: 20px 0px;
     border-radius: 30px;
+    @include pad-only{
+        margin-bottom: 30px;
+        width: 47%;
+    }
+    @include desktop-only{
+        margin-bottom: 30px;
+        width: 23%;
+    }
     &__card-ima {
         display: block;
         overflow: hidden;

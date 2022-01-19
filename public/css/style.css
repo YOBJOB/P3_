@@ -64,6 +64,12 @@ p, strong, span, i {
   border-radius: 30px;
   box-shadow: 0px 10px 10px #d9d9d9;
   background: #f2f2f2;
+  margin: 0 0 35px 0;
+}
+@media all and (min-width: 993px) and (max-width: 1420px) {
+  .btn_lien_fonc {
+    margin: 20px;
+  }
 }
 .btn_lien_fonc:hover {
   background: #e4d5f6;
@@ -308,8 +314,20 @@ p, strong, span, i {
   height: 350px;
   width: 100%;
   display: block;
-  margin: 10px 0px;
+  margin: 20px 0px;
   border-radius: 30px;
+}
+@media all and (min-width: 651px) and (max-width: 992px) {
+  .lien-resto {
+    margin-bottom: 30px;
+    width: 47%;
+  }
+}
+@media all and (min-width: 993px) and (max-width: 1420px) {
+  .lien-resto {
+    margin-bottom: 30px;
+    width: 23%;
+  }
 }
 .lien-resto__card-ima {
   display: block;
@@ -607,20 +625,21 @@ p, strong, span, i {
 .section_fonc {
   display: flex;
   flex-direction: column;
-  height: 400px;
-  width: 100%;
   margin: 20px 0;
 }
 .section_fonc .marg_l_20 {
   margin-left: 20px;
+}
+@media all and (max-width: 992px) {
+  .section_fonc .marg_l_20 {
+    margin-bottom: 20px;
+  }
 }
 .section_fonc .bloc_btn {
   justify-content: space-around;
   align-items: unset;
   display: flex;
   flex-direction: column;
-  height: 368px;
-  width: 100%;
   padding: 0px 20px 0px 30px;
   /*components/bouton-fonction*/
 }
@@ -635,13 +654,16 @@ p, strong, span, i {
 .section-resto {
   display: flex;
   flex-direction: column;
-  height: 1650px;
-  width: 100%;
-  padding: 20px 0;
+  padding: 20px 0 60px 0;
   background-color: #f2f2f2;
 }
 .section-resto .marg_l_20 {
   margin-left: 20px;
+}
+@media all and (max-width: 992px) {
+  .section-resto .marg_l_20 {
+    margin-bottom: 10px;
+  }
 }
 .section-resto .bloc-resto {
   display: flex;
@@ -651,6 +673,16 @@ p, strong, span, i {
   height: 100%;
   width: 100%;
   padding: 0px 20px;
+  /*components/resto*/
+}
+@media all and (min-width: 651px) and (max-width: 1420px) {
+  .section-resto .bloc-resto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 /*-photo resto-*/

@@ -45,15 +45,18 @@
 /*-section fonctionnement-*/ 
 .section_fonc{
     @include flex(column);
-    @include dim(400px);
+    // @include dim(400px);
     margin: 20px 0;
     .marg_l_20{
         margin-left: 20px;
+        @include mobile-pad{
+            margin-bottom: 20px;
+        }
     }
     .bloc_btn{
         @include flex-layout (space-around, unset);
         @include flex(column);
-        @include dim(368px); 
+        // @include dim(368px); 
         padding: 0px 20px 0px 30px;
         @include desktop-only{
             @include flex;
@@ -64,16 +67,25 @@
 /*-section resto-*/ 
 .section-resto{
     @include flex(column);
-    @include dim(1650px);
-    padding: 20px 0;
+    // @include dim(1650px);
+    padding: 20px 0 60px 0;
     background-color: $color-back;
     .marg_l_20{
         margin-left: 20px;
+        @include mobile-pad{
+            margin-bottom: 10px;
+        }
     }
     .bloc-resto{
         @include flex(column);
         @include flex-layout(space-around);
         @include dim(100%);
         padding: 0px 20px;
+        @include desktop-pad{
+            @include flex;
+            @include flex-layout(space-between);
+            flex-wrap: wrap;
+        }
+        /*components/resto*/
     }
 }
