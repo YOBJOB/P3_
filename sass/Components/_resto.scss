@@ -5,14 +5,14 @@
     display: block;
     margin: 20px 0px;
     border-radius: 30px;
-    @include pad-only{
+    @include desktop-pad{
         margin-bottom: 30px;
-        width: 47%;
+        width: 48%;
     }
-    @include desktop-only{
-        margin-bottom: 30px;
-        width: 24%;
-    }
+    // @include desktop-only{
+    //     margin-bottom: 30px;
+    //     width: 24%;
+    // }
     &__card-ima {
         display: block;
         overflow: hidden;

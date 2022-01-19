@@ -312,7 +312,8 @@ p, strong, span, i {
 /*new*/
 .propri_new {
   position: relative;
-  bottom: 233px;
+  bottom: 237px;
+  left: 7px;
   height: 30px;
   width: 100%;
 }
@@ -336,16 +337,10 @@ p, strong, span, i {
   margin: 20px 0px;
   border-radius: 30px;
 }
-@media all and (min-width: 651px) and (max-width: 992px) {
+@media all and (min-width: 651px) {
   .lien-resto {
     margin-bottom: 30px;
-    width: 47%;
-  }
-}
-@media all and (min-width: 993px) {
-  .lien-resto {
-    margin-bottom: 30px;
-    width: 24%;
+    width: 48%;
   }
 }
 .lien-resto__card-ima {

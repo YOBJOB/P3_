@@ -69,7 +69,6 @@
 /*-section resto-*/ 
 .section-resto{
     @include flex(column);
-    // @include dim(1650px);
     padding: 20px 0 60px 0;
     background-color: $color-back;
     .marg_l_20{
