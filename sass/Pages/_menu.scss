@@ -14,23 +14,23 @@
     right: 0px;
     max-width: 1420px;
     margin-bottom: -72px;
-    .section_menu {
+    .menu_container {
         width: 100%;
         background: $color-back;
         border-radius: 60px 60px 0px 0px;
         padding: 0px 15px;
-        &_header {
+        .menu-header {
             @include dim(100px);
             @include flex;
             @include flex-layout(space-between);
             padding: 5px;
-            &_titre {
+            &__titre {
                 font-family: "Shrikhand";
                 width: 90%;
                 padding-left: 5px;
                 font-size: 24px;
             }
-            &_contenaire {
+            &__container {
                 @include flex;
                 @include flex-layout(end, end);
                 padding: 0 25px 5px 0;
@@ -46,18 +46,18 @@
                 }
             }
         }
-        &_main {
+        .menu-main {
             width: 100%;
             @include flex(column);
             @include flex-layout(space-between);
-            &_plat {
+            &__plat {
                 width: 100%;
                 @include flex(column);
                 @include flex-layout(space-between, start);
                 margin: 15px 0 15px 0;
                 &__titre {
                     margin-bottom: 10px;
-                    .plat_titre {
+                    .titre_plat {
                         @include dim(28px);
                         @include flex;
                         @include flex-layout(start, center);
@@ -69,19 +69,19 @@
                         width: 45px;
                     }
                 }
-                .bloc_menu {
+                .bloc-plat {
                     width: 100%;
                     @include flex(column);
                     @include flex-layout(space-between);
-                    @include desktop-pad{
+                    @include desktop-pad {
                         @include flex;
                         flex-wrap: wrap;
+                        /*component/btn-plat*/
                     }
-                    /*component/btn-plat*/
                 }
             }
         }
-        .bloc_bouton_menu {
+        .menu_bloc_btn {
             @include flex;
             @include flex-layout;
             @include dim(160px);

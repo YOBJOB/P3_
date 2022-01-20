@@ -29,28 +29,29 @@
         </header>
         <figure class="photo_resto">
             <img class="wi_he_co" src="../public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt="photo du restaurant à la française">
+                alt="photo du restaurant la palette du gout">
         </figure>
-        <div class="menu_position">
-            <main>
-                <section class="section_menu">
-                    <h1 class="menu_titre ">La palette du goût</h1>
-                    <div class="menu-proj__coeur"><!--components/coeur-->
-                        <form class="bloc_coeur">
-                            <input type="checkbox" name="coeur" id="coeur" />
-                            <label for="coeur">
-                                <i class="coeur fas fa-heart"></i>
-                            </label>
-                        </form>
+        <main class="menu_position">
+            <section class="menu_container">
+                <div class="menu-header">
+                    <h1 class="menu-header__titre">La palette du goût</h1>
+                    <!--components/coeur-->
+                    <div class="menu-header__container">
+                        <div class="btn-coeur">
+                            <i class="btn-coeur_plein fas fa-heart"></i>
+                            <i class="btn-coeur_vide far fa-heart"></i>
+                        </div>
                     </div>
-                    <div class="bloc_arti">
-                        <article class="arti_menu">
-                            <div>
-                                <h2 class="plat_titre">ENTRÉES</h2>
+                </div>
+                <div class="menu_container">
+                    <div class="menu-main__plat">
+                        <div class="menu-main__plat__titre">
+                            <h2 class="titre_plat">ENTRÉES</h2>
                                 <span class="bordure_titre"></span>
                             </div>
-                            <div class="bloc_menu">
-                                <div class="btn-plat"><!--component/btn-plat-->
+                            <div class="bloc-plat">
+                                <article class="btn-plat btn-plat--1">
+                                    <!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Fricassée d'escargot</span>
                                         <span class="info">Au piment d'Espelette</span>
@@ -63,8 +64,9 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat btn-plat--2">
+                                    <!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">
                                             Foie gras de canard mi-cuit</span>
@@ -78,8 +80,9 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat btn-plat--3">
+                                    <!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Oeuf au plat</span>
                                         <span class="info">Assaisonné à la truffe sur lit de caviar</span>
@@ -92,16 +95,17 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
+                                </article>
                             </div>
-                        </article>
-                        <article class="arti_menu">
-                            <div>
-                                <h2 class="plat_titre">PLATS</h2>
+                        </div>
+                        <div class="menu-main__plat">
+                            <div class="menu-main__plat__titre">
+                                <h2 class="titre_plat">PLATS</h2>
                                 <span class="bordure_titre"></span>
                             </div> 
-                            <div class="bloc_menu">
-                                <div class="btn-plat"><!--component/btn-plat-->
+                            <div class="bloc-plat">
+                                <article class="btn-plat btn-plat--4">
+                                    <!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Filet de boeuf aux herbes</span>
                                         <span class="info">Accompagné de sa ribambelle de légumes</span>
@@ -114,8 +118,9 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat btn-plat--5">
+                                    <!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Parmentier de queue de boeuf</span>
                                         <span class="info">À la truffe noire sur sa purée de panais</span>
@@ -128,8 +133,9 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat btn-plat--6">
+                                    <!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Filet de turbot</span>
                                         <span class="info">Aux agrumes</span>
@@ -142,16 +148,17 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
+                                </article>
                             </div>
-                        </article>
-                        <article class="arti_menu">
-                            <div>
-                                <h2 class="plat_titre">DESSERT</h2>
+                        </div>
+                        <div class="menu-main__plat">
+                            <div class="menu-main__plat__titre">
+                                <h2 class="titre_plat">DESSERT</h2>
                                 <span class="bordure_titre"></span>
                             </div>
-                            <div class="bloc_menu">
-                                <div class="btn-plat"><!--component/btn-plat-->
+                            <div class="bloc-plat">
+                                <article class="btn-plat btn-plat--7">
+                                    <!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Paris-Brest</span>
                                         <span class="info">Revisité</span>
@@ -164,8 +171,9 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat btn-plat--8">
+                                    <!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Macaron au chocolat d'exception</span>
                                         <span class="info">Et glace à la vanille de Madagascar</span>
@@ -178,8 +186,9 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
-                                <div class="btn-plat"><!--component/btn-plat-->
+                                </article>
+                                <article class="btn-plat btn-plat--9">
+                                    <!--component/btn-plat-->
                                     <div class="btn-plat__ref">
                                         <span class="nom bold">Mousse au chocolat</span>
                                         <span class="info">Au piment d'Espelette et à la truffe noire</span>
@@ -192,11 +201,12 @@
                                             <i class="fas fa-check"></i>
                                         </span>
                                     </div>
-                                </div>
+                                </article>
                             </div>
-                        </article>
+                        </div>
                     </div>
-                    <div class="bloc_bouton_menu"><!--components/bouton-degrade-->
+                    <div class="menu_bloc_btn">
+                        <!--components/bouton-degrade-->
                         <button class="bouton">Commander</button>
                     </div>
                 </section>
