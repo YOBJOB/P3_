@@ -18,7 +18,7 @@
         width: 100%;
         background: $color-back;
         border-radius: 60px 60px 0px 0px;
-        padding: 0px 15px;
+        padding: 0px 9px;
         .menu-header {
             @include dim(100px);
             @include flex;
@@ -28,7 +28,13 @@
                 font-family: "Shrikhand";
                 width: 90%;
                 padding-left: 5px;
-                font-size: 24px;
+                font-size: 23px;
+                @include pad-only{
+                    font-size: 25px;
+                }
+                @include desktop-only{
+                    font-size: 27px;
+                }
             }
             &__container {
                 @include flex;
@@ -37,8 +43,8 @@
                 width: 10%;
                 .btn-coeur {
                     position: relative;
-                    bottom: 15px;
-                    right: 22px;
+                    bottom: 17px;
+                    right: 32px;
                     .fas,
                     .far {
                         font-size: 30px;
@@ -62,6 +68,12 @@
                         @include flex;
                         @include flex-layout(start, center);
                         font-size: 18px;
+                        @include pad-only{
+                            font-size: 20px;
+                        }
+                        @include desktop-only{
+                            font-size: 22px;
+                        }
                     }
                     .bordure_titre {
                         display: block;

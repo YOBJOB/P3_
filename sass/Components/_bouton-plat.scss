@@ -11,7 +11,7 @@
     cursor: pointer;
     transform-origin: top;
     animation: bars $anim-dur backwards;
-    @include desktop-pad{
+    @include desktop-pad {
         width: 49%;
     }
     @for $i from 1 through $num-bars {
@@ -21,7 +21,7 @@
     }
     &__ref {
         @include flex(column);
-        @include dim(80px, 80%);
+        @include dim(80px, 85%);
         @include flex-layout(center, unset);
         padding-left: 12px;
         overflow: hidden;
@@ -32,13 +32,29 @@
             margin: 3px 0;
             text-overflow: ellipsis;
             overflow: hidden;
+            font-size: 15px;
+            @include pad-only {
+                font-size: 17px;
+            }
+            @include desktop-only {
+                font-size: 19px;
+            }
         }
     }
     &__prix {
         @include flex(column);
-        @include dim(80px, 20%);
-        @include flex-layout(end,end);
+        @include dim(80px, 15%);
+        @include flex-layout(end, end);
         padding: 0 25px 15px 0;
+        .prix {
+            font-size: 15px;
+            @include pad-only {
+                font-size: 17px;
+            }
+            @include desktop-only {
+                font-size: 19px;
+            }
+        }
     }
     &__check {
         @include flex(column);
@@ -108,15 +124,14 @@
     0% {
         opacity: 0;
     }
-    25%{
+    25% {
         opacity: 0.25;
     }
-    50%{
+    50% {
         opacity: 0.5;
     }
-    75%{
+    75% {
         opacity: 0.75;
-
     }
     100% {
         opacity: 1;
