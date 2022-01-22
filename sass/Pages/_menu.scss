@@ -14,6 +14,14 @@
     right: 0px;
     max-width: 1420px;
     margin-bottom: -72px;
+    @include pad-only{
+        bottom: 56px;
+        margin-bottom: -56px;
+    }
+    @include desktop-only{
+        bottom: 50px;
+        margin-bottom: -50px;
+    }
     .menu_container {
         width: 100%;
         background: $color-back;

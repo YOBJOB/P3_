@@ -82,7 +82,7 @@
             }
         }
     }
-    &:hover {
+    &:active {
         & .btn-plat__prix {
             width: 20%;
             transition-duration: 750ms;
@@ -96,7 +96,27 @@
             animation: grow-check 750ms linear;
         }
         & .fa-check {
+            // animation: rotate 1s left linear;
             transform: rotate(0deg);
+        }
+    }
+    @include desktop-only {
+        &:hover {
+            & .btn-plat__prix {
+                width: 20%;
+                transition-duration: 750ms;
+            }
+            & .btn-plat__check {
+                width: 20%;
+                opacity: 1;
+                transform: scaleX(1);
+                transform-origin: right;
+                transition-duration: 750ms;
+                animation: grow-check 750ms linear;
+            }
+            & .fa-check {
+                transform: rotate(0deg);
+            }
         }
     }
 }
@@ -136,4 +156,33 @@
     100% {
         opacity: 1;
     }
+}
+// ANIMATION2
+@keyframes rotation {
+    0% {
+        rotate: 360;
+    }
+    100%{
+        rotate: 0;
+    }
+    
+}
+
+@keyframes grow-check2 {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 5%;
+    }
+    50% {
+        width: 10%;
+    }
+    75% {
+        width: 15%;
+    }
+    100% {
+        width: 20%;
+    }
+    
 }

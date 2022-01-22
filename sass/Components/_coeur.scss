@@ -39,7 +39,7 @@
 
 .btn-coeur {
     cursor: pointer;
-    &:hover, &:active {
+    &:hover{
         & .btn-coeur_plein {
             opacity: 1;
             transform: scale(1);
@@ -49,8 +49,14 @@
             background: -webkit-linear-gradient($color-primary, $color-secondary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            
         }
-    }  
+    }
+    @include desktop-only{
+        &:active {
+            filter: brightness(1.1);
+        }
+    }
     .btn-coeur_vide {
         position: absolute;
         top: 0;
@@ -68,6 +74,6 @@
         transition: opacity 500ms;
         transform-origin: bottom;
         transform: scale(0);
-        transition: transform 500ms cubic-bezier(.32,0,.07,1);
+        transition: transform 500ms cubic-bezier(0.32, 0, 0.07, 1);
     }
 }

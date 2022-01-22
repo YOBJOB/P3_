@@ -59,7 +59,7 @@ p, strong, span, i {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  height: 90px;
+  height: 80px;
   width: 100%;
   border-radius: 30px;
   box-shadow: 0px 10px 10px #d9d9d9;
@@ -255,11 +255,11 @@ p, strong, span, i {
   transform: rotate(-360deg);
   transition: transform 750ms ease-in-out;
 }
-.btn-plat:hover .btn-plat__prix {
+.btn-plat:active .btn-plat__prix {
   width: 20%;
   transition-duration: 750ms;
 }
-.btn-plat:hover .btn-plat__check {
+.btn-plat:active .btn-plat__check {
   width: 20%;
   opacity: 1;
   transform: scaleX(1);
@@ -267,8 +267,25 @@ p, strong, span, i {
   transition-duration: 750ms;
   animation: grow-check 750ms linear;
 }
-.btn-plat:hover .fa-check {
+.btn-plat:active .fa-check {
   transform: rotate(0deg);
+}
+@media all and (min-width: 993px) {
+  .btn-plat:hover .btn-plat__prix {
+    width: 20%;
+    transition-duration: 750ms;
+  }
+  .btn-plat:hover .btn-plat__check {
+    width: 20%;
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: right;
+    transition-duration: 750ms;
+    animation: grow-check 750ms linear;
+  }
+  .btn-plat:hover .fa-check {
+    transform: rotate(0deg);
+  }
 }
 
 @keyframes grow-check {
@@ -306,19 +323,49 @@ p, strong, span, i {
     opacity: 1;
   }
 }
+@keyframes rotation {
+  0% {
+    rotate: 360;
+  }
+  100% {
+    rotate: 0;
+  }
+}
+@keyframes grow-check2 {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 5%;
+  }
+  50% {
+    width: 10%;
+  }
+  75% {
+    width: 15%;
+  }
+  100% {
+    width: 20%;
+  }
+}
 /*coeur*/
 .btn-coeur {
   cursor: pointer;
 }
-.btn-coeur:hover .btn-coeur_plein, .btn-coeur:active .btn-coeur_plein {
+.btn-coeur:hover .btn-coeur_plein {
   opacity: 1;
   transform: scale(1);
 }
-.btn-coeur:hover .btn-coeur_vide, .btn-coeur:active .btn-coeur_vide {
+.btn-coeur:hover .btn-coeur_vide {
   opacity: 1;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media all and (min-width: 993px) {
+  .btn-coeur:active {
+    filter: brightness(1.1);
+  }
 }
 .btn-coeur .btn-coeur_vide {
   position: absolute;
@@ -527,6 +574,18 @@ p, strong, span, i {
   max-width: 1420px;
   margin-bottom: -72px;
 }
+@media all and (min-width: 651px) and (max-width: 992px) {
+  .menu_position {
+    bottom: 56px;
+    margin-bottom: -56px;
+  }
+}
+@media all and (min-width: 993px) {
+  .menu_position {
+    bottom: 50px;
+    margin-bottom: -50px;
+  }
+}
 .menu_position .menu_container {
   width: 100%;
   background: #f2f2f2;
@@ -654,13 +713,40 @@ p, strong, span, i {
   background: #d9d9d9;
   box-shadow: 0px -6px 9px -2px #bfbfbf;
 }
+.conten_local .bar-loc {
+  padding-left: 44px;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .conten_local .bar-loc__map {
-  margin-left: 20px;
+  padding-left: 20px;
+  font-size: 18px;
+}
+@media all and (min-width: 651px) and (max-width: 992px) {
+  .conten_local .bar-loc__map {
+    font-size: 19px;
+  }
+}
+@media all and (min-width: 993px) {
+  .conten_local .bar-loc__map {
+    font-size: 20px;
+  }
 }
 .conten_local .bar-loc__input {
   border: unset;
   background: #d9d9d9;
-  margin-left: 20px;
+  padding-left: 20px;
+  font-size: 18px;
+}
+@media all and (min-width: 651px) and (max-width: 992px) {
+  .conten_local .bar-loc__input {
+    font-size: 19px;
+  }
+}
+@media all and (min-width: 993px) {
+  .conten_local .bar-loc__input {
+    font-size: 20px;
+  }
 }
 
 /*-Trouvez un restaurant-*/
@@ -782,6 +868,18 @@ p, strong, span, i {
   right: 0px;
   max-width: 1420px;
   margin-bottom: -72px;
+}
+@media all and (min-width: 651px) and (max-width: 992px) {
+  .menu_position {
+    bottom: 56px;
+    margin-bottom: -56px;
+  }
+}
+@media all and (min-width: 993px) {
+  .menu_position {
+    bottom: 50px;
+    margin-bottom: -50px;
+  }
 }
 .menu_position .menu_container {
   width: 100%;
