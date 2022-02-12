@@ -2,49 +2,14 @@
 @import "../utils/variables";
 
 /*coeur*/
-// .btn-coeur {
-//     .btn-coeur_plein {
-//         display: none;
-//         background: -webkit-linear-gradient($color-primary, $color-secondary);
-//         -webkit-background-clip: text;
-//         -webkit-text-fill-color: transparent;
-//         opacity: 1;
-//         cursor: pointer;
-//     }
-//     .btn-coeur_vide {
-//         display: block;
-//     }
-//     &:hover, :active {
-//         .btn-coeur_plein {
-//             display: block;
-//             animation: coeur 500ms ease-in;
-//         }
-//         .btn-coeur_vide {
-//             display: none;
-//         }
-//     }
-//     .btn-coeur_plein:active{
-//         display: block;
-//         background: -webkit-linear-gradient($color-primary, $color-secondary);
-//         -webkit-background-clip: text;
-//         -webkit-text-fill-color: transparent;
-//         opacity: 1;
-//     }
-// }
-// @keyframes coeur{
-//     0%{opacity: 0;}
-//     50%{opacity: 0.5;}
-//     100%{opacity: 1;}
-// }
-
 .btn-coeur {
     cursor: pointer;
     &:hover{
-        & .btn-coeur_plein {
+        & .coeur-plein {
             opacity: 1;
             transform: scale(1);
         }
-        & .btn-coeur_vide {
+        & .coeur-vide {
             opacity: 1;
             background: -webkit-linear-gradient($color-primary, $color-secondary);
             -webkit-background-clip: text;
@@ -56,13 +21,13 @@
             filter: brightness(1.1);
         }
     }
-    .btn-coeur_vide {
+    .coeur-vide {
         position: absolute;
         top: 0;
         left: 0;
         color: rgba(32, 27, 27, 0.63);
     }
-    .btn-coeur_plein {
+    .coeur-plein {
         position: absolute;
         top: 0;
         left: 0;

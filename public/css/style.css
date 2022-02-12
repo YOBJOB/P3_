@@ -54,7 +54,7 @@ p, strong, span, i, a {
 }
 
 /*element-fonctionnement*/
-.article_fonc {
+.article-fonc {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -67,17 +67,17 @@ p, strong, span, i, a {
   margin: 0 0 35px 0;
 }
 @media all and (min-width: 993px) {
-  .article_fonc {
+  .article-fonc {
     margin: 20px;
   }
 }
-.article_fonc--color {
+.article-fonc--color {
   background: #e4d5f6;
 }
-.article_fonc--color .btn-fonction__icone--color {
+.article-fonc--color .element-fonction__icone--color {
   color: #9356dc;
 }
-.article_fonc .cercle-proj {
+.article-fonc .cercle-proj {
   position: relative;
   right: 15px;
   border-radius: 50%;
@@ -86,13 +86,13 @@ p, strong, span, i, a {
   width: 30px;
   min-width: 30px;
 }
-.article_fonc .cercle-proj__pos {
+.article-fonc .cercle-proj__pos {
   position: relative;
   left: 9px;
   top: 4px;
   color: white;
 }
-.article_fonc .btn-fonction {
+.article-fonc .element-fonction {
   display: flex;
   flex-direction: row;
   justify-content: unset;
@@ -100,10 +100,10 @@ p, strong, span, i, a {
   height: unset;
   width: 100%;
 }
-.article_fonc .btn-fonction__icone {
+.article-fonc .element-fonction__icone {
   color: #a6a6a6;
 }
-.article_fonc .btn-fonction__texte {
+.article-fonc .element-fonction__texte {
   padding-left: 10px;
 }
 
@@ -297,11 +297,11 @@ p, strong, span, i, a {
 .btn-coeur {
   cursor: pointer;
 }
-.btn-coeur:hover .btn-coeur_plein {
+.btn-coeur:hover .coeur-plein {
   opacity: 1;
   transform: scale(1);
 }
-.btn-coeur:hover .btn-coeur_vide {
+.btn-coeur:hover .coeur-vide {
   opacity: 1;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
@@ -312,13 +312,13 @@ p, strong, span, i, a {
     filter: brightness(1.1);
   }
 }
-.btn-coeur .btn-coeur_vide {
+.btn-coeur .coeur-vide {
   position: absolute;
   top: 0;
   left: 0;
   color: rgba(32, 27, 27, 0.63);
 }
-.btn-coeur .btn-coeur_plein {
+.btn-coeur .coeur-plein {
   position: absolute;
   top: 0;
   left: 0;

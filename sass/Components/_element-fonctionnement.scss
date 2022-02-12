@@ -2,7 +2,7 @@
 @import'../utils/variables';
 
 /*element-fonctionnement*/ 
-.article_fonc{
+.article-fonc{
     @include flex;
     @include flex-layout(start); 
     @include dim (80px);
@@ -15,13 +15,13 @@
     }
         &--color{
             background: lighten($color-primary, 30%);
-                .btn-fonction__icone--color{
+                .element-fonction__icone--color{
                     @include nuance-color-10($color-primary);  
                 }  
         }
     // &:hover {
     //     background: lighten($color-primary, 30%);
-    //     &:hover .btn-fonction__icone{
+    //     &:hover .element-fonction__icone{
     //         @include nuance-color-10($color-primary);  
     //     }     
     // }
@@ -39,7 +39,7 @@
             color: white
         }
     }
-    .btn-fonction{
+    .element-fonction{
         @include flex;
         @include flex-layout(unset); 
         @include dim(unset);
