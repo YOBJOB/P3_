@@ -24,7 +24,7 @@ body, header, section, figure, footer, div, ul, li, h1, h2, h3, h4, a, p {
 
 h1, h2 {
   font-size: 26px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "sans-serif";
 }
 
 h3, h4, h5, h6 {
@@ -32,9 +32,9 @@ h3, h4, h5, h6 {
   font-size: 18px;
 }
 
-p, strong, span, i {
+p, strong, span, i, a {
   font-size: 18px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "sans-serif";
 }
 
 .bold {
@@ -53,8 +53,8 @@ p, strong, span, i {
   display: block;
 }
 
-/*bouton-fonction*/
-.btn_lien_fonc {
+/*element-fonctionnement*/
+.article_fonc {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -67,17 +67,17 @@ p, strong, span, i {
   margin: 0 0 35px 0;
 }
 @media all and (min-width: 993px) {
-  .btn_lien_fonc {
+  .article_fonc {
     margin: 20px;
   }
 }
-.btn_lien_fonc:hover {
+.article_fonc--color {
   background: #e4d5f6;
 }
-.btn_lien_fonc:hover:hover .btn-fonction__icone {
+.article_fonc--color .btn-fonction__icone--color {
   color: #9356dc;
 }
-.btn_lien_fonc .cercle-proj {
+.article_fonc .cercle-proj {
   position: relative;
   right: 15px;
   border-radius: 50%;
@@ -86,13 +86,13 @@ p, strong, span, i {
   width: 30px;
   min-width: 30px;
 }
-.btn_lien_fonc .cercle-proj__pos {
+.article_fonc .cercle-proj__pos {
   position: relative;
   left: 9px;
   top: 4px;
   color: white;
 }
-.btn_lien_fonc .btn-fonction {
+.article_fonc .btn-fonction {
   display: flex;
   flex-direction: row;
   justify-content: unset;
@@ -100,10 +100,10 @@ p, strong, span, i {
   height: unset;
   width: 100%;
 }
-.btn_lien_fonc .btn-fonction__icone {
+.article_fonc .btn-fonction__icone {
   color: #a6a6a6;
 }
-.btn_lien_fonc .btn-fonction__texte {
+.article_fonc .btn-fonction__texte {
   padding-left: 10px;
 }
 
@@ -183,8 +183,7 @@ p, strong, span, i {
   overflow: hidden;
   white-space: nowrap;
 }
-.btn-plat__ref .nom,
-.btn-plat__ref .info {
+.btn-plat__ref .nom, .btn-plat__ref .info {
   display: block;
   margin: 3px 0;
   text-overflow: ellipsis;
@@ -192,14 +191,12 @@ p, strong, span, i {
   font-size: 15px;
 }
 @media all and (min-width: 651px) and (max-width: 992px) {
-  .btn-plat__ref .nom,
-.btn-plat__ref .info {
+  .btn-plat__ref .nom, .btn-plat__ref .info {
     font-size: 17px;
   }
 }
 @media all and (min-width: 993px) {
-  .btn-plat__ref .nom,
-.btn-plat__ref .info {
+  .btn-plat__ref .nom, .btn-plat__ref .info {
     font-size: 19px;
   }
 }
@@ -255,11 +252,11 @@ p, strong, span, i {
   transform: rotate(-360deg);
   transition: transform 750ms ease-in-out;
 }
-.btn-plat:active .btn-plat__prix {
+.btn-plat:active .btn-plat__prix, .btn-plat:hover .btn-plat__prix {
   width: 20%;
   transition-duration: 750ms;
 }
-.btn-plat:active .btn-plat__check {
+.btn-plat:active .btn-plat__check, .btn-plat:hover .btn-plat__check {
   width: 20%;
   opacity: 1;
   transform: scaleX(1);
@@ -267,40 +264,13 @@ p, strong, span, i {
   transition-duration: 750ms;
   animation: grow-check 750ms linear;
 }
-.btn-plat:active .fa-check {
+.btn-plat:active .fa-check, .btn-plat:hover .fa-check {
   transform: rotate(0deg);
-}
-@media all and (min-width: 993px) {
-  .btn-plat:hover .btn-plat__prix {
-    width: 20%;
-    transition-duration: 750ms;
-  }
-  .btn-plat:hover .btn-plat__check {
-    width: 20%;
-    opacity: 1;
-    transform: scaleX(1);
-    transform-origin: right;
-    transition-duration: 750ms;
-    animation: grow-check 750ms linear;
-  }
-  .btn-plat:hover .fa-check {
-    transform: rotate(0deg);
-  }
 }
 
 @keyframes grow-check {
   from {
     width: 0%;
-    height: 100%;
-  }
-  to {
-    width: 20%;
-    height: 100%;
-  }
-}
-@keyframes low-titre {
-  from {
-    width: 30%;
   }
   to {
     width: 20%;
@@ -321,31 +291,6 @@ p, strong, span, i {
   }
   100% {
     opacity: 1;
-  }
-}
-@keyframes rotation {
-  0% {
-    rotate: 360;
-  }
-  100% {
-    rotate: 0;
-  }
-}
-@keyframes grow-check2 {
-  0% {
-    width: 0%;
-  }
-  25% {
-    width: 5%;
-  }
-  50% {
-    width: 10%;
-  }
-  75% {
-    width: 15%;
-  }
-  100% {
-    width: 20%;
   }
 }
 /*coeur*/
@@ -517,8 +462,9 @@ p, strong, span, i {
 .foot_proj .bloc_foot .nav_foot .ul_foot_bloc .li_foot .lien_foot .espace {
   width: 30px;
 }
-.foot_proj .bloc_foot .nav_foot .ul_foot_bloc .li_foot .lien_foot p {
+.foot_proj .bloc_foot .nav_foot .ul_foot_bloc .li_foot .lien_foot a, .foot_proj .bloc_foot .nav_foot .ul_foot_bloc .li_foot .lien_foot p {
   color: rgba(255, 255, 255, 0.849);
+  font-family: Roboto, sans-cherif;
 }
 
 /*header*/
@@ -1021,6 +967,7 @@ p, strong, span, i {
 .content-loader .loader .bar {
   height: 50px;
   width: 25px;
+  border-radius: 10%;
 }
 .content-loader .loader .bar-1 {
   background-color: #9356dc;

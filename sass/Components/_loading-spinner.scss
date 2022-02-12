@@ -19,6 +19,7 @@
         .bar {
             height: 50px;
             width: 25px;
+            border-radius: 10%;
         }
         .bar-1 {
             background-color: $color-primary;
@@ -34,6 +35,7 @@
         }
     }
 }
+// ANIMATION
 @keyframes grow {
     0% {
         transform: scaleY(0);
@@ -56,56 +58,3 @@
         visibility: hidden;
     }
 }
-
-//         .loader-bars {
-//             display: block;
-//             left: 0;
-//             top: 0;
-//             @include dim(30px, 10px);
-//             position: absolute;
-//             background-color: $color-primary;
-//             .loader-bars::before {
-//                 content: "";
-//                 display: block;
-//                 left: 0;
-//                 top: 0;
-//                 @include dim(30px, 10px);
-//                 position: absolute;
-//                 background-color: $color-primary;
-//             }
-//             .loader-bars::after {
-//                 content: "";
-//                 display: block;
-//                 left: 15px;
-//                 top: 0;
-//                 @include dim(30px, 10px);
-//                 position: absolute;
-//                 background-color: $color-secondary;
-//             }
-//             .loader-bars span {
-//                 content: "";
-//                 display: block;
-//                 left: 30px;
-//                 top: 0;
-//                 @include dim(30px, 10px);
-//                 position: absolute;
-//                 background-color: $color-tertiary;
-//                 animation: grow 1.5s linear -0.5s infinite;
-//             }
-//         }
-//     }
-// }
-// @keyframes grow{
-//     0% {
-//         transform: scaleY(0);
-//         opacity: 0;
-//     }
-//     50% {
-//         transform: scaleY(1);
-//         opacity: 1;
-//     }
-//     100% {
-//         transform: scaleY(0);
-//         opacity: 0;
-//     }
-// }

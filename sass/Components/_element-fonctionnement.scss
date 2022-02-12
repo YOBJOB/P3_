@@ -1,8 +1,8 @@
 @import'../utils/mixins';
 @import'../utils/variables';
 
-/*bouton-fonction*/ 
-.btn_lien_fonc{
+/*element-fonctionnement*/ 
+.article_fonc{
     @include flex;
     @include flex-layout(start); 
     @include dim (80px);
@@ -13,12 +13,18 @@
     @include desktop-only{
         margin: 20px;
     }
-    &:hover {
-        background: lighten($color-primary, 30%);
-        &:hover .btn-fonction__icone{
-            @include nuance-color-10($color-primary);  
-        }     
-    }
+        &--color{
+            background: lighten($color-primary, 30%);
+                .btn-fonction__icone--color{
+                    @include nuance-color-10($color-primary);  
+                }  
+        }
+    // &:hover {
+    //     background: lighten($color-primary, 30%);
+    //     &:hover .btn-fonction__icone{
+    //         @include nuance-color-10($color-primary);  
+    //     }     
+    // }
     .cercle-proj{ 
         position: relative;
         right: 15px;          

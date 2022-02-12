@@ -26,17 +26,17 @@ body, header, section, figure, footer, div, ul, li, h1, h2, h3, h4, a, p {
 
 h1, h2 {
   font-size: 26px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'sans-serif';
 }
 
 h3, h4, h5, h6 {
-  font-family: "Shrikhand","sans-serif";
+  font-family: 'Shrikhand','sans-serif';
   font-size: 18px;
 }
 
-p, strong, span, i {
+p, strong, span, i, a {
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'sans-serif';
 }
 
 .bold {
@@ -418,22 +418,18 @@ p, strong, span, i {
 @-webkit-keyframes grow-check {
   from {
     width: 0%;
-    height: 100%;
   }
   to {
     width: 20%;
-    height: 100%;
   }
 }
 
 @keyframes grow-check {
   from {
     width: 0%;
-    height: 100%;
   }
   to {
     width: 20%;
-    height: 100%;
   }
 }
 
@@ -488,24 +484,6 @@ p, strong, span, i {
   }
   100% {
     opacity: 1;
-  }
-}
-
-@-webkit-keyframes rotation {
-  0% {
-    rotate: 360;
-  }
-  100% {
-    rotate: 0;
-  }
-}
-
-@keyframes rotation {
-  0% {
-    rotate: 360;
-  }
-  100% {
-    rotate: 0;
   }
 }
 
@@ -803,8 +781,9 @@ p, strong, span, i {
   width: 30px;
 }
 
-.foot_proj .bloc_foot .nav_foot .ul_foot_bloc .li_foot .lien_foot p {
+.foot_proj .bloc_foot .nav_foot .ul_foot_bloc .li_foot .lien_foot a, .foot_proj .bloc_foot .nav_foot .ul_foot_bloc .li_foot .lien_foot p {
   color: rgba(255, 255, 255, 0.849);
+  font-family: Roboto, sans-cherif;
 }
 
 /*header*/

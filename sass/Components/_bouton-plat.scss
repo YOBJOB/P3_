@@ -26,8 +26,8 @@
         padding-left: 12px;
         overflow: hidden;
         white-space: nowrap;
-        .nom,
-        .info {
+        & .nom,
+        & .info {
             display: block;
             margin: 3px 0;
             text-overflow: ellipsis;
@@ -46,7 +46,7 @@
         @include dim(80px, 15%);
         @include flex-layout(end, end);
         padding: 0 25px 15px 0;
-        .prix {
+        & .prix {
             font-size: 15px;
             @include pad-only {
                 font-size: 17px;
@@ -66,12 +66,12 @@
         transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
         background: $color-tertiary;
         border-radius: 0 20px 20px 0;
-        .cercle {
+        & .cercle {
             @include dim(20px, 20px);
             border-radius: 50%;
             background: $color-contrast;
             overflow: hidden;
-            .fa-check {
+            & .fa-check {
                 font-size: 15px;
                 position: relative;
                 bottom: 1px;
@@ -82,7 +82,7 @@
             }
         }
     }
-    &:active {
+    &:active, &:hover {
         & .btn-plat__prix {
             width: 20%;
             transition-duration: 750ms;
@@ -96,44 +96,15 @@
             animation: grow-check 750ms linear;
         }
         & .fa-check {
-            // animation: rotate 1s left linear;
             transform: rotate(0deg);
         }
     }
-    @include desktop-only {
-        &:hover {
-            & .btn-plat__prix {
-                width: 20%;
-                transition-duration: 750ms;
-            }
-            & .btn-plat__check {
-                width: 20%;
-                opacity: 1;
-                transform: scaleX(1);
-                transform-origin: right;
-                transition-duration: 750ms;
-                animation: grow-check 750ms linear;
-            }
-            & .fa-check {
-                transform: rotate(0deg);
-            }
-        }
-    }
 }
+
+// ANIMATION
 @keyframes grow-check {
     from {
         width: 0%;
-        height: 100%;
-    }
-    to {
-        width: 20%;
-        height: 100%;
-    }
-}
-
-@keyframes low-titre {
-    from {
-        width: 30%;
     }
     to {
         width: 20%;
@@ -156,33 +127,4 @@
     100% {
         opacity: 1;
     }
-}
-// ANIMATION2
-@keyframes rotation {
-    0% {
-        rotate: 360;
-    }
-    100%{
-        rotate: 0;
-    }
-    
-}
-
-@keyframes grow-check2 {
-    0% {
-        width: 0%;
-    }
-    25% {
-        width: 5%;
-    }
-    50% {
-        width: 10%;
-    }
-    75% {
-        width: 15%;
-    }
-    100% {
-        width: 20%;
-    }
-    
 }
